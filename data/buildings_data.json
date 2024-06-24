@@ -1,6 +1,6 @@
 {
-  "market": {
-    "britions": {
+  "base": {
+    "towncenter": {
       "costs": {
         "gold": 100,
         "wood": 100,
@@ -9,36 +9,256 @@
       },
       "defence": 100,
       "structure": 10
+    },
+    "market": {
+      "costs": {
+        "gold": 100,
+        "wood": 100,
+        "food": 100,
+        "stone": 100
+      },
+      "defence": 100,
+      "structure": 10
+    },
+    "wall": {
+      "costs": {
+        "gold": 100,
+        "wood": 100,
+        "food": 100,
+        "stone": 100
+      },
+      "defence": 100,
+      "structure": 10
+    },
+    "castle": {
+      "costs": {
+        "gold": 100,
+        "wood": 100,
+        "food": 100,
+        "stone": 100
+      },
+      "defence": 100,
+      "structure": 10
+    },
+    "university": {
+      "costs": {
+        "gold": 100,
+        "wood": 100,
+        "food": 100,
+        "stone": 100
+      },
+      "defence": 100,
+      "structure": 10
+    }
+  },
+  "updates": {
+    "britons": {
+      "towncenter": {
+        "costs": {
+          "gold": 0,
+          "wood": 0,
+          "food": 0,
+          "stone": 0
+        },
+        "defence": 0,
+        "structure": 0
+      },
+      "market": {
+        "costs": {
+          "gold": 0,
+          "wood": 0,
+          "food": 0,
+          "stone": 0
+        },
+        "defence": 0,
+        "structure": 0
+      },
+      "wall": {
+        "costs": {
+          "gold": 0,
+          "wood": 0,
+          "food": 0,
+          "stone": 0
+        },
+        "defence": 0,
+        "structure": 0
+      },
+      "castle": {
+        "costs": {
+          "gold": 0,
+          "wood": 0,
+          "food": 0,
+          "stone": 0
+        },
+        "defence": 0,
+        "structure": 0
+      },
+      "university": {
+        "costs": {
+          "gold": 0,
+          "wood": 0,
+          "food": 0,
+          "stone": 0
+        },
+        "defence": 0,
+        "structure": 0
+      }
     },
     "vikings": {
-      "costs": {
-        "gold": 100,
-        "wood": 100,
-        "food": 100,
-        "stone": 100
+      "towncenter": {
+        "costs": {
+          "gold": 0,
+          "wood": 0,
+          "food": 0,
+          "stone": 0
+        },
+        "defence": 0,
+        "structure": 0
       },
-      "defence": 100,
-      "structure": 10
+      "market": {
+        "costs": {
+          "gold": 0,
+          "wood": 0,
+          "food": 0,
+          "stone": 0
+        },
+        "defence": 0,
+        "structure": 0
+      },
+      "wall": {
+        "costs": {
+          "gold": 0,
+          "wood": 0,
+          "food": 0,
+          "stone": 0
+        },
+        "defence": 0,
+        "structure": 0
+      },
+      "castle": {
+        "costs": {
+          "gold": 0,
+          "wood": 0,
+          "food": 0,
+          "stone": 0
+        },
+        "defence": 0,
+        "structure": 0
+      },
+      "university": {
+        "costs": {
+          "gold": 0,
+          "wood": 0,
+          "food": 0,
+          "stone": 0
+        },
+        "defence": 0,
+        "structure": 0
+      }
     },
     "chinese": {
-      "costs": {
-        "gold": 100,
-        "wood": 100,
-        "food": 100,
-        "stone": 100
+      "towncenter": {
+        "costs": {
+          "gold": 0,
+          "wood": 0,
+          "food": 0,
+          "stone": 0
+        },
+        "defence": 0,
+        "structure": 0
       },
-      "defence": 100,
-      "structure": 10
+      "market": {
+        "costs": {
+          "gold": 0,
+          "wood": 0,
+          "food": 0,
+          "stone": 0
+        },
+        "defence": 0,
+        "structure": 0
+      },
+      "wall": {
+        "costs": {
+          "gold": 0,
+          "wood": 0,
+          "food": 0,
+          "stone": 0
+        },
+        "defence": 0,
+        "structure": 0
+      },
+      "castle": {
+        "costs": {
+          "gold": 0,
+          "wood": 0,
+          "food": 0,
+          "stone": 0
+        },
+        "defence": 0,
+        "structure": 0
+      },
+      "university": {
+        "costs": {
+          "gold": 0,
+          "wood": 0,
+          "food": 0,
+          "stone": 0
+        },
+        "defence": 0,
+        "structure": 0
+      }
     },
     "mongols": {
-      "costs": {
-        "gold": 100,
-        "wood": 100,
-        "food": 100,
-        "stone": 100
+      "towncenter": {
+        "costs": {
+          "gold": 0,
+          "wood": 0,
+          "food": 0,
+          "stone": 0
+        },
+        "defence": 0,
+        "structure": 0
       },
-      "defence": 100,
-      "structure": 10
+      "market": {
+        "costs": {
+          "gold": 0,
+          "wood": 0,
+          "food": 0,
+          "stone": 0
+        },
+        "defence": 0,
+        "structure": 0
+      },
+      "wall": {
+        "costs": {
+          "gold": 0,
+          "wood": 0,
+          "food": 0,
+          "stone": 0
+        },
+        "defence": 0,
+        "structure": 0
+      },
+      "castle": {
+        "costs": {
+          "gold": 0,
+          "wood": 0,
+          "food": 0,
+          "stone": 0
+        },
+        "defence": 0,
+        "structure": 0
+      },
+      "university": {
+        "costs": {
+          "gold": 0,
+          "wood": 0,
+          "food": 0,
+          "stone": 0
+        },
+        "defence": 0,
+        "structure": 0
+      }
     }
   }
 }
