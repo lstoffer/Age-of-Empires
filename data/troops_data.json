@@ -8,7 +8,8 @@
         "stone": 100
       },
       "defence": 100,
-      "attack": 10
+      "attack": 10,
+      "points": 100
     },
     "vikings": {
       "costs": {
@@ -18,7 +19,8 @@
         "stone": 100
       },
       "defence": 100,
-      "attack": 10
+      "attack": 10,
+      "points": 100
     },
     "chinese": {
       "costs": {
@@ -28,7 +30,8 @@
         "stone": 100
       },
       "defence": 100,
-      "attack": 10
+      "attack": 10,
+      "points": 100
     },
     "mongols": {
       "costs": {
@@ -38,7 +41,8 @@
         "stone": 100
       },
       "defence": 100,
-      "attack": 10
+      "attack": 10,
+      "points": 100
     }
   },
   "updates": {
@@ -50,7 +54,8 @@
         "stone": 0
       },
       "defence": 0,
-      "attack": 0
+      "attack": 0,
+      "points": 100
     },
     "vikings": {
       "costs": {
@@ -60,7 +65,8 @@
         "stone": 0
       },
       "defence": 0,
-      "attack": 0
+      "attack": 0,
+      "points": 100
     },
     "chinese": {
       "costs": {
@@ -70,7 +76,8 @@
         "stone": 0
       },
       "defence": 0,
-      "attack": 0
+      "attack": 0,
+      "points": 100
     },
     "mongols": {
       "costs": {
@@ -80,7 +87,8 @@
         "stone": 0
       },
       "defence": 0,
-      "attack": 0
+      "attack": 0,
+      "points": 100
     }
   }
 }

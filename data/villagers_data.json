@@ -13,7 +13,8 @@
         "food": 100,
         "stone": 100
       },
-      "defence": 100
+      "defence": 100,
+      "points": 100
     },
     "vikings": {
       "costs": {
@@ -28,7 +29,8 @@
         "food": 100,
         "stone": 100
       },
-      "defence": 100
+      "defence": 100,
+      "points": 100
     },
     "chinese": {
       "costs": {
@@ -43,7 +45,8 @@
         "food": 100,
         "stone": 100
       },
-      "defence": 100
+      "defence": 100,
+      "points": 100
     },
     "mongols": {
       "costs": {
@@ -58,7 +61,8 @@
         "food": 100,
         "stone": 100
       },
-      "defence": 100
+      "defence": 100,
+      "points": 100
     }
   },
   "updates": {
@@ -75,7 +79,8 @@
         "food": 100,
         "stone": 100
       },
-      "defence": 100
+      "defence": 100,
+      "points": 100
     },
     "vikings": {
       "costs": {
@@ -90,7 +95,8 @@
         "food": 100,
         "stone": 100
       },
-      "defence": 100
+      "defence": 100,
+      "points": 100
     },
     "chinese": {
       "costs": {
@@ -105,7 +111,8 @@
         "food": 100,
         "stone": 100
       },
-      "defence": 100
+      "defence": 100,
+      "points": 100
     },
     "mongols": {
       "costs": {
@@ -120,7 +127,8 @@
         "food": 100,
         "stone": 100
       },
-      "defence": 100
+      "defence": 100,
+      "points": 100
     }
   }
 }

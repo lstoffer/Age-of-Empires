@@ -8,7 +8,8 @@
         "stone": 100
       },
       "defence": 100,
-      "structure": 10
+      "structure": 10,
+      "points": 100
     },
     "market": {
       "costs": {
@@ -18,7 +19,8 @@
         "stone": 100
       },
       "defence": 100,
-      "structure": 10
+      "structure": 10,
+      "points": 100
     },
     "wall": {
       "costs": {
@@ -28,7 +30,8 @@
         "stone": 100
       },
       "defence": 100,
-      "structure": 10
+      "structure": 10,
+      "points": 100
     },
     "castle": {
       "costs": {
@@ -38,7 +41,8 @@
         "stone": 100
       },
       "defence": 100,
-      "structure": 10
+      "structure": 10,
+      "points": 100
     },
     "university": {
       "costs": {
@@ -48,7 +52,8 @@
         "stone": 100
       },
       "defence": 100,
-      "structure": 10
+      "structure": 10,
+      "points": 100
     }
   },
   "updates": {
@@ -61,7 +66,8 @@
           "stone": 0
         },
         "defence": 0,
-        "structure": 0
+        "structure": 0,
+        "points": 100
       },
       "market": {
         "costs": {
@@ -71,7 +77,8 @@
           "stone": 0
         },
         "defence": 0,
-        "structure": 0
+        "structure": 0,
+        "points": 100
       },
       "wall": {
         "costs": {
@@ -81,7 +88,8 @@
           "stone": 0
         },
         "defence": 0,
-        "structure": 0
+        "structure": 0,
+        "points": 100
       },
       "castle": {
         "costs": {
@@ -91,7 +99,8 @@
           "stone": 0
         },
         "defence": 0,
-        "structure": 0
+        "structure": 0,
+        "points": 100
       },
       "university": {
         "costs": {
@@ -101,7 +110,8 @@
           "stone": 0
         },
         "defence": 0,
-        "structure": 0
+        "structure": 0,
+        "points": 100
       }
     },
     "vikings": {
@@ -113,7 +123,8 @@
           "stone": 0
         },
         "defence": 0,
-        "structure": 0
+        "structure": 0,
+        "points": 100
       },
       "market": {
         "costs": {
@@ -123,7 +134,8 @@
           "stone": 0
         },
         "defence": 0,
-        "structure": 0
+        "structure": 0,
+        "points": 100
       },
       "wall": {
         "costs": {
@@ -133,7 +145,8 @@
           "stone": 0
         },
         "defence": 0,
-        "structure": 0
+        "structure": 0,
+        "points": 100
       },
       "castle": {
         "costs": {
@@ -143,7 +156,8 @@
           "stone": 0
         },
         "defence": 0,
-        "structure": 0
+        "structure": 0,
+        "points": 100
       },
       "university": {
         "costs": {
@@ -153,7 +167,8 @@
           "stone": 0
         },
         "defence": 0,
-        "structure": 0
+        "structure": 0,
+        "points": 100
       }
     },
     "chinese": {
@@ -165,7 +180,8 @@
           "stone": 0
         },
         "defence": 0,
-        "structure": 0
+        "structure": 0,
+        "points": 100
       },
       "market": {
         "costs": {
@@ -175,7 +191,8 @@
           "stone": 0
         },
         "defence": 0,
-        "structure": 0
+        "structure": 0,
+        "points": 100
       },
       "wall": {
         "costs": {
@@ -185,7 +202,8 @@
           "stone": 0
         },
         "defence": 0,
-        "structure": 0
+        "structure": 0,
+        "points": 100
       },
       "castle": {
         "costs": {
@@ -195,7 +213,8 @@
           "stone": 0
         },
         "defence": 0,
-        "structure": 0
+        "structure": 0,
+        "points": 100
       },
       "university": {
         "costs": {
@@ -205,7 +224,8 @@
           "stone": 0
         },
         "defence": 0,
-        "structure": 0
+        "structure": 0,
+        "points": 100
       }
     },
     "mongols": {
@@ -217,7 +237,8 @@
           "stone": 0
         },
         "defence": 0,
-        "structure": 0
+        "structure": 0,
+        "points": 100
       },
       "market": {
         "costs": {
@@ -227,7 +248,8 @@
           "stone": 0
         },
         "defence": 0,
-        "structure": 0
+        "structure": 0,
+        "points": 100
       },
       "wall": {
         "costs": {
@@ -237,7 +259,8 @@
           "stone": 0
         },
         "defence": 0,
-        "structure": 0
+        "structure": 0,
+        "points": 100
       },
       "castle": {
         "costs": {
@@ -247,7 +270,8 @@
           "stone": 0
         },
         "defence": 0,
-        "structure": 0
+        "structure": 0,
+        "points": 100
       },
       "university": {
         "costs": {
@@ -257,7 +281,8 @@
           "stone": 0
         },
         "defence": 0,
-        "structure": 0
+        "structure": 0,
+        "points": 100
       }
     }
   }
