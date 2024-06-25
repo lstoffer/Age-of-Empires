@@ -1,7 +1,8 @@
 from dataclasses import dataclass
 
+
 @dataclass
-class Cost:
+class Ressources:
     food: int
     wood: int
     stone: int

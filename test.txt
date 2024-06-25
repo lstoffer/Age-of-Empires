@@ -1,0 +1,264 @@
+Let $Y$ be a normally distributed random variable with parameter $\mu=-1.2$ and $\sigma=2.1.
+Find the 50%-quantile of $Y$
+
+The $t$-value of a two-sided statistic test with $20$ degrees of freedom is $2.05$.
+Find the correspoinding $P$-value.
+
+A normally distributed data set wieth mean $\overline x$ and standard deviation $s$ is given.
+What percentage of data lies below $\overlien x - 3s$?
+
+In a factory a filling machine is put back into operation after an overhaul. For this purpose, a new chart for the range is to be used to monitor the variation of the filling height measured in millimeters. The trial run consists of 8 samples each containing 12 measurements. The ranges of these samples are
+3.6, 9.5, 2.6, 0.6, 8.5, 9.5, 0.8, 1.6.
+Calculate the control limits of an R chart for the ranges. Use $\alpha = 0.0027$
+
+A process has a target value $\mu_0=240.0$ and a process standard deviation $\sigma=4.0$. Every hour a sample of sample size $1$ is taken.
+What is the average time needed to detect a change of $\triangle\mu=3.0$ using a CUSUM-control chart?
+Use the reference value $K=2$
+
+The following Process is out of control:
+[contorl chart with one point above limit]
+At what time (index) do you stop the process?
+
+The following CUSUM-chart was calculated for a trial run:
+[CUSUM chart]
+The target vlaue is 2000 and the reference value is 5.2. Find the mean of the first random sample.
+
+The following power function is given:
+[power function chart]
+Find the probability of an omitted alarm if the process shifts by $\delta=2.5$
+
+Monitoring a production process, the weight $F$ [N] is measured every hour. Ideally, the machine runs with $F_0=10.0N$. The standard deviation of the process is known to be $1.0$ N.
+Calculate the limits of an EWMA chart with smoothing paramter $\lambda=0.25$ at index (time) $i=1$
+
+Four machines 1,2,3 and 4 are being evaluated for their capability. The standard deviations of the four machines are known to be $\sigma_1=8.1$, $\sigma_2=4.3$, $\sigma_3=6.7$ and $\sigma_4=5.4$.
+The specification limits are set between LSL=56.3 and USL=85.4.
+Determine which of the machine is capable of working within specifications.
+
+The propagation speed of sound waves c [in m/s] in salt water at constant pressure and constant salinity depends on the water temperature T [in °C]. In an experiment, the propagation velocities were determined at five different temperatures:
+T       c
+5       1474
+10      1490
+15      1512
+20      1523
+30      1534
+The simplified model of Del Grosso describing the speed of sound waves in function of the water temperature has the form:
+$$c(T)=A+BT\exp(-\frac{T}{86.9})$$
+Find estimates of the parameters $A$ and $B$ using the least squares method.
+
+The multiple linear regression model $y=\beta_0+\beta_1x_1+\beta_2x_2+\epsilon$ was fitted to data and the following R-output was obtained:
+Call:
+lm(formula = y ~ x1 + x2)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-1.8579 -0.6167 -0.1432  0.5352  2.3318 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  1.99063    0.27906   7.133 1.77e-10 ***
+x1           2.99230    0.04038  74.098  < 2e-16 ***
+x2           4.00160    0.03975 100.658  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.9675 on 97 degrees of freedom
+Multiple R-squared:  0.9939,  Adjusted R-squared:  0.9938 
+F-statistic:  7941 on 2 and 97 DF,  p-value: < 2.2e-16
+Find an estimate for teh response at $x_1=2.14$ and $x_2=1.12$
+
+We fit the multiple regression model `sqrt(value) ~ log10(weight) + sqrt(clarity) + color` and get the following R-summary output:
+Call:
+lm(formula = sqrt(value) ~ log10(weight) + sqrt(clarity) + color, 
+    data = data)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.42855 -0.11975 -0.00508  0.10508  0.56713 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)    9.38203    0.36882  25.438  < 2e-16 ***
+log10(weight)  1.89228    0.18722  10.107  < 2e-16 ***
+sqrt(clarity)  1.83994    0.21411   8.593 1.18e-14 ***
+color         -0.02325    0.01404  -1.656   0.0999 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.1816 on 146 degrees of freedom
+Multiple R-squared:  0.5833,	Adjusted R-squared:  0.5747 
+F-statistic: 68.12 on 3 and 146 DF,  p-value: < 2.2e-16 
+Report all the parameters of the mulitiple linear regression model:
+$\hat\beta_0=...$
+$\hat\beta_1=...$
+$\hat\beta_2=...$
+$\hat\beta_3=...$
+$\hat\sigma=...$
+
+A simple linear regression gives the following R-summary output:
+Call:
+lm(formula = y ~ x)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-601.16 -128.36   -5.44  137.42  762.16 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)
+(Intercept)  -0.1112    10.4191  -0.011    0.991
+x             3.0578     1.8744   1.631    ?????
+
+Residual standard error: 208.3 on 398 degrees of freedom
+Multiple R-squared:  0.006642,  Adjusted R-squared:  0.004146 
+F-statistic: 2.661 on 1 and 398 DF,  p-value: 
+Calculate the missing P-values of the slope. (Any significance codes and the overall P-value were omitted)
+
+In the laboratory, the following data was measured by a colleague:
+x       y
+1.4     8.2
+1.5     7.5
+1.8     6.3
+2.2     5.3
+2.4     5.4
+3.1     4.5
+3.6     4.5
+4.5     4.6
+5.0     4.9
+Unfortunately, we cannot use the data in this way, as we should know the function vlaue at different positoins for futher use. From physiscs we know that the data should follow the model:
+$$f(x)=A+Bx+C\exp(-x)$$
+Find an estimate of the function value at $x=2.5$
+
+The simple linear regression model `Presure ~ Temperatures` was fitted to data and the following R-summary output was obtained:
+Call:
+lm(formula = Presure ~ Temperature)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-76.538 -27.681  -3.091  20.471  91.001 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  49.3291     8.7701   5.625 2.79e-07 ***
+Temperature   3.1065     0.1239  25.077  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 35.6 on 78 degrees of freedom
+Multiple R-squared:  0.8897,  Adjusted R-squared:  0.8882 
+F-statistic: 628.9 on 1 and 78 DF,  p-value: < 2.2e-16
+The null hypothesis for the parameter $\beta_1$ of the slope is:
+$$H_0:\beta_1=2.5$$
+Find the $t$-value for this null hypothesis
+
+3 Auswählfragen zu Residual Analysis
+...
+
+With R the multiple linear regression model
+$y=\beta_0+\beta_1x_1+\beta_2x_2+\beta_3x_3+\beta_4x_4+\beta_5x_5+\epsilon$ was fitted to data.
+With `confint(lm(Y ~ X1 + X2 + X3 + X4 + X5), level=0.9)` we obtain the following R-output:
+                   5 %       95 %
+(Intercept) -1.0180441 -0.5913497
+X1           0.8775748  1.2559939
+X2           1.6380363  2.0059464
+X3           2.7349345  3.1095663
+X4          -1.8082398 -1.4464761
+X5           1.3443389  1.7182027
+Find the 90%-confidence interval of the intercept.
+
+We perform an analysis of variance summary(aov(Y ~ X1 + X2 + X3 + X4, data)) and get the following R-output:
+            Df Sum Sq Mean Sq F value   Pr(>F)    
+X1           1   2594  2593.7  11.426 0.005466 ** 
+X2           2   1328   663.9   2.925 0.092336 .  
+X3           4  10393  2598.3  11.446 0.000461 ***
+X4           4   5323  1330.9   5.863 0.007475 ** 
+Residuals   12   2724   227.0
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Which variables are significant on the 10%-level?
+
+The following half normal plot of the model `y ~ A*B*C*D` is given
+[half normal plot]
+How many significant main effects are there?
+
+The following interaction plot is given:
+[interaction plot]
+Find an estimate of the main effect a
+
+The following interaction plot is given:
+[interaction plot]
+Find an estimate of the interction effect A:B
+
+How many two factor interaction effects does a $2^5$ factorial design have?
+
+A design with five input variables $x_1,x_2,x_3,x_4$ and $x_5$ is given in original units. The transformations from the original to the coded variables are:
+$$X1=\frac{x_1+2}{3}$$
+$$X2=\frac{x_2+5}{-6}$$
+$$X3=\frac{x_3-26}{40}$$
+$$X4=\frac{x_4+4}{6}$$
+$$X5=\frac{x_5-28}{62}$$
+Find the value of the coded variable $X5=1$ in original units.
+
+We have the following experimental results of a design in coded variables:
+Run     X1      X2      Y
+1       -1      -1      23
+2       1       -1      26
+3       -1      1       18
+4       1       1       19
+5       0       0       24
+6       0       0       21
+7       0       0       22
+8       0       0       20
+9       0       0       24
+10      0       0       21
+Calculate the test statistic $t_{curv}$ for the test of curvature
+
+We compare three gropus and obtain the following notched boxplots:
+[boxplots]
+Which group has no potential outliers?
+
+Let $\hat f$ be an estiamte of a first-prder response surface
+$$f(x_1,x_2)=\beta_0+\beta_1x_1+\beta_2x_2$$
+With `summary(lm(Y~X1+X2,data))` we obtain the following R-output:
+Call:
+lm(formula = Y ~ X1 + X2, data = data)
+
+Residuals:
+       1        2        3        4 
+ 0.08299 -0.08299 -0.08299  0.08299 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)   
+(Intercept) 10.10930    0.08299  121.81  0.00523 **
+X1           5.29463    0.08299   63.80  0.00998 **
+X2          -4.60014    0.08299  -55.43  0.01148 * 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.166 on 1 degrees of freedom
+Multiple R-squared:  0.9999,	Adjusted R-squared:  0.9996 
+F-statistic:  3571 on 2 and 1 DF,  p-value: 0.01183 
+Find the gradient (not normalised) of the steepest acent
+
+Let $\hat f$ be an estiamte of a second-order response surface
+f(x_1,x_2)=\beta_0+\beta_1x_1+\beta_2x_2+\beta_{11}x_1^2+\beta_{22}x_2^2+\beta_{12}x_1x_2$$
+With `summary(lm(Y ~ X1 + X2 + I(X1^2) + I(X2^2) + X1:X2, data))` we obtain the following R-output:
+Call:
+lm(formula = y ~ X1 + X2 + I(X1^2) + I(X2^2) + X1:X2, data = data)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-1.0187 -0.1551  0.1154  0.2106  0.6225 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  76.7048     0.2269 337.992 5.24e-16 ***
+X1            0.9374     0.1794   5.225 0.001220 ** 
+X2            0.5074     0.1794   2.828 0.025466 *  
+I(X1^2)      -1.2467     0.1924  -6.480 0.000341 ***
+I(X2^2)      -0.8774     0.1924  -4.560 0.002604 ** 
+X1:X2         0.3171     0.2537   1.250 0.251599    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.5075 on 7 degrees of freedom
+Multiple R-squared:  0.9299,  Adjusted R-squared:  0.8799 
+F-statistic: 18.58 on 5 and 7 DF,  p-value: 0.0006502
+Find the stationary point of this second order response surface. 

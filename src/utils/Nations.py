@@ -1,7 +1,8 @@
 from enum import Enum
 
+
 class Nations(Enum):
-    BRITONS = "britions"
+    BRITONS = "britons"
     VIKINGS = "vikings"
     CHINESE = "chinese"
     MONGOLS = "mongols"
