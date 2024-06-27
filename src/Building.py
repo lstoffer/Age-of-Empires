@@ -1,17 +1,15 @@
 import utils.Buildings as Buildings
 import utils.Nations as Nations
 import DataLoader
-from utils.Costs import Cost
+from utils.Cost import Cost
 
 
 class Building:
-    def __init__(self, nation: Nations, type: Buildings) -> None:
-        self.nation = nation
-        self.type = type
-        initialData = DataLoader.load_building_data(building_type=type, nation=nation)
-        self.structure = initialData['structure']
-        self.defence = initialData['defence']
-        self.cost = Cost.from_dict(initialData['costs'])
+    def __init__(self, cost: Cost, defence: int, structure: int, points: int) -> None:
+        self.cost = cost
+        self.defence = defence
+        self.structure = 
+        self.points
 
     def get_def(self):
         pass

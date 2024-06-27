@@ -1,47 +1,57 @@
 import utils.Buildings as Buildings
 import utils.Nations as Nations
-from typing import Dict
 import json
-import os
-
-cwd = os.getcwd()
-building_data_filepath = os.path.join(cwd, 'data/buildings_data.json')
-
-def load_data(filepath) -> Dict:
-    try:
-        with open(filepath, 'r') as file:
-            try:
-                data = json.load(file)
-                return data
-            except json.JSONDecodeError as e:
-                print(f'Error decoding JSON file {filepath}: {e}')
-    except FileNotFoundError:
-        print(f'File {filepath} not found')
-        return {}
-    except PermissionError:
-        print(f'Permission denied when trying to read {filepath}')
-        return {}
-    except Exception as e:
-        print(f'Error loading file {filepath}: {e}')
-        return {}
+from pathlib import Path
 
 
-def load_building_data(building_type: Buildings = None, nation: Nations = None) -> Dict:
-    data = load_data(building_data_filepath)
-        
-    if building_type is not None:
+class DataLoader():
+
+    def __init__(self) -> None:
+        self.dataDir = Path.cwd() / 'data'
+        self.nationsData = self.load_data('nations_data.json')
+        self.fieldsData = self.load_data('fields_data.json')
+        self.villagersData = self.load_data('villagers_data.json')
+        self.troopsData = self.load_data('troops_data.json')
+        self.buildingsData = self.load_data('buildings_data.json')
+        self.bordersData = self.load_data('borders_data.json')
+        self.updatesData = self.load_data('updates_data.json')
+
+    def load_data(self, fileName) -> dict:
+        filepath = self.dataDir / fileName
         try:
-            data = data[building_type.value]
-        except:
-            print(f'Building type {building_type.value} not present in building data')
+            with open(filepath, 'r') as file:
+                try:
+                    data = json.load(file)
+                    return data
+                except json.JSONDecodeError as e:
+                    print(f'Error decoding JSON file {filepath}: {e}')
+        except FileNotFoundError:
+            print(f'File {filepath} not found')
             return {}
-    
-    if nation is not None:
-        try:
-            data = data[nation.value]
-        except:
-            print(f'Nations {nation.value} not presetn in building data of building type {building_type.value}')
+        except PermissionError:
+            print(f'Permission denied when trying to read {filepath}')
             return {}
-    
-    return data
-            
+        except Exception as e:
+            print(f'Error loading file {filepath}: {e}')
+            return {}
+
+    def nations(self) -> dict:
+        return self.nationsData.copy()
+
+    def fields(self) -> dict:
+        return self.fieldsData.copy()
+
+    def villagers(self) -> dict:
+        return self.villagersData.copy()
+
+    def troops(self) -> dict:
+        return self.troopsData.copy()
+
+    def buildings(self) -> dict:
+        return self.buildingsData.copy()
+
+    def borders(self) -> dict:
+        return self.bordersData.copy()
+
+    def updates(self) -> dict:
+        return self.updatesData.copy()
