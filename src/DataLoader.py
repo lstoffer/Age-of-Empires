@@ -1,20 +1,24 @@
 import json
 from pathlib import Path
+from utils.DataType import DataType
+from utils.NationType import NationType
+from utils.TroopType import TroopType
+from utils.BuildingType import BuildingType
 
 
 class DataLoader():
 
     def __init__(self) -> None:
         self.dataDir = Path.cwd() / 'data'
-        self.nationsData = self.load_data('nations_data.json')
-        self.fieldsData = self.load_data('fields_data.json')
-        self.villagersData = self.load_data('villagers_data.json')
-        self.troopsData = self.load_data('troops_data.json')
-        self.buildingsData = self.load_data('buildings_data.json')
-        self.bordersData = self.load_data('borders_data.json')
-        self.updatesData = self.load_data('updates_data.json')
+        self.nationsData = self.loadData('nations_data.json')
+        self.fieldsData = self.loadData('fields_data.json')
+        self.villagersData = self.loadData('villagers_data.json')
+        self.troopsData = self.loadData('troops_data.json')
+        self.buildingsData = self.loadData('buildings_data.json')
+        self.bordersData = self.loadData('borders_data.json')
+        self.updatesData = self.loadData('updates_data.json')
 
-    def load_data(self, fileName) -> dict:
+    def loadData(self, fileName) -> dict:
         filepath = self.dataDir / fileName
         try:
             with open(filepath, 'r') as file:
@@ -35,18 +39,41 @@ class DataLoader():
 
     def nations(self) -> dict:
         return self.nationsData.copy()
+    
+    def nation(self, nationType: NationType) -> dict:
+        return self.nationsData[nationType].copy()
 
     def fields(self) -> dict:
         return self.fieldsData.copy()
+    
+    def field(self, index: int) -> dict:
+        return self.fieldsData[index].copy()
 
-    def villagers(self) -> dict:
-        return self.villagersData.copy()
+    def villagers(self, dataType: DataType = None, nationType: NationType = None) -> dict:
+        if dataType and nationType:
+            return self.villagersData[dataType][nationType].copy()
+        elif dataType:
+            return self.villagersData[dataType].copy()
+        else:
+            return self.villagersData.copy()
 
-    def troops(self) -> dict:
-        return self.troopsData.copy()
+    def troops(self, dataType: DataType = None, nationType: NationType = None, troopType: TroopType = None) -> dict:
+        if dataType and nationType and troopType:
+            return self.troopsData[dataType][nationType][troopType].copy()
+        elif dataType and nationType:
+            return self.troopsData[dataType][nationType].copy()
+        elif dataType:
+            return self.troopsData[dataType].copy()
+        else:
+            return self.troopsData.copy()
 
-    def buildings(self) -> dict:
-        return self.buildingsData.copy()
+    def buildings(self, dataType: DataType = None, buildingType: BuildingType = None) -> dict:
+        if dataType and buildingType:
+            return self.buildingsData[dataType][buildingType].copy()
+        elif dataType:
+            return self.buildingsData[dataType].copy()
+        else:
+            return self.buildingsData.copy()
 
     def borders(self) -> dict:
         return self.bordersData.copy()
