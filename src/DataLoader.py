@@ -1,5 +1,3 @@
-import utils.Buildings as Buildings
-import utils.Nations as Nations
 import json
 from pathlib import Path
 

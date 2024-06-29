@@ -1,7 +1,7 @@
 from enum import Enum
 
 
-class Ages(Enum):
+class AgeType(Enum):
     DARK_AGE = "dark-age"
     FEUDAL_AGE = "feudal-age"
     CASTLE_AGE = "castle-age"

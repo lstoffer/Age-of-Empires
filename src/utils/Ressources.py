@@ -1,8 +1,15 @@
-from enum import Enum
+from utils.RessourceType import RessourceType
+class Ressources:
+    def __init__(self, food: int, wood: int, stone: int, gold: int) -> None:
+        self.food = food
+        self.wood = wood
+        self.stone = stone
+        self.gold = gold
 
-
-class Ressources(Enum):
-    FOOD = "food"
-    WOOD = "wood"
-    STONE = "stone"
-    GOLD = "gold"
+    @classmethod
+    def from_dict(cls, dict):
+        food = dict[RessourceType.FOOD]
+        wood = dict[RessourceType.WOOD]
+        stone = dict[RessourceType.STONE]
+        gold = dict[RessourceType.GOLD]
+        return cls(food, wood, stone, gold)

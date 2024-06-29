@@ -1,7 +1,7 @@
 from enum import Enum
 
 
-class Nations(Enum):
+class NationType(Enum):
     BRITONS = "britons"
     VIKINGS = "vikings"
     CHINESE = "chinese"

@@ -1,7 +1,7 @@
 from enum import Enum
 
 
-class Updates(Enum):
+class UpdateType(Enum):
     WHEEL = "wheel"
     TRADE_CART = "trade-cart"
     SHORT_SWORDSMAN = "short-swordsman"

@@ -1,94 +1,374 @@
 {
   "base": {
     "britons": {
-      "costs": {
-        "gold": 100,
-        "wood": 100,
-        "food": 100,
-        "stone": 100
+      "archer": {
+        "costs": {
+          "gold": 100,
+          "wood": 100,
+          "food": 100,
+          "stone": 100
+        },
+        "defence": 100,
+        "attack": 10,
+        "points": 100
       },
-      "defence": 100,
-      "attack": 10,
-      "points": 100
+      "infantry": {
+        "costs": {
+          "gold": 100,
+          "wood": 100,
+          "food": 100,
+          "stone": 100
+        },
+        "defence": 100,
+        "attack": 10,
+        "points": 100
+      },
+      "cavalry": {
+        "costs": {
+          "gold": 100,
+          "wood": 100,
+          "food": 100,
+          "stone": 100
+        },
+        "defence": 100,
+        "attack": 10,
+        "points": 100
+      },
+      "siege": {
+        "costs": {
+          "gold": 100,
+          "wood": 100,
+          "food": 100,
+          "stone": 100
+        },
+        "defence": 100,
+        "attack": 10,
+        "points": 100
+      }
     },
     "vikings": {
-      "costs": {
-        "gold": 100,
-        "wood": 100,
-        "food": 100,
-        "stone": 100
+      "archer": {
+        "costs": {
+          "gold": 100,
+          "wood": 100,
+          "food": 100,
+          "stone": 100
+        },
+        "defence": 100,
+        "attack": 10,
+        "points": 100
       },
-      "defence": 100,
-      "attack": 10,
-      "points": 100
+      "infantry": {
+        "costs": {
+          "gold": 100,
+          "wood": 100,
+          "food": 100,
+          "stone": 100
+        },
+        "defence": 100,
+        "attack": 10,
+        "points": 100
+      },
+      "cavalry": {
+        "costs": {
+          "gold": 100,
+          "wood": 100,
+          "food": 100,
+          "stone": 100
+        },
+        "defence": 100,
+        "attack": 10,
+        "points": 100
+      },
+      "siege": {
+        "costs": {
+          "gold": 100,
+          "wood": 100,
+          "food": 100,
+          "stone": 100
+        },
+        "defence": 100,
+        "attack": 10,
+        "points": 100
+      }
     },
     "chinese": {
-      "costs": {
-        "gold": 100,
-        "wood": 100,
-        "food": 100,
-        "stone": 100
+      "archer": {
+        "costs": {
+          "gold": 100,
+          "wood": 100,
+          "food": 100,
+          "stone": 100
+        },
+        "defence": 100,
+        "attack": 10,
+        "points": 100
       },
-      "defence": 100,
-      "attack": 10,
-      "points": 100
+      "infantry": {
+        "costs": {
+          "gold": 100,
+          "wood": 100,
+          "food": 100,
+          "stone": 100
+        },
+        "defence": 100,
+        "attack": 10,
+        "points": 100
+      },
+      "cavalry": {
+        "costs": {
+          "gold": 100,
+          "wood": 100,
+          "food": 100,
+          "stone": 100
+        },
+        "defence": 100,
+        "attack": 10,
+        "points": 100
+      },
+      "siege": {
+        "costs": {
+          "gold": 100,
+          "wood": 100,
+          "food": 100,
+          "stone": 100
+        },
+        "defence": 100,
+        "attack": 10,
+        "points": 100
+      }
     },
     "mongols": {
-      "costs": {
-        "gold": 100,
-        "wood": 100,
-        "food": 100,
-        "stone": 100
+      "archer": {
+        "costs": {
+          "gold": 100,
+          "wood": 100,
+          "food": 100,
+          "stone": 100
+        },
+        "defence": 100,
+        "attack": 10,
+        "points": 100
       },
-      "defence": 100,
-      "attack": 10,
-      "points": 100
+      "infantry": {
+        "costs": {
+          "gold": 100,
+          "wood": 100,
+          "food": 100,
+          "stone": 100
+        },
+        "defence": 100,
+        "attack": 10,
+        "points": 100
+      },
+      "cavalry": {
+        "costs": {
+          "gold": 100,
+          "wood": 100,
+          "food": 100,
+          "stone": 100
+        },
+        "defence": 100,
+        "attack": 10,
+        "points": 100
+      },
+      "siege": {
+        "costs": {
+          "gold": 100,
+          "wood": 100,
+          "food": 100,
+          "stone": 100
+        },
+        "defence": 100,
+        "attack": 10,
+        "points": 100
+      }
     }
   },
   "updates": {
     "britons": {
-      "costs": {
-        "gold": 0,
-        "wood": 0,
-        "food": 0,
-        "stone": 0
+      "archer": {
+        "costs": {
+          "gold": 100,
+          "wood": 100,
+          "food": 100,
+          "stone": 100
+        },
+        "defence": 100,
+        "attack": 10,
+        "points": 100
       },
-      "defence": 0,
-      "attack": 0,
-      "points": 100
+      "infantry": {
+        "costs": {
+          "gold": 100,
+          "wood": 100,
+          "food": 100,
+          "stone": 100
+        },
+        "defence": 100,
+        "attack": 10,
+        "points": 100
+      },
+      "cavalry": {
+        "costs": {
+          "gold": 100,
+          "wood": 100,
+          "food": 100,
+          "stone": 100
+        },
+        "defence": 100,
+        "attack": 10,
+        "points": 100
+      },
+      "siege": {
+        "costs": {
+          "gold": 100,
+          "wood": 100,
+          "food": 100,
+          "stone": 100
+        },
+        "defence": 100,
+        "attack": 10,
+        "points": 100
+      }
     },
     "vikings": {
-      "costs": {
-        "gold": 0,
-        "wood": 0,
-        "food": 0,
-        "stone": 0
+      "archer": {
+        "costs": {
+          "gold": 100,
+          "wood": 100,
+          "food": 100,
+          "stone": 100
+        },
+        "defence": 100,
+        "attack": 10,
+        "points": 100
       },
-      "defence": 0,
-      "attack": 0,
-      "points": 100
+      "infantry": {
+        "costs": {
+          "gold": 100,
+          "wood": 100,
+          "food": 100,
+          "stone": 100
+        },
+        "defence": 100,
+        "attack": 10,
+        "points": 100
+      },
+      "cavalry": {
+        "costs": {
+          "gold": 100,
+          "wood": 100,
+          "food": 100,
+          "stone": 100
+        },
+        "defence": 100,
+        "attack": 10,
+        "points": 100
+      },
+      "siege": {
+        "costs": {
+          "gold": 100,
+          "wood": 100,
+          "food": 100,
+          "stone": 100
+        },
+        "defence": 100,
+        "attack": 10,
+        "points": 100
+      }
     },
     "chinese": {
-      "costs": {
-        "gold": 0,
-        "wood": 0,
-        "food": 0,
-        "stone": 0
+      "archer": {
+        "costs": {
+          "gold": 100,
+          "wood": 100,
+          "food": 100,
+          "stone": 100
+        },
+        "defence": 100,
+        "attack": 10,
+        "points": 100
       },
-      "defence": 0,
-      "attack": 0,
-      "points": 100
+      "infantry": {
+        "costs": {
+          "gold": 100,
+          "wood": 100,
+          "food": 100,
+          "stone": 100
+        },
+        "defence": 100,
+        "attack": 10,
+        "points": 100
+      },
+      "cavalry": {
+        "costs": {
+          "gold": 100,
+          "wood": 100,
+          "food": 100,
+          "stone": 100
+        },
+        "defence": 100,
+        "attack": 10,
+        "points": 100
+      },
+      "siege": {
+        "costs": {
+          "gold": 100,
+          "wood": 100,
+          "food": 100,
+          "stone": 100
+        },
+        "defence": 100,
+        "attack": 10,
+        "points": 100
+      }
     },
     "mongols": {
-      "costs": {
-        "gold": 0,
-        "wood": 0,
-        "food": 0,
-        "stone": 0
+      "archer": {
+        "costs": {
+          "gold": 100,
+          "wood": 100,
+          "food": 100,
+          "stone": 100
+        },
+        "defence": 100,
+        "attack": 10,
+        "points": 100
       },
-      "defence": 0,
-      "attack": 0,
-      "points": 100
+      "infantry": {
+        "costs": {
+          "gold": 100,
+          "wood": 100,
+          "food": 100,
+          "stone": 100
+        },
+        "defence": 100,
+        "attack": 10,
+        "points": 100
+      },
+      "cavalry": {
+        "costs": {
+          "gold": 100,
+          "wood": 100,
+          "food": 100,
+          "stone": 100
+        },
+        "defence": 100,
+        "attack": 10,
+        "points": 100
+      },
+      "siege": {
+        "costs": {
+          "gold": 100,
+          "wood": 100,
+          "food": 100,
+          "stone": 100
+        },
+        "defence": 100,
+        "attack": 10,
+        "points": 100
+      }
     }
   }
 }
