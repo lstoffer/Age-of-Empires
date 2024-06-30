@@ -1,6 +1,5 @@
 import json
 from pathlib import Path
-from utils.DataType import DataType
 from utils.NationType import NationType
 from utils.TroopType import TroopType
 from utils.BuildingType import BuildingType
@@ -51,29 +50,23 @@ class DataLoader():
         else:
             return self.fieldsData.copy()
 
-    def villagers(self, dataType: DataType = None, nationType: NationType = None) -> dict:
-        if dataType and nationType:
-            return self.villagersData[dataType][nationType].copy()
-        elif dataType:
-            return self.villagersData[dataType].copy()
+    def villagers(self, nationType: NationType = None) -> dict:
+        if nationType:
+            return self.villagersData[nationType].copy()
         else:
             return self.villagersData.copy()
 
-    def troops(self, dataType: DataType = None, nationType: NationType = None, troopType: TroopType = None) -> dict:
-        if dataType and nationType and troopType:
-            return self.troopsData[dataType][nationType][troopType].copy()
-        elif dataType and nationType:
-            return self.troopsData[dataType][nationType].copy()
-        elif dataType:
-            return self.troopsData[dataType].copy()
+    def troops(self, nationType: NationType = None, troopType: TroopType = None) -> dict:
+        if nationType and troopType:
+            return self.troopsData[nationType][troopType].copy()
+        elif nationType:
+            return self.troopsData[nationType].copy()
         else:
             return self.troopsData.copy()
 
-    def buildings(self, dataType: DataType = None, buildingType: BuildingType = None) -> dict:
-        if dataType and buildingType:
-            return self.buildingsData[dataType][buildingType].copy()
-        elif dataType:
-            return self.buildingsData[dataType].copy()
+    def buildings(self, buildingType: BuildingType = None) -> dict:
+        if buildingType:
+            return self.buildingsData[buildingType].copy()
         else:
             return self.buildingsData.copy()
 

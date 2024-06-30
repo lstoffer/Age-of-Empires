@@ -1,134 +1,66 @@
 {
-  "base": {
-    "britons": {
-      "costs": {
-        "gold": 100,
-        "wood": 100,
-        "food": 100,
-        "stone": 100
-      },
-      "profits": {
-        "gold": 100,
-        "wood": 100,
-        "food": 100,
-        "stone": 100
-      },
-      "defence": 100,
-      "points": 100
+  "britons": {
+    "costs": {
+      "gold": 100,
+      "wood": 100,
+      "food": 100,
+      "stone": 100
     },
-    "vikings": {
-      "costs": {
-        "gold": 100,
-        "wood": 100,
-        "food": 100,
-        "stone": 100
-      },
-      "profits": {
-        "gold": 100,
-        "wood": 100,
-        "food": 100,
-        "stone": 100
-      },
-      "defence": 100,
-      "points": 100
+    "profits": {
+      "gold": 100,
+      "wood": 100,
+      "food": 100,
+      "stone": 100
     },
-    "chinese": {
-      "costs": {
-        "gold": 100,
-        "wood": 100,
-        "food": 100,
-        "stone": 100
-      },
-      "profits": {
-        "gold": 100,
-        "wood": 100,
-        "food": 100,
-        "stone": 100
-      },
-      "defence": 100,
-      "points": 100
-    },
-    "mongols": {
-      "costs": {
-        "gold": 100,
-        "wood": 100,
-        "food": 100,
-        "stone": 100
-      },
-      "profits": {
-        "gold": 100,
-        "wood": 100,
-        "food": 100,
-        "stone": 100
-      },
-      "defence": 100,
-      "points": 100
-    }
+    "defence": 100,
+    "points": 100
   },
-  "updates": {
-    "britons": {
-      "costs": {
-        "gold": 100,
-        "wood": 100,
-        "food": 100,
-        "stone": 100
-      },
-      "profits": {
-        "gold": 100,
-        "wood": 100,
-        "food": 100,
-        "stone": 100
-      },
-      "defence": 100,
-      "points": 100
+  "vikings": {
+    "costs": {
+      "gold": 100,
+      "wood": 100,
+      "food": 100,
+      "stone": 100
     },
-    "vikings": {
-      "costs": {
-        "gold": 100,
-        "wood": 100,
-        "food": 100,
-        "stone": 100
-      },
-      "profits": {
-        "gold": 100,
-        "wood": 100,
-        "food": 100,
-        "stone": 100
-      },
-      "defence": 100,
-      "points": 100
+    "profits": {
+      "gold": 100,
+      "wood": 100,
+      "food": 100,
+      "stone": 100
     },
-    "chinese": {
-      "costs": {
-        "gold": 100,
-        "wood": 100,
-        "food": 100,
-        "stone": 100
-      },
-      "profits": {
-        "gold": 100,
-        "wood": 100,
-        "food": 100,
-        "stone": 100
-      },
-      "defence": 100,
-      "points": 100
+    "defence": 100,
+    "points": 100
+  },
+  "chinese": {
+    "costs": {
+      "gold": 100,
+      "wood": 100,
+      "food": 100,
+      "stone": 100
     },
-    "mongols": {
-      "costs": {
-        "gold": 100,
-        "wood": 100,
-        "food": 100,
-        "stone": 100
-      },
-      "profits": {
-        "gold": 100,
-        "wood": 100,
-        "food": 100,
-        "stone": 100
-      },
-      "defence": 100,
-      "points": 100
-    }
+    "profits": {
+      "gold": 100,
+      "wood": 100,
+      "food": 100,
+      "stone": 100
+    },
+    "defence": 100,
+    "points": 100
+  },
+  "mongols": {
+    "costs": {
+      "gold": 100,
+      "wood": 100,
+      "food": 100,
+      "stone": 100
+    },
+    "profits": {
+      "gold": 100,
+      "wood": 100,
+      "food": 100,
+      "stone": 100
+    },
+    "defence": 100,
+    "points": 100
   }
 }
