@@ -4,6 +4,8 @@ from utils.DataType import DataType
 from utils.NationType import NationType
 from utils.TroopType import TroopType
 from utils.BuildingType import BuildingType
+from utils.UpdateType import UpdateType
+from utils.UpdateType import UpdateCategory
 
 
 class DataLoader():
@@ -37,17 +39,17 @@ class DataLoader():
             print(f'Error loading file {filepath}: {e}')
             return {}
 
-    def nations(self) -> dict:
-        return self.nationsData.copy()
-    
-    def nation(self, nationType: NationType) -> dict:
-        return self.nationsData[nationType].copy()
+    def nations(self, nationType: NationType = None) -> dict:
+        if nationType:
+            return self.nationsData[nationType].copy()
+        else:
+            return self.nationsData.copy()
 
-    def fields(self) -> dict:
-        return self.fieldsData.copy()
-    
-    def field(self, index: int) -> dict:
-        return self.fieldsData[index].copy()
+    def fields(self, index: int = None) -> dict:
+        if index:
+            return self.fieldsData[str(index)].copy()
+        else:
+            return self.fieldsData.copy()
 
     def villagers(self, dataType: DataType = None, nationType: NationType = None) -> dict:
         if dataType and nationType:
@@ -75,8 +77,16 @@ class DataLoader():
         else:
             return self.buildingsData.copy()
 
+    def updates(self, updateType: UpdateType = None, updateCategory: UpdateCategory = None, nationType: NationType = None) -> dict:
+        if updateType and updateCategory and nationType:
+            return self.updatesData[updateType][updateCategory][nationType].copy()
+        elif updateType and updateCategory:
+            return self.updatesData[updateType][updateCategory].copy()
+        elif updateType:
+            return self.updatesData[updateType].copy()
+        else:
+            return self.updatesData.copy()
+    
     def borders(self) -> dict:
         return self.bordersData.copy()
 
-    def updates(self) -> dict:
-        return self.updatesData.copy()
