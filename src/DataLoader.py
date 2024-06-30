@@ -64,9 +64,11 @@ class DataLoader():
         else:
             return self.troopsData.copy()
 
-    def buildings(self, buildingType: BuildingType = None) -> dict:
-        if buildingType:
-            return self.buildingsData[buildingType].copy()
+    def buildings(self, nationType: NationType = None, buildingType: BuildingType = None) -> dict:
+        if nationType and buildingType:
+            return self.buildingsData[nationType][buildingType].copy()
+        elif nationType:
+            return self.buildingsData[nationType].copy()
         else:
             return self.buildingsData.copy()
 

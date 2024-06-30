@@ -1,5 +1,6 @@
 from DataLoader import DataLoader
 from Borders import Borders
+from Nation import Nation
 
 class Game:
     def __init__(self) -> None:
@@ -7,4 +8,4 @@ class Game:
         self.updates = self.dataLoader.updates
         self.borders = Borders(self.dataLoader.borders())
 
-        
+        self.britions = 
