@@ -7,7 +7,7 @@ from utils.UpdateType import UpdateType
 from utils.UpdateType import UpdateCategory
 
 
-class DataLoader():
+class DataAccess():
 
     def __init__(self) -> None:
         self.dataDir = Path.cwd() / 'data'
@@ -19,7 +19,7 @@ class DataLoader():
         self.bordersData = self.loadData('borders_data.json')
         self.updatesData = self.loadData('updates_data.json')
 
-    def loadData(self, fileName) -> dict:
+    def loadData(self, fileName: Path) -> dict:
         filepath = self.dataDir / fileName
         try:
             with open(filepath, 'r') as file:
@@ -37,51 +37,59 @@ class DataLoader():
         except Exception as e:
             print(f'Error loading file {filepath}: {e}')
             return {}
+        
+    def storeData(self, fileName: Path, dataDict: dict):
+        filePath = self.dataDir / fileName
+        try:
+            with open(filePath, 'w') as dataFile:
+                json.dump(dataDict, dataFile)
+        except Exception as e:
+            print(f'Failed to overwirte {filePath}: {e}')
 
     def nations(self, nationType: NationType = None) -> dict:
         if nationType:
-            return self.nationsData[nationType].copy()
+            return self.nationsData[nationType]
         else:
-            return self.nationsData.copy()
+            return self.nationsData
 
     def fields(self, index: int = None) -> dict:
         if index:
-            return self.fieldsData[str(index)].copy()
+            return self.fieldsData[str(index)]
         else:
-            return self.fieldsData.copy()
+            return self.fieldsData
 
     def villagers(self, nationType: NationType = None) -> dict:
         if nationType:
-            return self.villagersData[nationType].copy()
+            return self.villagersData[nationType]
         else:
-            return self.villagersData.copy()
+            return self.villagersData
 
     def troops(self, nationType: NationType = None, troopType: TroopType = None) -> dict:
         if nationType and troopType:
-            return self.troopsData[nationType][troopType].copy()
+            return self.troopsData[nationType][troopType]
         elif nationType:
-            return self.troopsData[nationType].copy()
+            return self.troopsData[nationType]
         else:
-            return self.troopsData.copy()
+            return self.troopsData
 
     def buildings(self, nationType: NationType = None, buildingType: BuildingType = None) -> dict:
         if nationType and buildingType:
-            return self.buildingsData[nationType][buildingType].copy()
+            return self.buildingsData[nationType][buildingType]
         elif nationType:
-            return self.buildingsData[nationType].copy()
+            return self.buildingsData[nationType]
         else:
-            return self.buildingsData.copy()
+            return self.buildingsData
 
     def updates(self, updateType: UpdateType = None, updateCategory: UpdateCategory = None, nationType: NationType = None) -> dict:
         if updateType and updateCategory and nationType:
-            return self.updatesData[updateType][updateCategory][nationType].copy()
+            return self.updatesData[updateType][updateCategory][nationType]
         elif updateType and updateCategory:
-            return self.updatesData[updateType][updateCategory].copy()
+            return self.updatesData[updateType][updateCategory]
         elif updateType:
-            return self.updatesData[updateType].copy()
+            return self.updatesData[updateType]
         else:
-            return self.updatesData.copy()
+            return self.updatesData
     
     def borders(self) -> dict:
-        return self.bordersData.copy()
+        return self.bordersData
 

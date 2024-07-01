@@ -14,3 +14,11 @@ class Troops:
         cavalry = dict[TroopType.CAVALRY]
         siege = dict[TroopType.SIEGE]
         return cls(archer, infantry, cavalry, siege)
+    
+    def serialize(self) -> dict:
+        troopData = {}
+        troopData[TroopType.ARCHER.value] = self.archer
+        troopData[TroopType.INFANTRY.value] = self.infantry
+        troopData[TroopType.CAVALRY.value] = self.cavalry
+        troopData[TroopType.SIEGE.value] = self.siege
+        return troopData

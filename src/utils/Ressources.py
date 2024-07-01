@@ -20,3 +20,11 @@ class Ressources:
                               self.wood + other.wood,
                               self.stone + other.stone,
                               self.gold + other.gold)
+        
+    def serialize(self) -> dict:
+        ressourcesData = {}
+        ressourcesData[RessourceType.FOOD.value] = self.food
+        ressourcesData[RessourceType.WOOD.value] = self.wood
+        ressourcesData[RessourceType.STONE.value] = self.stone
+        ressourcesData[RessourceType.GOLD.value] = self.gold
+        return ressourcesData

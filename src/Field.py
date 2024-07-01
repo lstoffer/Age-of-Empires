@@ -28,3 +28,13 @@ class Field:
 
     def getDefence(self):
         pass
+
+    def serialize(self) -> dict:
+        fieldData = {}
+        fieldData['index'] = self.index
+        fieldData['ressource'] = self.ressource
+        fieldData['nation'] = self.nation
+        fieldData['troops'] = self.troops.serialize()
+        fieldData['buildings'] = self.buildings.serialize()
+        fieldData['villagers'] = self.villagers
+        return fieldData

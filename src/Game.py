@@ -1,12 +1,12 @@
 from utils.NationType import NationType
-from DataLoader import DataLoader
+from DataAccess import DataAccess
 from Borders import Borders
 from Nation import Nation
 from Fields import Fields
 
 class Game:
     def __init__(self) -> None:
-        self.dataLoader = DataLoader()
+        self.dataLoader = DataAccess()
         self.__updatesData = self.dataLoader.updates()
         self.__bordersData = Borders(self.dataLoader.borders())
         self.__buildingsData = self.dataLoader.buildings()

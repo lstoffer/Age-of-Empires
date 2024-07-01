@@ -18,3 +18,13 @@ class Buildings:
         castle = dict[BuildingType.CASTLE]
         university = dict[BuildingType.UNIVERSITY]
         return cls(towncenter, market, barracks, wall, castle, university)
+    
+    def serialize(self) -> dict:
+        buildingsData = {}
+        buildingsData[BuildingType.TOWNCENTER.value] = self.towncenter
+        buildingsData[BuildingType.MARKET.value] = self.market
+        buildingsData[BuildingType.BARRACKS.value] = self.barracks
+        buildingsData[BuildingType.WALL.value] = self.wall
+        buildingsData[BuildingType.CASTLE.value] = self.castle
+        buildingsData[BuildingType.UNIVERSITY.value] = self.university
+        return buildingsData
