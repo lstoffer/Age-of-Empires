@@ -35,9 +35,11 @@ class Nation:
         self.buildings = buildings
         self.villagers = villagers
         self.buildingInstances = buildingInstances
-        self.toopInstances = troopInstances
+        self.troopInstances = troopInstances
         self.villagerInstance = villagerInstance
         self.updateInstances = updateInstances
+
+        self.__applyUpdates()
 
     @classmethod
     def from_dict(cls, nationDict: dict, buildingsDict: dict, troopsDict: dict, villagerDict: dict, updateDict: dict):
@@ -51,13 +53,34 @@ class Nation:
         villagers = nationDict['villagers']
 
         buildingInstances = BuildingInstances.from_dict(buildingsDict)
-        troopIntances = TroopInstances.from_dict(troopsDict)
+        troopInstances = TroopInstances.from_dict(troopsDict)
         villagerInstance = Villager.from_dict(villagerDict)
         updateInstances = {updateType: Update.from_dict(updateDict[updateType]) for updateType in updates}
 
         return cls(points, updates, age, fields, ressources, 
                    troops, buildings, villagers, buildingInstances, 
-                   troopIntances, villagerInstance, updateInstances)
+                   troopInstances, villagerInstance, updateInstances)
+    
+    def addUpdate(self, updateType: UpdateType, update: Update):
+        self.updates.append(updateType)
+        self.updateInstances[updateType] = update
+        self.__applyUpdate(update)
+    
+    def __applyUpdate(self, update: Update):
+        self.buildingInstances += update.buildingInstances
+        self.troopInstances += update.troopInstances
+        self.villagerInstance += update.villagerInstance
+
+    def __applyUpdates(self):
+        iterator = iter(self.updateInstances.values())
+        accumulatedUpdate = next(iterator)
+
+        for update in iterator:
+            accumulatedUpdate += update
+
+        self.buildingInstances += accumulatedUpdate.buildingInstances
+        self.troopInstances += accumulatedUpdate.troopInstances
+        self.villagerInstance += accumulatedUpdate.villagerInstance
     
     def serialize(self) -> dict:
         nationsData = {}

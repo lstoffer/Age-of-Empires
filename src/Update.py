@@ -4,10 +4,10 @@ from utils.TroopInstances import TroopInstances
 from Villager import Villager
 
 class Update:
-    def __init__(self, buildingInstances: BuildingInstances, troopInstances: TroopInstances, villager: Villager) -> None:
+    def __init__(self, buildingInstances: BuildingInstances, troopInstances: TroopInstances, villagerInstance: Villager) -> None:
         self.buildingInstances = buildingInstances
         self.troopInstances = troopInstances
-        self.villager = villager
+        self.villagerInstance = villagerInstance
 
     @classmethod
     def from_dict(cls, dict):
@@ -20,5 +20,5 @@ class Update:
         if isinstance(other, Update):
             return Update(self.buildingInstances + other.buildingInstances, 
                           self.troopInstances + other.troopInstances, 
-                          self.villager + other.villager)
+                          self.villagerInstance + other.villagerInstance)
         return NotImplemented
