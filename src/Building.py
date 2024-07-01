@@ -15,3 +15,11 @@ class Building:
         structure = dict['structure']
         points = dict['points']
         return cls(cost, defence, structure, points)
+    
+    def __add__(self, other):
+        if isinstance(other, Building):
+            return Building(self.cost + other.cost,
+                            self.defence + other.defence,
+                            self.structure + other.structure,
+                            self.points + other.points)
+        return NotImplemented

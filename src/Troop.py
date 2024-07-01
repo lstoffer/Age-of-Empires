@@ -15,3 +15,11 @@ class Troop:
         attack = dict['attack']
         points = dict['points']
         return cls(cost, defence, attack, points)
+
+    def __add__(self, other):
+        if isinstance(other, Troop):
+            return Troop(self.cost + other.cost,
+                         self.defence + other.defence,
+                         self.attack + other.attack,
+                         self.points + other.points)
+        return NotImplemented

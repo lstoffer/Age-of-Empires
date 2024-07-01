@@ -13,3 +13,10 @@ class Ressources:
         stone = dict[RessourceType.STONE]
         gold = dict[RessourceType.GOLD]
         return cls(food, wood, stone, gold)
+    
+    def __add__(self, other):
+        if isinstance(other, Ressources):
+            return Ressources(self.food + other.food,
+                              self.wood + other.wood,
+                              self.stone + other.stone,
+                              self.gold + other.gold)

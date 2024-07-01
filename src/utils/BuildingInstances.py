@@ -19,3 +19,13 @@ class BuildingInstances:
         castle = Building.from_dict(dict[BuildingType.CASTLE])
         university = Building.from_dict(dict[BuildingType.UNIVERSITY])
         return cls(towncenter, market, barracks, wall, castle, university)
+    
+    def __add__(self, other):
+        if isinstance(other, BuildingInstances):
+            return BuildingInstances(self.towncenter + other.towncenter,
+                                     self.market + other.market,
+                                     self.barracks + other.barracks,
+                                     self.wall + other.wall,
+                                     self.castle + other.castle,
+                                     self.university + other.university)
+        return NotImplemented

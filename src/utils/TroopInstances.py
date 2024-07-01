@@ -16,3 +16,11 @@ class TroopInstances:
         cavalry = Troop.from_dict(dict[TroopType.CAVALRY])
         siege = Troop.from_dict(dict[TroopType.SIEGE])
         return cls(archer, infantry, cavalry, siege)
+    
+    def __add__(self, other):
+        if isinstance(other, TroopInstances):
+            return TroopInstances(self.archer + other.archer,
+                                  self.infantry + other.infantry,
+                                  self.cavalry + other.cavalry,
+                                  self.siege + other.siege)
+        return NotImplemented

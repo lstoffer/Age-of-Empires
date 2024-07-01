@@ -15,3 +15,11 @@ class Villager:
         defence = dict['defence']
         points = dict['points']
         return cls(cost, profit, defence, points)
+    
+    def __add__(self, other):
+        if isinstance(other, Villager):
+            return Villager(self.cost + other.cost,
+                            self.profit + other.profit,
+                            self.defence + other.defence,
+                            self.points + other.points)
+        return NotImplemented
