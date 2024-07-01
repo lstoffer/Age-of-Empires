@@ -1,4 +1,5 @@
 from typing import List
+from typing import Dict
 from utils.UpdateType import UpdateType
 from utils.AgeType import AgeType
 from utils.Ressources import Ressources
@@ -7,6 +8,7 @@ from utils.Buildings import Buildings
 from utils.BuildingInstances import BuildingInstances
 from utils.TroopInstances import TroopInstances
 from Villager import Villager
+from Update import Update
 
 class Nation:
     def __init__(
@@ -21,7 +23,8 @@ class Nation:
         villagers: int,
         buildingInstances: BuildingInstances,
         troopInstances: TroopInstances,
-        villagerInstance: Villager
+        villagerInstance: Villager,
+        updateInstances: Dict[UpdateType, Update]
     ) -> None:
         self.points = points
         self.updates = updates
@@ -34,9 +37,10 @@ class Nation:
         self.buildingInstances = buildingInstances
         self.toopInstances = troopInstances
         self.villagerInstance = villagerInstance
+        self.updateInstances = updateInstances
 
     @classmethod
-    def from_dict(cls, nationDict: dict, buildingsDict: dict, troopsDict: dict, villagerDict: dict):
+    def from_dict(cls, nationDict: dict, buildingsDict: dict, troopsDict: dict, villagerDict: dict, updateDict: dict):
         points = nationDict['points']
         updates = [UpdateType(update) for update in nationDict['updates']]
         age = AgeType(nationDict['age'])
@@ -49,5 +53,8 @@ class Nation:
         buildingInstances = BuildingInstances.from_dict(buildingsDict)
         troopIntances = TroopInstances.from_dict(troopsDict)
         villagerInstance = Villager.from_dict(villagerDict)
+        updateInstances = {updateType: Update.from_dict(updateDict[updateType]) for updateType in updates}
 
-        return cls(points, updates, age, fields, ressources, troops, buildings, villagers, buildingInstances, troopIntances, villagerInstance)
+        return cls(points, updates, age, fields, ressources, 
+                   troops, buildings, villagers, buildingInstances, 
+                   troopIntances, villagerInstance, updateInstances)
