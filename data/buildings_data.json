@@ -22,6 +22,17 @@
       "structure": 10,
       "points": 100
     },
+    "barracks": {
+      "costs": {
+        "gold": 100,
+        "wood": 100,
+        "food": 100,
+        "stone": 100
+      },
+      "defence": 100,
+      "structure": 10,
+      "points": 100
+    },
     "wall": {
       "costs": {
         "gold": 100,
@@ -69,6 +80,17 @@
       "points": 100
     },
     "market": {
+      "costs": {
+        "gold": 100,
+        "wood": 100,
+        "food": 100,
+        "stone": 100
+      },
+      "defence": 100,
+      "structure": 10,
+      "points": 100
+    },
+    "barracks": {
       "costs": {
         "gold": 100,
         "wood": 100,
@@ -136,6 +158,17 @@
       "structure": 10,
       "points": 100
     },
+    "barracks": {
+      "costs": {
+        "gold": 100,
+        "wood": 100,
+        "food": 100,
+        "stone": 100
+      },
+      "defence": 100,
+      "structure": 10,
+      "points": 100
+    },
     "wall": {
       "costs": {
         "gold": 100,
@@ -183,6 +216,17 @@
       "points": 100
     },
     "market": {
+      "costs": {
+        "gold": 100,
+        "wood": 100,
+        "food": 100,
+        "stone": 100
+      },
+      "defence": 100,
+      "structure": 10,
+      "points": 100
+    },
+    "barracks": {
       "costs": {
         "gold": 100,
         "wood": 100,

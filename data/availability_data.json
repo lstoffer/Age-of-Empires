@@ -1,0 +1,186 @@
+{
+  "buildings": {
+    "towncenter": {
+      "dark-age": true,
+      "feudal-age": true,
+      "castle-age": true,
+      "imperial-age": true
+    },
+    "market": {
+      "dark-age": false,
+      "feudal-age": true,
+      "castle-age": true,
+      "imperial-age": true
+    },
+    "barracks": {
+      "dark-age": false,
+      "feudal-age": false,
+      "castle-age": true,
+      "imperial-age": true
+    },
+    "wall": {
+      "dark-age": false,
+      "feudal-age": false,
+      "castle-age": true,
+      "imperial-age": true
+    },
+    "castle": {
+      "dark-age": false,
+      "feudal-age": false,
+      "castle-age": false,
+      "imperial-age": true
+    },
+    "university": {
+      "dark-age": false,
+      "feudal-age": false,
+      "castle-age": false,
+      "imperial-age": true
+    }
+  },
+  "updates": {
+    "wheel": {
+      "dark-age": true,
+      "feudal-age": true,
+      "castle-age": true,
+      "imperial-age": true
+    },
+    "trade-cart": {
+      "dark-age": false,
+      "feudal-age": true,
+      "castle-age": true,
+      "imperial-age": true
+    },
+    "short-swordsman": {
+      "dark-age": false,
+      "feudal-age": false,
+      "castle-age": true,
+      "imperial-age": true
+    },
+    "long-swordsman": {
+      "dark-age": false,
+      "feudal-age": false,
+      "castle-age": false,
+      "imperial-age": true
+    },
+    "heavy-cavalry": {
+      "dark-age": false,
+      "feudal-age": false,
+      "castle-age": true,
+      "imperial-age": true
+    },
+    "war-elephant": {
+      "dark-age": false,
+      "feudal-age": false,
+      "castle-age": false,
+      "imperial-age": true
+    },
+    "improved-bowman": {
+      "dark-age": false,
+      "feudal-age": false,
+      "castle-age": true,
+      "imperial-age": true
+    },
+    "composite-bowman": {
+      "dark-age": false,
+      "feudal-age": false,
+      "castle-age": false,
+      "imperial-age": true
+    },
+    "centurion": {
+      "dark-age": false,
+      "feudal-age": false,
+      "castle-age": false,
+      "imperial-age": true
+    },
+    "legionary": {
+      "dark-age": false,
+      "feudal-age": false,
+      "castle-age": false,
+      "imperial-age": true
+    },
+    "stone-thrower": {
+      "dark-age": false,
+      "feudal-age": false,
+      "castle-age": false,
+      "imperial-age": true
+    },
+    "trebuchet": {
+      "dark-age": false,
+      "feudal-age": false,
+      "castle-age": false,
+      "imperial-age": true
+    },
+    "gold-mining": {
+      "dark-age": false,
+      "feudal-age": false,
+      "castle-age": true,
+      "imperial-age": true
+    },
+    "gold-mining-ii": {
+      "dark-age": false,
+      "feudal-age": false,
+      "castle-age": false,
+      "imperial-age": true
+    },
+    "stone-mining": {
+      "dark-age": false,
+      "feudal-age": true,
+      "castle-age": true,
+      "imperial-age": true
+    },
+    "stone-mining-ii": {
+      "dark-age": false,
+      "feudal-age": false,
+      "castle-age": false,
+      "imperial-age": true
+    },
+    "woodcutting": {
+      "dark-age": false,
+      "feudal-age": true,
+      "castle-age": true,
+      "imperial-age": true
+    },
+    "artisanship": {
+      "dark-age": false,
+      "feudal-age": false,
+      "castle-age": false,
+      "imperial-age": true
+    },
+    "domestication": {
+      "dark-age": false,
+      "feudal-age": true,
+      "castle-age": true,
+      "imperial-age": true
+    },
+    "plow": {
+      "dark-age": false,
+      "feudal-age": false,
+      "castle-age": false,
+      "imperial-age": true
+    },
+    "big-wall": {
+      "dark-age": false,
+      "feudal-age": false,
+      "castle-age": true,
+      "imperial-age": true
+    },
+    "stone-wall": {
+      "dark-age": false,
+      "feudal-age": false,
+      "castle-age": false,
+      "imperial-age": true
+    },
+    "big-castle": {
+      "dark-age": false,
+      "feudal-age": false,
+      "castle-age": false,
+      "imperial-age": true
+    },
+    "stone-castle": {
+      "dark-age": false,
+      "feudal-age": false,
+      "castle-age": false,
+      "imperial-age": true
+    }
+  }
+}
