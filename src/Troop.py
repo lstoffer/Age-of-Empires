@@ -2,6 +2,9 @@ from utils.Ressources import Ressources
 
 
 class Troop:
+    '''
+    Class that represents one troop unit.
+    '''
     def __init__(self, cost: Ressources, defence: int, attack: int, points: int) -> None:
         self.cost = cost
         self.defence = defence

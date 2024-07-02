@@ -4,6 +4,11 @@ from utils.TroopInstances import TroopInstances
 from Villager import Villager
 
 class Update:
+    '''
+    Class that represents one Update with all its values
+    The class contains instances for buildings, troops and villagers
+    The instances hold the upate values for these categories of entities
+    '''
     def __init__(self, buildingInstances: BuildingInstances, troopInstances: TroopInstances, villagerInstance: Villager) -> None:
         self.buildingInstances = buildingInstances
         self.troopInstances = troopInstances

@@ -2,6 +2,9 @@ from utils.Ressources import Ressources
 
 
 class Building:
+    '''
+    Class that represents one building unit.
+    '''
     def __init__(self, cost: Ressources, defence: int, structure: int, points: int) -> None:
         self.cost = cost
         self.defence = defence

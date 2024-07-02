@@ -2,6 +2,9 @@ from utils.Ressources import Ressources
 
 
 class Villager:
+    '''
+    Class that represents one villager unit.
+    '''
     def __init__(self, cost: Ressources, profit: Ressources, defence: int, points: int) -> None:
         self.cost = cost
         self.profit = profit

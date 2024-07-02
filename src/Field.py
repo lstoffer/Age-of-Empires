@@ -5,6 +5,9 @@ from utils.Buildings import Buildings
 from utils.Ressources import Ressources
 
 class Field:
+    '''
+    Class that represents one field on the board
+    '''
     def __init__(self, index: int, ressource: RessourceType, nation: NationType, troops: Troops, buildings: Buildings, villagers: int) -> None:
         self.index = index
         self.ressource = ressource

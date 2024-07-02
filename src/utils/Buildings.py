@@ -1,6 +1,10 @@
 from utils.BuildingType import BuildingType
 
 class Buildings:
+    '''
+    Class that represents the mumbers of diffrent building types that a nation
+    posesses.    
+    '''
     def __init__(self, towncenter, market, barracks, wall, castle, university) -> None:
         self.towncenter = towncenter
         self.market = market

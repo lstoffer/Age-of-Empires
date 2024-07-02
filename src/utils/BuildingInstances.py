@@ -2,6 +2,9 @@ from utils.BuildingType import BuildingType
 from Building import Building
 
 class BuildingInstances:
+    '''
+    Container Class for the building instances of one nation
+    '''
     def __init__(self, towncenter: Building = None, market: Building = None, barracks: Building = None, wall: Building = None, castle: Building = None, university: Building = None) -> None:
         self.towncenter = towncenter
         self.market = market

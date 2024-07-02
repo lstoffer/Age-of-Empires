@@ -3,6 +3,9 @@ from Troop import Troop
 
 
 class TroopInstances:
+    '''
+    Container Class for the troop instances of one nation
+    '''
     def __init__(self, archer, infantry, cavalry, siege) -> None:
         self.archer = archer
         self.infantry = infantry

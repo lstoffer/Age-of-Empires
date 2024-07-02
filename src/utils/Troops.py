@@ -1,6 +1,10 @@
 from utils.TroopType import TroopType
 
 class Troops:
+    '''
+    Class that represents the mumbers of diffrent troop types that a nation
+    posesses.    
+    '''
     def __init__(self, archer: int, infantry: int, cavalry: int, siege: int) -> None:
         self.archer = archer
         self.infantry = infantry

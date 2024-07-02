@@ -1,6 +1,9 @@
 from Field import Field
 
 class Fields:
+    '''
+    Container class for all fields on the board
+    '''
     def __init__(self, fields: dict) -> None:
         self.fields = {int(key): Field.from_dict(value) for key, value in fields.items()}
 
