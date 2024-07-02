@@ -1,0 +1,42 @@
+{
+    "dark-age": {
+        "costs": {
+            "gold": 100,
+            "wood": 100,
+            "food": 100,
+            "stone": 100
+        },
+        "buildings": [],
+        "next": "feudal-age"
+    },
+    "feudal-age": {
+        "costs": {
+            "gold": 100,
+            "wood": 100,
+            "food": 100,
+            "stone": 100
+        },
+        "buildings": [],
+        "next": "castle-age"
+    },
+    "castle-age": {
+        "costs": {
+            "gold": 100,
+            "wood": 100,
+            "food": 100,
+            "stone": 100
+        },
+        "buildings": [],
+        "next": "imperial-age"
+    },
+    "imperial-age": {
+        "costs": {
+            "gold": 100,
+            "wood": 100,
+            "food": 100,
+            "stone": 100
+        },
+        "buildings": [],
+        "next": ""
+    }
+}
