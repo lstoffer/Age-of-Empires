@@ -26,11 +26,17 @@ class Field:
         villagers = dict['villagers']
         return cls(index, ressource, nation, troops, buildings, villagers)
 
-    def getAttack(sef):
-        pass
-
-    def getDefence(self):
-        pass
+    def getTroops(self) -> Troops:
+        return self.troops
+    
+    def getVillager(self) -> int:
+        return self.villagers
+    
+    def getNation(self) -> NationType:
+        return self.nation
+    
+    def getRessource(self) -> RessourceType:
+        return self.ressource
 
     def serialize(self) -> dict:
         fieldData = {}

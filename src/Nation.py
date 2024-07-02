@@ -9,6 +9,7 @@ from utils.BuildingInstances import BuildingInstances
 from utils.TroopInstances import TroopInstances
 from Villager import Villager
 from Update import Update
+from Points import Points
 
 class Nation:
     def __init__(
@@ -26,7 +27,7 @@ class Nation:
         villagerInstance: Villager,
         updateInstances: Dict[UpdateType, Update]
     ) -> None:
-        self.points = points
+        self.__points = points      # Only used to sotre the points after playing not to access the points during play
         self.updates = updates
         self.age = age
         self.fields = fields
@@ -65,6 +66,32 @@ class Nation:
         self.updates.append(updateType)
         self.updateInstances[updateType] = update
         self.__applyUpdate(update)
+
+    def getAttack(self, troops: Troops) -> int:
+        archerAttack = troops.archer * self.troopInstances.archer.attack
+        infantryAttack = troops.infantry * self.troopInstances.infantry.attack
+        cavalryAttack = troops.cavalry * self.troopInstances.cavalry.attack
+        return archerAttack + infantryAttack + cavalryAttack
+
+    def getSiegeAttack(self, troops: Troops) -> int:
+        return troops.siege * self.troopInstances.siege.attack
+    
+    def getDefence(self, troops: Troops) -> int:
+        archerDef = troops.archer * self.troopInstances.archer.defence
+        infantryDef = troops.infantry * self.troopInstances.infantry.defence
+        cavalryDef = troops.cavalry * self.troopInstances.cavalry.defence
+        return archerDef + infantryDef + cavalryDef
+    
+    def getPoints(self, points: Points) -> int:
+        nationPoints = points.ages[self.age]
+        nationPoints += points.field * len(self.fields)
+        nationPoints += self.troops.archer * self.troopInstances.archer.points
+        nationPoints += self.troops.infantry * self.troopInstances.infantry.points
+        nationPoints += self.troops.cavalry * self.troopInstances.cavalry.points
+        nationPoints += self.troops.siege * self.troopInstances.siege.points
+        nationPoints += self.villagers * self.villagerInstance.points
+        self.__points = nationPoints
+        return nationPoints
     
     def __applyUpdate(self, update: Update):
         self.buildingInstances += update.buildingInstances

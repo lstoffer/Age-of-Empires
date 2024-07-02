@@ -6,7 +6,7 @@ class TroopInstances:
     '''
     Container Class for the troop instances of one nation
     '''
-    def __init__(self, archer, infantry, cavalry, siege) -> None:
+    def __init__(self, archer: Troop, infantry: Troop, cavalry: Troop, siege: Troop) -> None:
         self.archer = archer
         self.infantry = infantry
         self.cavalry = cavalry

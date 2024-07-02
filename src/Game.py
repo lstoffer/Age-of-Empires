@@ -3,6 +3,7 @@ from DataAccess import DataAccess
 from Borders import Borders
 from Nation import Nation
 from Fields import Fields
+from Points import Points
 
 class Game:
     def __init__(self) -> None:
@@ -14,6 +15,7 @@ class Game:
         self.__nationsData = self.dataLoader.nations()
         self.__troopsData = self.dataLoader.troops()
         self.__villagersData = self.dataLoader.villagers()
+        self.__pointsData = self.dataLoader.points()
 
         self.britons = Nation.from_dict(nationDict=self.__nationsData[NationType.BRITONS], 
                                         buildingsDict=self.__buildingsData[NationType.BRITONS], 
@@ -39,7 +41,16 @@ class Game:
                                         villagerDict=self.__villagersData[NationType.MONGOLS],
                                         updateDict=self.__updatesData[NationType.MONGOLS])
         
+        self.nations = {
+            NationType.BRITONS: self.britons,
+            NationType.VIKINGS: self.vikings,
+            NationType.CHINESE: self.chinese,
+            NationType.MONGOLS: self.chinese
+        }
+        
         self.fields = Fields(self.__fieldsData)
         self.borders = Borders(self.__bordersData)
+
+        self.points = Points(self.__pointsData)
 
         

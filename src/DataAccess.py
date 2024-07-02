@@ -18,6 +18,7 @@ class DataAccess():
         self.buildingsData = self.loadData('buildings_data.json')
         self.bordersData = self.loadData('borders_data.json')
         self.updatesData = self.loadData('updates_data.json')
+        self.pointsData = self.loadData('points_data.json')
 
     def loadData(self, fileName: Path) -> dict:
         filepath = self.dataDir / fileName
@@ -92,4 +93,7 @@ class DataAccess():
     
     def borders(self) -> dict:
         return self.bordersData
+    
+    def points(self) -> dict:
+        return self.pointsData
 
