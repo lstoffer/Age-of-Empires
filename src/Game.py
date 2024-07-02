@@ -2,6 +2,7 @@ from utils.NationType import NationType
 from DataAccess import DataAccess
 from Borders import Borders
 from Nation import Nation
+from Nations import Nations
 from Fields import Fields
 from Points import Points
 from Ages import Ages
@@ -11,13 +12,13 @@ class Game:
     def __init__(self) -> None:
         self.dataAccess = DataAccess()
         self.__updatesData = self.dataAccess.updates()
-        self.__bordersData = Borders(self.dataAccess.borders())
+        # self.__bordersData = Borders(self.dataAccess.borders())
         self.__buildingsData = self.dataAccess.buildings()
-        self.__fieldsData = self.dataAccess.fields()
-        self.__nationsData = self.dataAccess.nations()
+        # self.__fieldsData = self.dataAccess.fields()
+        # self.__nationsData = self.dataAccess.nations()
         self.__troopsData = self.dataAccess.troops()
         self.__villagersData = self.dataAccess.villagers()
-        self.__pointsData = self.dataAccess.points()
+        # self.__pointsData = self.dataAccess.points()
         self.__agesData = self.dataAccess.ages()
 
         self.britons = Nation.from_dict(nationDict=self.__nationsData[NationType.BRITONS],
@@ -44,12 +45,7 @@ class Game:
                                         villagerDict=self.__villagersData[NationType.MONGOLS],
                                         updateDict=self.__updatesData[NationType.MONGOLS])
 
-        self.nations = {
-            NationType.BRITONS: self.britons,
-            NationType.VIKINGS: self.vikings,
-            NationType.CHINESE: self.chinese,
-            NationType.MONGOLS: self.chinese
-        }
+        self.nations = Nations(self.britons, self.vikings, self.chinese, self.mongols)
 
         self.fields = Fields(self.__fieldsData)
         self.borders = Borders(self.__bordersData)
@@ -57,3 +53,14 @@ class Game:
         self.points = Points(self.__pointsData)
 
         self.ages = Ages(self.__agesData)
+
+    def serialize(self):
+        bordersData = self.borders.serialize()
+        fieldsData = self.fields.serialize()
+        nationsData = self.nations.serialize()
+        pointsData = self.points.serialize()
+
+        self.dataAccess.storeData('borders_data.json', bordersData)
+        self.dataAccess.storeData('fields_data.json', fieldsData)
+        self.dataAccess.storeData('nations_data.json', nationsData)
+        self.dataAccess.storeData('points_data.json', pointsData)

@@ -1,6 +1,7 @@
 from typing import Optional
 from utils.NationType import NationType
 
+
 class Borders:
     def __init__(self, borders: dict) -> None:
         self.borders = {

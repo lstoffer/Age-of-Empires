@@ -2,13 +2,14 @@ from utils.RessourceType import RessourceType
 from utils.NationType import NationType
 from utils.Troops import Troops
 from utils.Buildings import Buildings
-from utils.Ressources import Ressources
+
 
 class Field:
     '''
     Class that represents one field on the board
     '''
-    def __init__(self, index: int, ressource: RessourceType, nation: NationType, troops: Troops, buildings: Buildings, villagers: int) -> None:
+    def __init__(self, index: int, ressource: RessourceType, nation: NationType,
+                 troops: Troops, buildings: Buildings, villagers: int) -> None:
         self.index = index
         self.ressource = ressource
         self.nation = nation
@@ -28,13 +29,13 @@ class Field:
 
     def getTroops(self) -> Troops:
         return self.troops
-    
+
     def getVillager(self) -> int:
         return self.villagers
-    
+
     def getNation(self) -> NationType:
         return self.nation
-    
+
     def getRessource(self) -> RessourceType:
         return self.ressource
 

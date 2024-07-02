@@ -39,7 +39,7 @@ class DataAccess():
         except Exception as e:
             print(f'Error loading file {filepath}: {e}')
             return {}
-        
+
     def storeData(self, fileName: Path, dataDict: dict):
         filePath = self.dataDir / fileName
         try:
@@ -82,7 +82,8 @@ class DataAccess():
         else:
             return self.buildingsData
 
-    def updates(self, updateType: UpdateType = None, updateCategory: UpdateCategory = None, nationType: NationType = None) -> dict:
+    def updates(self, updateType: UpdateType = None, updateCategory: UpdateCategory = None,
+                nationType: NationType = None) -> dict:
         if updateType and updateCategory and nationType:
             return self.updatesData[updateType][updateCategory][nationType]
         elif updateType and updateCategory:
@@ -100,4 +101,3 @@ class DataAccess():
 
     def ages(self) -> dict:
         return self.agesData
-

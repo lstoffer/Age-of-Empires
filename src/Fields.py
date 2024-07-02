@@ -1,5 +1,6 @@
 from Field import Field
 
+
 class Fields:
     '''
     Container class for all fields on the board
@@ -9,6 +10,7 @@ class Fields:
 
     def __getitem__(self, key: int):
         return self.fields[key]
-    
+
     def serialize(self):
         fields = {str(key): value.serialize() for key, value in self.fields.items()}
+        return fields
