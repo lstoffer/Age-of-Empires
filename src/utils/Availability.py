@@ -2,6 +2,7 @@ from utils.BuildingType import BuildingType
 from utils.AgeType import AgeType
 from utils.UpdateType import UpdateType
 
+
 class Availability:
     def __init__(self, availability: dict) -> None:
         self.availability = {}
@@ -16,10 +17,10 @@ class Availability:
 
     def updateAvailable(self, update: UpdateType, age: AgeType) -> bool:
         return self.availability['upates'][update][age]
-    
+
     def buildingAvailable(self, building: BuildingType, age: AgeType) -> bool:
         return self.availability['buildings'][building][age]
-    
+
     def serialize(self):
         availability = {}
         availability['buildings'] = {

@@ -1,11 +1,10 @@
 from utils.NationType import NationType
-from utils.AgeType import AgeType
 from DataAccess import DataAccess
 from Borders import Borders
 from Nation import Nation
 from Fields import Fields
 from Points import Points
-from Age import Age
+from Ages import Ages
 
 
 class Game:
@@ -57,6 +56,4 @@ class Game:
 
         self.points = Points(self.__pointsData)
 
-        self.ages = {
-            AgeType(key): Age.from_dict(value) for key, value in self.__agesData.items()
-        }
+        self.ages = Ages(self.__agesData)
