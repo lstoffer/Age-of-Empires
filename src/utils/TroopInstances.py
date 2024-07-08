@@ -14,10 +14,10 @@ class TroopInstances:
 
     @classmethod
     def from_dict(cls, dict):
-        archer = Troop.from_dict(dict[TroopType.ARCHER])
-        infantry = Troop.from_dict(dict[TroopType.INFANTRY])
-        cavalry = Troop.from_dict(dict[TroopType.CAVALRY])
-        siege = Troop.from_dict(dict[TroopType.SIEGE])
+        archer = Troop.from_dict(dict[TroopType.ARCHER.value])
+        infantry = Troop.from_dict(dict[TroopType.INFANTRY.value])
+        cavalry = Troop.from_dict(dict[TroopType.CAVALRY.value])
+        siege = Troop.from_dict(dict[TroopType.SIEGE.value])
         return cls(archer, infantry, cavalry, siege)
     
     def __add__(self, other):

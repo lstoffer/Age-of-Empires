@@ -6,7 +6,8 @@
     "troops": {
       "archer": 0,
       "infantry": 0,
-      "cavalry": 0
+      "cavalry": 0,
+      "siege": 0
     },
     "buildings": {
       "university": 0,

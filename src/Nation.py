@@ -56,11 +56,14 @@ class Nation:
         buildingInstances = BuildingInstances.from_dict(buildingsDict)
         troopInstances = TroopInstances.from_dict(troopsDict)
         villagerInstance = Villager.from_dict(villagerDict)
-        updateInstances = {updateType: Update.from_dict(updateDict[updateType]) for updateType in updates}
+        updateInstances = {updateType.value: Update.from_dict(updateDict[updateType.value]) for updateType in updates}
 
         return cls(points, updates, age, fields, ressources, 
                    troops, buildings, villagers, buildingInstances, 
                    troopInstances, villagerInstance, updateInstances)
+    
+    def addRessources(self, ressources: Ressources):
+        self.ressources += ressources
     
     def addUpdate(self, updateType: UpdateType, update: Update):
         self.updates.append(updateType)
@@ -99,6 +102,9 @@ class Nation:
         self.villagerInstance += update.villagerInstance
 
     def __applyUpdates(self):
+        if not self.updateInstances:
+            return
+        
         iterator = iter(self.updateInstances.values())
         accumulatedUpdate = next(iterator)
 

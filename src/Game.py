@@ -12,47 +12,58 @@ class Game:
     def __init__(self) -> None:
         self.dataAccess = DataAccess()
         self.__updatesData = self.dataAccess.updates()
-        # self.__bordersData = Borders(self.dataAccess.borders())
+        self.__bordersData = self.dataAccess.borders()
         self.__buildingsData = self.dataAccess.buildings()
-        # self.__fieldsData = self.dataAccess.fields()
-        # self.__nationsData = self.dataAccess.nations()
+        self.__fieldsData = self.dataAccess.fields()
+        self.__nationsData = self.dataAccess.nations()
         self.__troopsData = self.dataAccess.troops()
         self.__villagersData = self.dataAccess.villagers()
-        # self.__pointsData = self.dataAccess.points()
+        self.__pointsData = self.dataAccess.points()
         self.__agesData = self.dataAccess.ages()
 
-        self.britons = Nation.from_dict(nationDict=self.__nationsData[NationType.BRITONS],
-                                        buildingsDict=self.__buildingsData[NationType.BRITONS],
-                                        troopsDict=self.__troopsData[NationType.BRITONS],
-                                        villagerDict=self.__villagersData[NationType.BRITONS],
-                                        updateDict=self.__updatesData[NationType.BRITONS])
+        self.britons = Nation.from_dict(nationDict=self.__nationsData[NationType.BRITONS.value],
+                                        buildingsDict=self.__buildingsData[NationType.BRITONS.value],
+                                        troopsDict=self.__troopsData[NationType.BRITONS.value],
+                                        villagerDict=self.__villagersData[NationType.BRITONS.value],
+                                        updateDict=self.__updatesData[NationType.BRITONS.value])
 
-        self.vikings = Nation.from_dict(nationDict=self.__nationsData[NationType.VIKINGS],
-                                        buildingsDict=self.__buildingsData[NationType.VIKINGS],
-                                        troopsDict=self.__troopsData[NationType.VIKINGS],
-                                        villagerDict=self.__villagersData[NationType.VIKINGS],
-                                        updateDict=self.__updatesData[NationType.VIKINGS])
+        self.vikings = Nation.from_dict(nationDict=self.__nationsData[NationType.VIKINGS.value],
+                                        buildingsDict=self.__buildingsData[NationType.VIKINGS.value],
+                                        troopsDict=self.__troopsData[NationType.VIKINGS.value],
+                                        villagerDict=self.__villagersData[NationType.VIKINGS.value],
+                                        updateDict=self.__updatesData[NationType.VIKINGS.value])
 
-        self.chinese = Nation.from_dict(nationDict=self.__nationsData[NationType.CHINESE],
-                                        buildingsDict=self.__buildingsData[NationType.CHINESE],
-                                        troopsDict=self.__troopsData[NationType.CHINESE],
-                                        villagerDict=self.__villagersData[NationType.CHINESE],
-                                        updateDict=self.__updatesData[NationType.CHINESE])
+        self.chinese = Nation.from_dict(nationDict=self.__nationsData[NationType.CHINESE.value],
+                                        buildingsDict=self.__buildingsData[NationType.CHINESE.value],
+                                        troopsDict=self.__troopsData[NationType.CHINESE.value],
+                                        villagerDict=self.__villagersData[NationType.CHINESE.value],
+                                        updateDict=self.__updatesData[NationType.CHINESE.value])
 
-        self.mongols = Nation.from_dict(nationDict=self.__nationsData[NationType.MONGOLS],
-                                        buildingsDict=self.__buildingsData[NationType.MONGOLS],
-                                        troopsDict=self.__troopsData[NationType.MONGOLS],
-                                        villagerDict=self.__villagersData[NationType.MONGOLS],
-                                        updateDict=self.__updatesData[NationType.MONGOLS])
+        self.mongols = Nation.from_dict(nationDict=self.__nationsData[NationType.MONGOLS.value],
+                                        buildingsDict=self.__buildingsData[NationType.MONGOLS.value],
+                                        troopsDict=self.__troopsData[NationType.MONGOLS.value],
+                                        villagerDict=self.__villagersData[NationType.MONGOLS.value],
+                                        updateDict=self.__updatesData[NationType.MONGOLS.value])
 
         self.nations = Nations(self.britons, self.vikings, self.chinese, self.mongols)
 
         self.fields = Fields(self.__fieldsData)
         self.borders = Borders(self.__bordersData)
 
-        self.points = Points(self.__pointsData)
+        self.points = Points.from_dict(self.__pointsData)
 
         self.ages = Ages(self.__agesData)
+
+    def applyRessourceDividends(self):
+        '''adds all ressources earned by all the villagers of a nation to the nation'''
+        for field in self.fields.fields.values():
+            ressourceType = field.ressource
+            villagersAmount = field.villagers
+            nationType = field.nation
+            nation = self.nations.getNation(nationType)
+            amount = villagersAmount * nation.villagerInstance.profit.get(ressourceType)
+            nation.ressources.add(ressourceType=ressourceType, amount=amount)
+
 
     def serialize(self):
         bordersData = self.borders.serialize()
@@ -64,3 +75,8 @@ class Game:
         self.dataAccess.storeData('fields_data.json', fieldsData)
         self.dataAccess.storeData('nations_data.json', nationsData)
         self.dataAccess.storeData('points_data.json', pointsData)
+
+
+
+game = Game()
+print('here')

@@ -16,9 +16,9 @@ class Update:
 
     @classmethod
     def from_dict(cls, dict):
-        buildingInstances = BuildingInstances.from_dict(dict[UpdateCategory.BUILDINGS])
-        troopInstances = TroopInstances.from_dict(dict[UpdateCategory.TROOPS])
-        villager = Villager.from_dict(dict[UpdateCategory.VILLAGERS])
+        buildingInstances = BuildingInstances.from_dict(dict[UpdateCategory.BUILDINGS.value])
+        troopInstances = TroopInstances.from_dict(dict[UpdateCategory.TROOPS.value])
+        villager = Villager.from_dict(dict[UpdateCategory.VILLAGERS.value])
         return cls(buildingInstances, troopInstances, villager)
 
     def __add__(self, other):

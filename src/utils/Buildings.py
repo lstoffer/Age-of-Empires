@@ -15,12 +15,12 @@ class Buildings:
 
     @classmethod
     def from_dict(cls, dict):
-        towncenter = dict[BuildingType.TOWNCENTER]
-        market = dict[BuildingType.MARKET]
-        barracks = dict[BuildingType.BARRACKS]
-        wall = dict[BuildingType.WALL]
-        castle = dict[BuildingType.CASTLE]
-        university = dict[BuildingType.UNIVERSITY]
+        towncenter = dict[BuildingType.TOWNCENTER.value]
+        market = dict[BuildingType.MARKET.value]
+        barracks = dict[BuildingType.BARRACKS.value]
+        wall = dict[BuildingType.WALL.value]
+        castle = dict[BuildingType.CASTLE.value]
+        university = dict[BuildingType.UNIVERSITY.value]
         return cls(towncenter, market, barracks, wall, castle, university)
     
     def serialize(self) -> dict:

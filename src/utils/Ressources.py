@@ -8,11 +8,31 @@ class Ressources:
 
     @classmethod
     def from_dict(cls, dict):
-        food = dict[RessourceType.FOOD]
-        wood = dict[RessourceType.WOOD]
-        stone = dict[RessourceType.STONE]
-        gold = dict[RessourceType.GOLD]
+        food = dict[RessourceType.FOOD.value]
+        wood = dict[RessourceType.WOOD.value]
+        stone = dict[RessourceType.STONE.value]
+        gold = dict[RessourceType.GOLD.value]
         return cls(food, wood, stone, gold)
+    
+    def add(self, ressourceType: RessourceType, amount: int):
+        if ressourceType == RessourceType.FOOD:
+            self.food += amount
+        elif ressourceType == RessourceType.WOOD:
+            self.wood += amount
+        elif ressourceType == RessourceType.STONE:
+            self.stone += amount
+        elif ressourceType == RessourceType.GOLD:
+            self.gold += amount
+
+    def get(self, ressourceType: RessourceType):
+        if ressourceType == RessourceType.FOOD:
+            return self.food
+        elif ressourceType == RessourceType.WOOD:
+            return self.wood
+        elif ressourceType == RessourceType.STONE:
+            return self.stone
+        elif ressourceType == RessourceType.GOLD:
+            return self.gold
     
     def __add__(self, other):
         if isinstance(other, Ressources):

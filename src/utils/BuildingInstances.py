@@ -15,12 +15,12 @@ class BuildingInstances:
 
     @classmethod
     def from_dict(cls, dict):
-        towncenter = Building.from_dict(dict[BuildingType.TOWNCENTER])
-        market = Building.from_dict(dict[BuildingType.MARKET])
-        barracks = Building.from_dict(dict[BuildingType.BARRACKS])
-        wall = Building.from_dict(dict[BuildingType.WALL])
-        castle = Building.from_dict(dict[BuildingType.CASTLE])
-        university = Building.from_dict(dict[BuildingType.UNIVERSITY])
+        towncenter = Building.from_dict(dict[BuildingType.TOWNCENTER.value])
+        market = Building.from_dict(dict[BuildingType.MARKET.value])
+        barracks = Building.from_dict(dict[BuildingType.BARRACKS.value])
+        wall = Building.from_dict(dict[BuildingType.WALL.value])
+        castle = Building.from_dict(dict[BuildingType.CASTLE.value])
+        university = Building.from_dict(dict[BuildingType.UNIVERSITY.value])
         return cls(towncenter, market, barracks, wall, castle, university)
     
     def __add__(self, other):

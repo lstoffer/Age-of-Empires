@@ -13,10 +13,10 @@ class Troops:
 
     @classmethod
     def from_dict(cls, dict):
-        archer = dict[TroopType.ARCHER]
-        infantry = dict[TroopType.INFANTRY]
-        cavalry = dict[TroopType.CAVALRY]
-        siege = dict[TroopType.SIEGE]
+        archer = dict[TroopType.ARCHER.value]
+        infantry = dict[TroopType.INFANTRY.value]
+        cavalry = dict[TroopType.CAVALRY.value]
+        siege = dict[TroopType.SIEGE.value]
         return cls(archer, infantry, cavalry, siege)
     
     def serialize(self) -> dict:
