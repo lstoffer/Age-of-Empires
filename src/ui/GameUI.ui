@@ -49,85 +49,558 @@
          <widget class="QComboBox" name="nation_select_comboBox"/>
         </item>
         <item>
-         <widget class="Line" name="line">
-          <property name="lineWidth">
+         <widget class="QTabWidget" name="tabWidget_3">
+          <property name="currentIndex">
            <number>1</number>
           </property>
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
-          </property>
+          <widget class="QWidget" name="ressources_controlTab">
+           <attribute name="title">
+            <string>Rohstoffe</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_24">
+            <item>
+             <widget class="QScrollArea" name="scrollArea_4">
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <widget class="QWidget" name="scrollAreaWidgetContents_5">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>1024</width>
+                 <height>819</height>
+                </rect>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_26">
+                <item>
+                 <widget class="QGroupBox" name="groupBox_7">
+                  <property name="title">
+                   <string>Vergeben / Abziehen</string>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_27">
+                   <item>
+                    <layout class="QFormLayout" name="formLayout_7">
+                     <item row="0" column="0">
+                      <widget class="QLabel" name="label_71">
+                       <property name="text">
+                        <string>Nahrung</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="1" column="0">
+                      <widget class="QLabel" name="label_72">
+                       <property name="text">
+                        <string>Holz</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="2" column="0">
+                      <widget class="QLabel" name="label_73">
+                       <property name="text">
+                        <string>Stein</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="3" column="0">
+                      <widget class="QLabel" name="label_74">
+                       <property name="text">
+                        <string>Gold</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="0" column="1">
+                      <widget class="QSpinBox" name="spinBox_16"/>
+                     </item>
+                     <item row="1" column="1">
+                      <widget class="QSpinBox" name="spinBox_17"/>
+                     </item>
+                     <item row="2" column="1">
+                      <widget class="QSpinBox" name="spinBox_18"/>
+                     </item>
+                     <item row="3" column="1">
+                      <widget class="QSpinBox" name="spinBox_19"/>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_2">
+                     <item>
+                      <widget class="QPushButton" name="pushButton_8">
+                       <property name="text">
+                        <string>Vergeben</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="pushButton_9">
+                       <property name="text">
+                        <string>Abziehen</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="verticalSpacer_6">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="villagers_controlTab">
+           <attribute name="title">
+            <string>Dorfbewohner</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_4">
+            <item>
+             <widget class="QScrollArea" name="scrollArea">
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <widget class="QWidget" name="scrollAreaWidgetContents">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>1024</width>
+                 <height>819</height>
+                </rect>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_5">
+                <item>
+                 <widget class="QGroupBox" name="groupBox">
+                  <property name="title">
+                   <string>Ausbildung</string>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_6">
+                   <item>
+                    <layout class="QFormLayout" name="formLayout">
+                     <item row="0" column="0">
+                      <widget class="QLabel" name="label_54">
+                       <property name="text">
+                        <string>Dofzentrum</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="0" column="1">
+                      <widget class="QComboBox" name="comboBox"/>
+                     </item>
+                     <item row="1" column="0">
+                      <widget class="QLabel" name="label_55">
+                       <property name="text">
+                        <string>Anzahl</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="1" column="1">
+                      <widget class="QSpinBox" name="spinBox_2"/>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="pushButton">
+                     <property name="text">
+                      <string>Ausbilden</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QGroupBox" name="groupBox_2">
+                  <property name="title">
+                   <string>Bewegung</string>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_7">
+                   <item>
+                    <layout class="QFormLayout" name="formLayout_2">
+                     <item row="0" column="0">
+                      <widget class="QLabel" name="label_56">
+                       <property name="text">
+                        <string>Anzahl</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="2" column="0">
+                      <widget class="QLabel" name="label_57">
+                       <property name="text">
+                        <string>Von</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="3" column="0">
+                      <widget class="QLabel" name="label_58">
+                       <property name="text">
+                        <string>Nach</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="0" column="1">
+                      <widget class="QSpinBox" name="spinBox_3"/>
+                     </item>
+                     <item row="2" column="1">
+                      <widget class="QSpinBox" name="spinBox_4"/>
+                     </item>
+                     <item row="3" column="1">
+                      <widget class="QSpinBox" name="spinBox_5"/>
+                     </item>
+                     <item row="1" column="0" colspan="2">
+                      <widget class="Line" name="line_9">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="pushButton_2">
+                     <property name="text">
+                      <string>Bewegen</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="verticalSpacer_2">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="troops_controlTab">
+           <attribute name="title">
+            <string>Truppen</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_20">
+            <item>
+             <widget class="QScrollArea" name="scrollArea_2">
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <widget class="QWidget" name="scrollAreaWidgetContents_3">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>1024</width>
+                 <height>819</height>
+                </rect>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_9">
+                <item>
+                 <widget class="QGroupBox" name="groupBox_3">
+                  <property name="title">
+                   <string>Ausbildung</string>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_10">
+                   <item>
+                    <layout class="QFormLayout" name="formLayout_3">
+                     <item row="0" column="0">
+                      <widget class="QLabel" name="label_59">
+                       <property name="text">
+                        <string>Dofzentrum</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="0" column="1">
+                      <widget class="QComboBox" name="comboBox_2"/>
+                     </item>
+                     <item row="1" column="0">
+                      <widget class="QLabel" name="label_60">
+                       <property name="text">
+                        <string>Anzahl</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="1" column="1">
+                      <widget class="QSpinBox" name="spinBox_6"/>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="pushButton_3">
+                     <property name="text">
+                      <string>Ausbilden</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QGroupBox" name="groupBox_4">
+                  <property name="title">
+                   <string>Bewegung</string>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_11">
+                   <item>
+                    <layout class="QFormLayout" name="formLayout_4">
+                     <item row="0" column="0">
+                      <widget class="QLabel" name="label_61">
+                       <property name="text">
+                        <string>Anzahl Bogenschützen</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="0" column="1">
+                      <widget class="QSpinBox" name="spinBox_7"/>
+                     </item>
+                     <item row="1" column="0">
+                      <widget class="QLabel" name="label_66">
+                       <property name="text">
+                        <string>Anzahl Infanterie</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="1" column="1">
+                      <widget class="QSpinBox" name="spinBox_12"/>
+                     </item>
+                     <item row="2" column="0">
+                      <widget class="QLabel" name="label_67">
+                       <property name="text">
+                        <string>Anzahl Kavallerie</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="2" column="1">
+                      <widget class="QSpinBox" name="spinBox_13"/>
+                     </item>
+                     <item row="3" column="0">
+                      <widget class="QLabel" name="label_68">
+                       <property name="text">
+                        <string>Anzahl Belagerungswaffen</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="3" column="1">
+                      <widget class="QSpinBox" name="spinBox_14"/>
+                     </item>
+                     <item row="5" column="0">
+                      <widget class="QLabel" name="label_62">
+                       <property name="text">
+                        <string>Von</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="5" column="1">
+                      <widget class="QSpinBox" name="spinBox_8"/>
+                     </item>
+                     <item row="6" column="0">
+                      <widget class="QLabel" name="label_63">
+                       <property name="text">
+                        <string>Nach</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="6" column="1">
+                      <widget class="QSpinBox" name="spinBox_9"/>
+                     </item>
+                     <item row="4" column="0" colspan="2">
+                      <widget class="Line" name="line">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="pushButton_4">
+                     <property name="text">
+                      <string>Bewegen</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QGroupBox" name="groupBox_5">
+                  <property name="title">
+                   <string>Angriff</string>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_21">
+                   <item>
+                    <layout class="QFormLayout" name="formLayout_5">
+                     <item row="0" column="0">
+                      <widget class="QLabel" name="label_64">
+                       <property name="text">
+                        <string>Von</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="1" column="0">
+                      <widget class="QLabel" name="label_65">
+                       <property name="text">
+                        <string>Nach</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="0" column="1">
+                      <widget class="QSpinBox" name="spinBox_10"/>
+                     </item>
+                     <item row="1" column="1">
+                      <widget class="QSpinBox" name="spinBox_11"/>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="pushButton_5">
+                     <property name="text">
+                      <string>Angriff</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="verticalSpacer">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="buildings_controlTab">
+           <attribute name="title">
+            <string>Gebäude</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_22">
+            <item>
+             <widget class="QScrollArea" name="scrollArea_3">
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <widget class="QWidget" name="scrollAreaWidgetContents_4">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>1024</width>
+                 <height>819</height>
+                </rect>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_25">
+                <item>
+                 <widget class="QGroupBox" name="groupBox_6">
+                  <property name="title">
+                   <string>Bauen / Abreissen</string>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_23">
+                   <item>
+                    <layout class="QFormLayout" name="formLayout_6">
+                     <item row="0" column="0">
+                      <widget class="QLabel" name="label_69">
+                       <property name="text">
+                        <string>Feld</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="1" column="0">
+                      <widget class="QLabel" name="label_70">
+                       <property name="text">
+                        <string>Gebäude</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="1" column="1">
+                      <widget class="QComboBox" name="comboBox_3"/>
+                     </item>
+                     <item row="0" column="1">
+                      <widget class="QSpinBox" name="spinBox_15"/>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout">
+                     <item>
+                      <widget class="QPushButton" name="pushButton_6">
+                       <property name="text">
+                        <string>Bauen</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="pushButton_7">
+                       <property name="text">
+                        <string>Abreissen</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="verticalSpacer_5">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="trade_controlTab">
+           <attribute name="title">
+            <string>Handel</string>
+           </attribute>
+          </widget>
          </widget>
-        </item>
-        <item>
-         <spacer name="verticalSpacer_2">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-          <property name="sizeType">
-           <enum>QSizePolicy::Fixed</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>20</width>
-            <height>20</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item>
-         <widget class="QPushButton" name="pushButton_2">
-          <property name="text">
-           <string>Dorfbewohner ausbilden</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="pushButton_5">
-          <property name="text">
-           <string>Truppen ausbilden</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="pushButton_3">
-          <property name="text">
-           <string>Gebäude bauen</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="pushButton_4">
-          <property name="text">
-           <string>Handel treiben</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="pushButton">
-          <property name="text">
-           <string>Truppen bewegen</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="pushButton_6">
-          <property name="text">
-           <string>Angriff</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <spacer name="verticalSpacer">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>20</width>
-            <height>40</height>
-           </size>
-          </property>
-         </spacer>
         </item>
        </layout>
       </widget>
@@ -174,8 +647,8 @@
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>1036</width>
-                 <height>857</height>
+                 <width>1024</width>
+                 <height>875</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_8">
@@ -541,8 +1014,8 @@
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>1036</width>
-                 <height>857</height>
+                 <width>193</width>
+                 <height>607</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_14">
@@ -908,8 +1381,8 @@
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>1036</width>
-                 <height>857</height>
+                 <width>193</width>
+                 <height>607</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_16">
@@ -1275,8 +1748,8 @@
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>1036</width>
-                 <height>857</height>
+                 <width>193</width>
+                 <height>607</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_18">
@@ -1950,7 +2423,7 @@
      <x>0</x>
      <y>0</y>
      <width>1092</width>
-     <height>30</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>
