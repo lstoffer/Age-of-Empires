@@ -51,7 +51,7 @@
         <item>
          <widget class="QTabWidget" name="tabWidget_3">
           <property name="currentIndex">
-           <number>0</number>
+           <number>2</number>
           </property>
           <widget class="QWidget" name="ressources_controlTab">
            <attribute name="title">
@@ -110,30 +110,30 @@
                       </widget>
                      </item>
                      <item row="0" column="1">
-                      <widget class="QSpinBox" name="spinBox_16"/>
+                      <widget class="QSpinBox" name="food_add_sub_spinBox"/>
                      </item>
                      <item row="1" column="1">
-                      <widget class="QSpinBox" name="spinBox_17"/>
+                      <widget class="QSpinBox" name="wood_add_sub_spinBox"/>
                      </item>
                      <item row="2" column="1">
-                      <widget class="QSpinBox" name="spinBox_18"/>
+                      <widget class="QSpinBox" name="stone_add_sub_spinBox"/>
                      </item>
                      <item row="3" column="1">
-                      <widget class="QSpinBox" name="spinBox_19"/>
+                      <widget class="QSpinBox" name="gold_add_sub_spinBox"/>
                      </item>
                     </layout>
                    </item>
                    <item>
                     <layout class="QHBoxLayout" name="horizontalLayout_2">
                      <item>
-                      <widget class="QPushButton" name="pushButton_8">
+                      <widget class="QPushButton" name="ressources_add_btn">
                        <property name="text">
                         <string>Vergeben</string>
                        </property>
                       </widget>
                      </item>
                      <item>
-                      <widget class="QPushButton" name="pushButton_9">
+                      <widget class="QPushButton" name="ressources_sub_btn">
                        <property name="text">
                         <string>Abziehen</string>
                        </property>
@@ -160,12 +160,12 @@
                       </widget>
                      </item>
                      <item row="0" column="1">
-                      <widget class="QSpinBox" name="spinBox_20"/>
+                      <widget class="QSpinBox" name="ressources_dividends_spinBox"/>
                      </item>
                     </layout>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_10">
+                    <widget class="QPushButton" name="ressources_dividends_btn">
                      <property name="text">
                       <string>Ausschütten</string>
                      </property>
@@ -229,7 +229,7 @@
                       </widget>
                      </item>
                      <item row="0" column="1">
-                      <widget class="QComboBox" name="comboBox"/>
+                      <widget class="QComboBox" name="villagers_develop_towncenter_comboBox"/>
                      </item>
                      <item row="1" column="0">
                       <widget class="QLabel" name="label_55">
@@ -239,12 +239,12 @@
                       </widget>
                      </item>
                      <item row="1" column="1">
-                      <widget class="QSpinBox" name="spinBox_2"/>
+                      <widget class="QSpinBox" name="villagers_develop_amount_spinBox"/>
                      </item>
                     </layout>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton">
+                    <widget class="QPushButton" name="villagers_develop_btn">
                      <property name="text">
                       <string>Ausbilden</string>
                      </property>
@@ -283,13 +283,13 @@
                       </widget>
                      </item>
                      <item row="0" column="1">
-                      <widget class="QSpinBox" name="spinBox_3"/>
+                      <widget class="QSpinBox" name="villagers_move_amount_comboBox"/>
                      </item>
                      <item row="2" column="1">
-                      <widget class="QSpinBox" name="spinBox_4"/>
+                      <widget class="QSpinBox" name="villagers_move_from_spinBox"/>
                      </item>
                      <item row="3" column="1">
-                      <widget class="QSpinBox" name="spinBox_5"/>
+                      <widget class="QSpinBox" name="villagers_move_to_spinBox"/>
                      </item>
                      <item row="1" column="0" colspan="2">
                       <widget class="Line" name="line_9">
@@ -301,7 +301,7 @@
                     </layout>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_2">
+                    <widget class="QPushButton" name="villagers_move_btn">
                      <property name="text">
                       <string>Bewegen</string>
                      </property>
@@ -365,7 +365,7 @@
                       </widget>
                      </item>
                      <item row="0" column="1">
-                      <widget class="QComboBox" name="comboBox_2"/>
+                      <widget class="QComboBox" name="troops_develop_buiding_comboBox"/>
                      </item>
                      <item row="1" column="0">
                       <widget class="QLabel" name="label_60">
@@ -375,12 +375,12 @@
                       </widget>
                      </item>
                      <item row="1" column="1">
-                      <widget class="QSpinBox" name="spinBox_6"/>
+                      <widget class="QSpinBox" name="troops_develop_amount_spinBox"/>
                      </item>
                     </layout>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_3">
+                    <widget class="QPushButton" name="troops_develop_btn">
                      <property name="text">
                       <string>Ausbilden</string>
                      </property>
@@ -405,7 +405,7 @@
                       </widget>
                      </item>
                      <item row="0" column="1">
-                      <widget class="QSpinBox" name="spinBox_7"/>
+                      <widget class="QSpinBox" name="troops_move_archer_amount_spinBox"/>
                      </item>
                      <item row="1" column="0">
                       <widget class="QLabel" name="label_66">
@@ -415,7 +415,7 @@
                       </widget>
                      </item>
                      <item row="1" column="1">
-                      <widget class="QSpinBox" name="spinBox_12"/>
+                      <widget class="QSpinBox" name="troops_move_infantry_amount_spinBox"/>
                      </item>
                      <item row="2" column="0">
                       <widget class="QLabel" name="label_67">
@@ -425,7 +425,7 @@
                       </widget>
                      </item>
                      <item row="2" column="1">
-                      <widget class="QSpinBox" name="spinBox_13"/>
+                      <widget class="QSpinBox" name="troops_move_cavalry_amoutn_spinBox"/>
                      </item>
                      <item row="3" column="0">
                       <widget class="QLabel" name="label_68">
@@ -435,7 +435,7 @@
                       </widget>
                      </item>
                      <item row="3" column="1">
-                      <widget class="QSpinBox" name="spinBox_14"/>
+                      <widget class="QSpinBox" name="troops_move_siege_amount_spinBox"/>
                      </item>
                      <item row="5" column="0">
                       <widget class="QLabel" name="label_62">
@@ -445,7 +445,7 @@
                       </widget>
                      </item>
                      <item row="5" column="1">
-                      <widget class="QSpinBox" name="spinBox_8"/>
+                      <widget class="QSpinBox" name="troops_move_from_spinBox"/>
                      </item>
                      <item row="6" column="0">
                       <widget class="QLabel" name="label_63">
@@ -455,7 +455,7 @@
                       </widget>
                      </item>
                      <item row="6" column="1">
-                      <widget class="QSpinBox" name="spinBox_9"/>
+                      <widget class="QSpinBox" name="troops_move_to_spinBox"/>
                      </item>
                      <item row="4" column="0" colspan="2">
                       <widget class="Line" name="line">
@@ -467,7 +467,7 @@
                     </layout>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_4">
+                    <widget class="QPushButton" name="troops_move_btn">
                      <property name="text">
                       <string>Bewegen</string>
                      </property>
@@ -499,15 +499,15 @@
                       </widget>
                      </item>
                      <item row="0" column="1">
-                      <widget class="QSpinBox" name="spinBox_10"/>
+                      <widget class="QSpinBox" name="troops_attack_from_spinBox"/>
                      </item>
                      <item row="1" column="1">
-                      <widget class="QSpinBox" name="spinBox_11"/>
+                      <widget class="QSpinBox" name="troops_attack_to_spinBox"/>
                      </item>
                     </layout>
                    </item>
                    <item>
-                    <widget class="QPushButton" name="pushButton_5">
+                    <widget class="QPushButton" name="troops_attack_btn">
                      <property name="text">
                       <string>Angriff</string>
                      </property>
@@ -578,24 +578,24 @@
                       </widget>
                      </item>
                      <item row="1" column="1">
-                      <widget class="QComboBox" name="comboBox_3"/>
+                      <widget class="QComboBox" name="buildings_type_comboBox"/>
                      </item>
                      <item row="0" column="1">
-                      <widget class="QSpinBox" name="spinBox_15"/>
+                      <widget class="QSpinBox" name="buildings_field_select_spinBox"/>
                      </item>
                     </layout>
                    </item>
                    <item>
                     <layout class="QHBoxLayout" name="horizontalLayout">
                      <item>
-                      <widget class="QPushButton" name="pushButton_6">
+                      <widget class="QPushButton" name="buildings_build_btn">
                        <property name="text">
                         <string>Bauen</string>
                        </property>
                       </widget>
                      </item>
                      <item>
-                      <widget class="QPushButton" name="pushButton_7">
+                      <widget class="QPushButton" name="buildings_destroy_btn">
                        <property name="text">
                         <string>Abreissen</string>
                        </property>
@@ -1044,8 +1044,8 @@
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>227</width>
-                 <height>734</height>
+                 <width>1036</width>
+                 <height>857</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_14">
@@ -1411,8 +1411,8 @@
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>227</width>
-                 <height>734</height>
+                 <width>1036</width>
+                 <height>857</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_16">
@@ -1778,8 +1778,8 @@
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>227</width>
-                 <height>734</height>
+                 <width>1036</width>
+                 <height>857</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_18">
