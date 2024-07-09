@@ -2,7 +2,7 @@
   "111": {
     "index": 111,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -22,7 +22,7 @@
   "112": {
     "index": 112,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -42,7 +42,7 @@
   "113": {
     "index": 113,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -62,7 +62,7 @@
   "114": {
     "index": 114,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -82,7 +82,7 @@
   "115": {
     "index": 115,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -102,7 +102,7 @@
   "121": {
     "index": 121,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -122,7 +122,7 @@
   "122": {
     "index": 122,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -142,7 +142,7 @@
   "123": {
     "index": 123,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -162,7 +162,7 @@
   "124": {
     "index": 124,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -182,7 +182,7 @@
   "125": {
     "index": 125,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -202,7 +202,7 @@
   "131": {
     "index": 131,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -222,7 +222,7 @@
   "132": {
     "index": 132,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -242,7 +242,7 @@
   "133": {
     "index": 133,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -262,7 +262,7 @@
   "134": {
     "index": 134,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -282,7 +282,7 @@
   "135": {
     "index": 135,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -302,7 +302,7 @@
   "141": {
     "index": 141,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -322,7 +322,7 @@
   "142": {
     "index": 142,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -342,7 +342,7 @@
   "143": {
     "index": 143,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -362,7 +362,7 @@
   "144": {
     "index": 144,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -382,7 +382,7 @@
   "145": {
     "index": 145,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -402,7 +402,7 @@
   "151": {
     "index": 151,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -422,7 +422,7 @@
   "152": {
     "index": 152,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -442,7 +442,7 @@
   "153": {
     "index": 153,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -462,7 +462,7 @@
   "154": {
     "index": 154,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -482,7 +482,7 @@
   "155": {
     "index": 155,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -502,7 +502,7 @@
   "161": {
     "index": 161,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -522,7 +522,7 @@
   "162": {
     "index": 162,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -542,7 +542,7 @@
   "163": {
     "index": 163,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -562,7 +562,7 @@
   "164": {
     "index": 164,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -582,7 +582,7 @@
   "165": {
     "index": 165,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -602,7 +602,7 @@
   "171": {
     "index": 171,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -622,7 +622,7 @@
   "172": {
     "index": 172,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -642,7 +642,7 @@
   "173": {
     "index": 173,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -662,7 +662,7 @@
   "174": {
     "index": 174,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -682,7 +682,7 @@
   "175": {
     "index": 175,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -702,7 +702,7 @@
   "181": {
     "index": 181,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -722,7 +722,7 @@
   "182": {
     "index": 182,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -742,7 +742,7 @@
   "183": {
     "index": 183,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -762,7 +762,7 @@
   "184": {
     "index": 184,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -782,7 +782,7 @@
   "185": {
     "index": 185,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -802,7 +802,7 @@
   "211": {
     "index": 211,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -822,7 +822,7 @@
   "212": {
     "index": 212,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -842,7 +842,7 @@
   "213": {
     "index": 213,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -862,7 +862,7 @@
   "214": {
     "index": 214,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -882,7 +882,7 @@
   "215": {
     "index": 215,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -902,7 +902,7 @@
   "221": {
     "index": 221,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -922,7 +922,7 @@
   "222": {
     "index": 222,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -942,7 +942,7 @@
   "223": {
     "index": 223,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -962,7 +962,7 @@
   "224": {
     "index": 224,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -982,7 +982,7 @@
   "225": {
     "index": 225,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1002,7 +1002,7 @@
   "231": {
     "index": 231,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1022,7 +1022,7 @@
   "232": {
     "index": 232,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1042,7 +1042,7 @@
   "233": {
     "index": 233,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1062,7 +1062,7 @@
   "234": {
     "index": 234,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1082,7 +1082,7 @@
   "235": {
     "index": 235,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1102,7 +1102,7 @@
   "241": {
     "index": 241,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1122,7 +1122,7 @@
   "242": {
     "index": 242,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1142,7 +1142,7 @@
   "243": {
     "index": 243,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1162,7 +1162,7 @@
   "244": {
     "index": 244,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1182,7 +1182,7 @@
   "245": {
     "index": 245,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1202,7 +1202,7 @@
   "251": {
     "index": 251,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1222,7 +1222,7 @@
   "252": {
     "index": 252,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1242,7 +1242,7 @@
   "253": {
     "index": 253,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1262,7 +1262,7 @@
   "254": {
     "index": 254,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1282,7 +1282,7 @@
   "255": {
     "index": 255,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1302,7 +1302,7 @@
   "261": {
     "index": 261,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1322,7 +1322,7 @@
   "262": {
     "index": 262,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1342,7 +1342,7 @@
   "263": {
     "index": 263,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1362,7 +1362,7 @@
   "264": {
     "index": 264,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1382,7 +1382,7 @@
   "265": {
     "index": 265,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1402,7 +1402,7 @@
   "271": {
     "index": 271,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1422,7 +1422,7 @@
   "272": {
     "index": 272,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1442,7 +1442,7 @@
   "273": {
     "index": 273,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1462,7 +1462,7 @@
   "274": {
     "index": 274,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1482,7 +1482,7 @@
   "275": {
     "index": 275,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1502,7 +1502,7 @@
   "281": {
     "index": 281,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1522,7 +1522,7 @@
   "282": {
     "index": 282,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1542,7 +1542,7 @@
   "283": {
     "index": 283,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1562,7 +1562,7 @@
   "284": {
     "index": 284,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1582,7 +1582,7 @@
   "285": {
     "index": 285,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1602,7 +1602,7 @@
   "311": {
     "index": 311,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1622,7 +1622,7 @@
   "312": {
     "index": 312,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1642,7 +1642,7 @@
   "313": {
     "index": 313,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1662,7 +1662,7 @@
   "314": {
     "index": 314,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1682,7 +1682,7 @@
   "315": {
     "index": 315,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1702,7 +1702,7 @@
   "321": {
     "index": 321,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1722,7 +1722,7 @@
   "322": {
     "index": 322,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1742,7 +1742,7 @@
   "323": {
     "index": 323,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1762,7 +1762,7 @@
   "324": {
     "index": 324,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1782,7 +1782,7 @@
   "325": {
     "index": 325,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1802,7 +1802,7 @@
   "331": {
     "index": 331,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1822,7 +1822,7 @@
   "332": {
     "index": 332,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1842,7 +1842,7 @@
   "333": {
     "index": 333,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1862,7 +1862,7 @@
   "334": {
     "index": 334,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1882,7 +1882,7 @@
   "335": {
     "index": 335,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1902,7 +1902,7 @@
   "341": {
     "index": 341,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1922,7 +1922,7 @@
   "342": {
     "index": 342,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1942,7 +1942,7 @@
   "343": {
     "index": 343,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1962,7 +1962,7 @@
   "344": {
     "index": 344,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1982,7 +1982,7 @@
   "345": {
     "index": 345,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2002,7 +2002,7 @@
   "351": {
     "index": 351,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2022,7 +2022,7 @@
   "352": {
     "index": 352,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2042,7 +2042,7 @@
   "353": {
     "index": 353,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2062,7 +2062,7 @@
   "354": {
     "index": 354,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2082,7 +2082,7 @@
   "355": {
     "index": 355,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2102,7 +2102,7 @@
   "361": {
     "index": 361,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2122,7 +2122,7 @@
   "362": {
     "index": 362,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2142,7 +2142,7 @@
   "363": {
     "index": 363,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2162,7 +2162,7 @@
   "364": {
     "index": 364,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2182,7 +2182,7 @@
   "365": {
     "index": 365,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2202,7 +2202,7 @@
   "371": {
     "index": 371,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2222,7 +2222,7 @@
   "372": {
     "index": 372,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2242,7 +2242,7 @@
   "373": {
     "index": 373,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2262,7 +2262,7 @@
   "374": {
     "index": 374,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2282,7 +2282,7 @@
   "375": {
     "index": 375,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2302,7 +2302,7 @@
   "381": {
     "index": 381,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2322,7 +2322,7 @@
   "382": {
     "index": 382,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2342,7 +2342,7 @@
   "383": {
     "index": 383,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2362,7 +2362,7 @@
   "384": {
     "index": 384,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2382,7 +2382,7 @@
   "385": {
     "index": 385,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2402,7 +2402,7 @@
   "411": {
     "index": 411,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2422,7 +2422,7 @@
   "412": {
     "index": 412,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2442,7 +2442,7 @@
   "413": {
     "index": 413,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2462,7 +2462,7 @@
   "414": {
     "index": 414,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2482,7 +2482,7 @@
   "415": {
     "index": 415,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2502,7 +2502,7 @@
   "421": {
     "index": 421,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2522,7 +2522,7 @@
   "422": {
     "index": 422,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2542,7 +2542,7 @@
   "423": {
     "index": 423,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2562,7 +2562,7 @@
   "424": {
     "index": 424,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2582,7 +2582,7 @@
   "425": {
     "index": 425,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2602,7 +2602,7 @@
   "431": {
     "index": 431,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2622,7 +2622,7 @@
   "432": {
     "index": 432,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2642,7 +2642,7 @@
   "433": {
     "index": 433,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2662,7 +2662,7 @@
   "434": {
     "index": 434,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2682,7 +2682,7 @@
   "435": {
     "index": 435,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2702,7 +2702,7 @@
   "441": {
     "index": 441,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2722,7 +2722,7 @@
   "442": {
     "index": 442,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2742,7 +2742,7 @@
   "443": {
     "index": 443,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2762,7 +2762,7 @@
   "444": {
     "index": 444,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2782,7 +2782,7 @@
   "445": {
     "index": 445,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2802,7 +2802,7 @@
   "451": {
     "index": 451,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2822,7 +2822,7 @@
   "452": {
     "index": 452,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2842,7 +2842,7 @@
   "453": {
     "index": 453,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2862,7 +2862,7 @@
   "454": {
     "index": 454,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2882,7 +2882,7 @@
   "455": {
     "index": 455,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2902,7 +2902,7 @@
   "461": {
     "index": 461,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2922,7 +2922,7 @@
   "462": {
     "index": 462,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2942,7 +2942,7 @@
   "463": {
     "index": 463,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2962,7 +2962,7 @@
   "464": {
     "index": 464,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2982,7 +2982,7 @@
   "465": {
     "index": 465,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -3002,7 +3002,7 @@
   "471": {
     "index": 471,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -3022,7 +3022,7 @@
   "472": {
     "index": 472,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -3042,7 +3042,7 @@
   "473": {
     "index": 473,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -3062,7 +3062,7 @@
   "474": {
     "index": 474,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -3082,7 +3082,7 @@
   "475": {
     "index": 475,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -3102,7 +3102,7 @@
   "481": {
     "index": 481,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -3122,7 +3122,7 @@
   "482": {
     "index": 482,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -3142,7 +3142,7 @@
   "483": {
     "index": 483,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -3162,7 +3162,7 @@
   "484": {
     "index": 484,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -3182,7 +3182,7 @@
   "485": {
     "index": 485,
     "ressource": "food",
-    "nation": "britons",
+    "nation": "",
     "troops": {
       "archer": 0,
       "infantry": 0,

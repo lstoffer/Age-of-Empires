@@ -1,9 +1,9 @@
 {
   "ages": {
     "dark-age": 0,
-    "feudal-age": 0,
-    "castle-age": 0,
-    "imperial-age": 0
+    "feudal-age": 800,
+    "castle-age": 1600,
+    "imperial-age": 2800
   },
-  "field": 0
+  "field": 20
 }

@@ -1,42 +1,42 @@
 {
-    "dark-age": {
-        "costs": {
-            "gold": 100,
-            "wood": 100,
-            "food": 100,
-            "stone": 100
-        },
-        "buildings": [],
-        "next": "feudal-age"
+  "dark-age": {
+    "costs": {
+      "gold": 0,
+      "wood": 0,
+      "food": 0,
+      "stone": 0
     },
-    "feudal-age": {
-        "costs": {
-            "gold": 100,
-            "wood": 100,
-            "food": 100,
-            "stone": 100
-        },
-        "buildings": [],
-        "next": "castle-age"
+    "buildings": [],
+    "next": "feudal-age"
+  },
+  "feudal-age": {
+    "costs": {
+      "gold": 200,
+      "wood": 200,
+      "food": 200,
+      "stone": 200
     },
-    "castle-age": {
-        "costs": {
-            "gold": 100,
-            "wood": 100,
-            "food": 100,
-            "stone": 100
-        },
-        "buildings": [],
-        "next": "imperial-age"
+    "buildings": [],
+    "next": "castle-age"
+  },
+  "castle-age": {
+    "costs": {
+      "gold": 400,
+      "wood": 400,
+      "food": 400,
+      "stone": 400
     },
-    "imperial-age": {
-        "costs": {
-            "gold": 100,
-            "wood": 100,
-            "food": 100,
-            "stone": 100
-        },
-        "buildings": [],
-        "next": ""
-    }
+    "buildings": ["market"],
+    "next": "imperial-age"
+  },
+  "imperial-age": {
+    "costs": {
+      "gold": 700,
+      "wood": 700,
+      "food": 700,
+      "stone": 700
+    },
+    "buildings": ["wall", "barracks"],
+    "next": ""
+  }
 }
