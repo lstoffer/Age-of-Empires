@@ -19,6 +19,8 @@ class GamePresenter:
         self.gui.buildBuilding.connect(self.model.buildBuilding)
         self.gui.destroyBuilding.connect(self.model.destroyBuilding)
 
+        self.gui.stopGame.connect(self.model.stopGame)
+
         self.gui.show()
         app.exec()
 

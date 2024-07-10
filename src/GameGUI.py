@@ -10,6 +10,8 @@ from utils.BuildingType import BuildingType
 
 class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
     
+    stopGame = pyqtSignal()
+    
     # Ressources
     addRessources = pyqtSignal(Ressources, NationType)
     applyDividends = pyqtSignal(int)
@@ -25,6 +27,8 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
     def __init__(self, parent=None) -> None:
         super().__init__(parent)
         self.setupUi(self)
+        self.setupNationSelect()
+        self.setupBuildingSelect()
         # Ressources
         self.ressources_add_btn.clicked.connect(self.onRssourcesAddClick)
         self.ressources_sub_btn.clicked.connect(self.onRessourcesSubClick)
@@ -39,11 +43,23 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
         self.buildings_destroy_btn.clicked.connect(self.onBuildingsDestroyClick)
         
 
+    def closeEvent(self, event):
+        super().closeEvent(event)
+        self.stopGame.emit()
+
     def setupNationSelect(self):
         self.nation_select_comboBox.addItem('Briten', 'britons')
         self.nation_select_comboBox.addItem('Wikinger', 'vikings')
         self.nation_select_comboBox.addItem('Chinesen', 'chinese')
         self.nation_select_comboBox.addItem('Mongolen', 'mongols')
+
+    def setupBuildingSelect(self):
+        self.buildings_type_comboBox.addItem('Dorfzentrum', 'towncenter')
+        self.buildings_type_comboBox.addItem('Markt', 'market')
+        self.buildings_type_comboBox.addItem('Kaserne', 'barracks')
+        self.buildings_type_comboBox.addItem('Wall', 'wall')
+        self.buildings_type_comboBox.addItem('Burg', 'Castle')
+        self.buildings_type_comboBox.addItem('Universität', 'university')
     
     def onRssourcesAddClick(self):
         food = self.food_add_sub_spinBox.value()
@@ -87,7 +103,7 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
         buildingType = BuildingType(self.buildings_type_comboBox.currentData())
         self.buildBuilding(nation, field, buildingType)
 
-    def onBuildingDestroyClick(self):
+    def onBuildingsDestroyClick(self):
         nation = NationType(self.nation_select_comboBox.currentData())
         field = self.buildings_field_select_spinBox.value()
         buildingType = BuildingType(self.buildings_type_comboBox.currentData())

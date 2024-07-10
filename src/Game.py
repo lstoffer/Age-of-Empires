@@ -1,6 +1,6 @@
 from utils.NationType import NationType
 from DataAccess import DataAccess
-from PyQt5.QtCore import pyqtSlot
+from PyQt5.QtCore import pyqtSignal, pyqtSlot, QObject
 from Borders import Borders
 from Nation import Nation
 from Nations import Nations
@@ -11,8 +11,9 @@ from utils.Ressources import Ressources
 from utils.BuildingType import BuildingType
 
 
-class Game:
+class Game(QObject):
     def __init__(self) -> None:
+        super().__init__()
         self.dataAccess = DataAccess()
         self.__updatesData = self.dataAccess.updates()
         self.__bordersData = self.dataAccess.borders()
@@ -56,6 +57,10 @@ class Game:
         self.points = Points.from_dict(self.__pointsData)
 
         self.ages = Ages(self.__agesData)
+
+    @pyqtSlot()
+    def stopGame(self):
+        self.serialize()
 
     @pyqtSlot(int)
     def applyRessourceDividends(self, rounds: int = 1):
