@@ -134,6 +134,7 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
     def updateBritions(self, nation: Nation):
         self.britons_points_label.setText(str(nation.getPoints())) 
         self.britons_age_label.setText(str(nation.age.value))
+        self.britons_villagers_label.setText(str(nation.villagers))
         self.britons_food_label.setText(str(nation.ressources.food))
         self.britons_wood_label.setText(str(nation.ressources.wood))
         self.britons_stone_label.setText(str(nation.ressources.stone))
@@ -157,6 +158,7 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
     def updateVikings(self, nation: Nation):
         self.vikings_points_label.setText(str(nation.getPoints())) 
         self.vikings_age_label.setText(str(nation.age.value))
+        self.vikings_villagers_label.setText(str(nation.villagers))
         self.vikings_food_label.setText(str(nation.ressources.food))
         self.vikings_wood_label.setText(str(nation.ressources.wood))
         self.vikings_stone_label.setText(str(nation.ressources.stone))
@@ -180,6 +182,7 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
     def updateChinese(self, nation: Nation):
         self.chinese_points_label.setText(str(nation.getPoints())) 
         self.chinese_age_label.setText(str(nation.age.value))
+        self.chinese_villagers_label.setText(str(nation.villagers))
         self.chinese_food_label.setText(str(nation.ressources.food))
         self.chinese_wood_label.setText(str(nation.ressources.wood))
         self.chinese_stone_label.setText(str(nation.ressources.stone))
@@ -203,6 +206,7 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
     def updateMongols(self, nation: Nation):
         self.mongols_points_label.setText(str(nation.getPoints())) 
         self.mongols_age_label.setText(str(nation.age.value))
+        self.mongols_villagers_label.setText(str(nation.villagers))
         self.mongols_food_label.setText(str(nation.ressources.food))
         self.mongols_wood_label.setText(str(nation.ressources.wood))
         self.mongols_stone_label.setText(str(nation.ressources.stone))
