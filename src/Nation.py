@@ -117,7 +117,7 @@ class Nation:
     
     def serialize(self) -> dict:
         nationsData = {}
-        nationsData['points'] = self.points
+        nationsData['points'] = self.__points
         nationsData['updates'] = [update.value for update in self.updates]
         nationsData['age'] = self.age.value
         nationsData['fields'] = [str(field) for field in self.fields]

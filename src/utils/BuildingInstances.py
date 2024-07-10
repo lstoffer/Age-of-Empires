@@ -13,6 +13,20 @@ class BuildingInstances:
         self.castle = castle
         self.university = university
 
+    def get(self, buildingType: BuildingType):
+        if buildingType == BuildingType.TOWNCENTER:
+            return self.towncenter
+        elif buildingType == BuildingType.MARKET:
+            return self.market
+        elif buildingType == BuildingType.BARRACKS:
+            return self.barracks
+        elif buildingType == BuildingType.WALL:
+            return self.wall
+        elif buildingType == BuildingType.CASTLE:
+            return self.castle
+        elif buildingType == BuildingType.UNIVERSITY:
+            return self.university
+
     @classmethod
     def from_dict(cls, dict):
         towncenter = Building.from_dict(dict[BuildingType.TOWNCENTER.value])

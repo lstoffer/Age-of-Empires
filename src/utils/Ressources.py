@@ -33,6 +33,10 @@ class Ressources:
             return self.stone
         elif ressourceType == RessourceType.GOLD:
             return self.gold
+        
+    def isSufficient(self, costs) -> bool:
+        if isinstance(costs, Ressources):
+            return self.food >= costs.food and self.wood >= costs.woood and self.stone >= costs.stone and self.gold >= costs.gold
     
     def __add__(self, other):
         if isinstance(other, Ressources):

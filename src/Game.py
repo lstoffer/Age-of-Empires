@@ -99,12 +99,20 @@ class Game(QObject):
             return # TODO: ERROR MESSAGE
         if fieldInstance.getNation() != nationType:
             return # TODO: ERROR MESSAGE
+        nation = self.nations.getNation(nationType)
+        costs = nation.villagerInstance.cost
+        if not nation.ressources.isSufficient(costs):
+            return # TODO: ERROR MESSAGE
         fieldInstance.villagers += amount
         
     @pyqtSlot(NationType, int, BuildingType)
     def buildBuilding(self, nationType: NationType, field: int, buildingType: BuildingType):
         fieldInstance = self.fields[field]
         if fieldInstance.getNation() != nationType:
+            return # TODO: ERROR MESSAGE
+        nation = self.nations.getNation(nationType)
+        costs = nation.buildingInstances.get(buildingType).cost
+        if not nation.ressources.isSufficient(costs):
             return # TODO: ERROR MESSAGE
         fieldInstance.buildings.add(buildingType, 1)
 
