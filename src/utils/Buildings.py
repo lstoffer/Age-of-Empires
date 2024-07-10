@@ -15,31 +15,31 @@ class Buildings:
 
     def getBuilding(self, buildingType: BuildingType):
         if buildingType == BuildingType.TOWNCENTER:
-            return self.buildings.towncenter
+            return self.towncenter
         elif buildingType == BuildingType.MARKET:
-            return self.buildings.market
+            return self.market
         elif buildingType == BuildingType.BARRACKS:
-            return self.buildings.barracks
+            return self.barracks
         elif buildingType == BuildingType.WALL:
-            return self.buildings.wall
+            return self.wall
         elif buildingType == BuildingType.CASTLE:
-            return self.buildings.castle
+            return self.castle
         elif buildingType == BuildingType.UNIVERSITY:
-            return self.buildings.university
+            return self.university
 
     def add(self, buildingType: BuildingType, amount: int = 1):
         if buildingType == BuildingType.TOWNCENTER:
-            self.buildings.towncenter += amount
+            self.towncenter += amount
         elif buildingType == BuildingType.MARKET:
-            self.buildings.market += amount
+            self.market += amount
         elif buildingType == BuildingType.BARRACKS:
-            self.buildings.barracks += amount
+            self.barracks += amount
         elif buildingType == BuildingType.WALL:
-            self.buildings.wall += amount
+            self.wall += amount
         elif buildingType == BuildingType.CASTLE:
-            self.buildings.castle += amount
+            self.castle += amount
         elif buildingType == BuildingType.UNIVERSITY:
-            self.buildings.university += amount
+            self.university += amount
 
     def remove(self, buidingType: BuildingType, amount: int = 1):
         self.add(buidingType, -amount)
