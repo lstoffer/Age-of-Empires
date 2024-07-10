@@ -133,7 +133,7 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
 
     def updateBritions(self, nation: Nation):
         self.britons_points_label = nation.getPoints()
-        self.britons_age_label = nation.age.value()
+        self.britons_age_label = nation.age.value
         self.britons_food_label = nation.ressources.food
         self.britons_wood_label = nation.ressources.wood
         self.britons_stone_label = nation.ressources.stone
