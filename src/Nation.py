@@ -89,11 +89,13 @@ class Nation:
         # nationPoints = points.ages[self.age] TODO
         # nationPoints += points.field * len(self.fields)
         nationPoints = 0
+        # Troop Points
         nationPoints += self.troops.archer * self.troopInstances.archer.points
         nationPoints += self.troops.infantry * self.troopInstances.infantry.points
         nationPoints += self.troops.cavalry * self.troopInstances.cavalry.points
         nationPoints += self.troops.siege * self.troopInstances.siege.points
         nationPoints += self.villagers * self.villagerInstance.points
+        # Building Points
         nationPoints += self.buildings.towncenter * self.buildingInstances.towncenter.points
         nationPoints += self.buildings.market * self.buildingInstances.market.points
         nationPoints += self.buildings.barracks * self.buildingInstances.barracks.points
