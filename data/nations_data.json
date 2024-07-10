@@ -22,9 +22,9 @@
       "wall": 0,
       "barracks": 0,
       "market": 0,
-      "towncenter": 0
+      "towncenter": 1
     },
-    "villagers": 0
+    "villagers": 6
   },
   "vikings": {
     "points": 0,
@@ -49,9 +49,9 @@
       "wall": 0,
       "barracks": 0,
       "market": 0,
-      "towncenter": 0
+      "towncenter": 1
     },
-    "villagers": 0
+    "villagers": 6
   },
   "chinese": {
     "points": 0,
@@ -76,9 +76,9 @@
       "wall": 0,
       "barracks": 0,
       "market": 0,
-      "towncenter": 0
+      "towncenter": 1
     },
-    "villagers": 0
+    "villagers": 6
   },
   "mongols": {
     "points": 0,
@@ -103,8 +103,8 @@
       "wall": 0,
       "barracks": 0,
       "market": 0,
-      "towncenter": 0
+      "towncenter": 1
     },
-    "villagers": 0
+    "villagers": 6
   }
 }
