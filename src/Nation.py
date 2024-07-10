@@ -94,6 +94,12 @@ class Nation:
         nationPoints += self.troops.cavalry * self.troopInstances.cavalry.points
         nationPoints += self.troops.siege * self.troopInstances.siege.points
         nationPoints += self.villagers * self.villagerInstance.points
+        nationPoints += self.buildings.towncenter * self.buildingInstances.towncenter.points
+        nationPoints += self.buildings.market * self.buildingInstances.market.points
+        nationPoints += self.buildings.barracks * self.buildingInstances.barracks.points
+        nationPoints += self.buildings.wall * self.buildingInstances.wall.points
+        nationPoints += self.buildings.castle * self.buildingInstances.castle.points
+        nationPoints += self.buildings.university * self.buildingInstances.university.points
         self.__points = nationPoints
         return nationPoints
     
