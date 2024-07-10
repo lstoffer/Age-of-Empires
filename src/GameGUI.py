@@ -13,7 +13,7 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
     stopGame = pyqtSignal()
     
     # Ressources
-    addRessources = pyqtSignal(Ressources, NationType)
+    addRessources = pyqtSignal(NationType, Ressources)
     applyDividends = pyqtSignal(int)
 
     # Villagers
@@ -74,7 +74,7 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
         gold = self.stone_add_sub_spinBox.value()
         nation = NationType(self.nation_select_comboBox.currentData())
         ressources = Ressources(food, wood, stone, gold)
-        self.addRessources.emit(ressources, nation)
+        self.addRessources.emit(nation, ressources)
 
     def onRessourcesSubClick(self):
         food = self.food_add_sub_spinBox.value()
