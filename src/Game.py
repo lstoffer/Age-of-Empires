@@ -8,6 +8,7 @@ from Fields import Fields
 from Points import Points
 from Ages import Ages
 from utils.Ressources import Ressources
+from utils.BuildingType import BuildingType
 
 
 class Game:
@@ -73,6 +74,43 @@ class Game:
         nation = self.nations.getNation(nationType)
         nation.addRessources(ressources)
 
+    @pyqtSlot(NationType, int, int, int)
+    def moveVillagers(self, nationType: NationType, amount: int, fromField: int, toField: int):
+        fromFieldInstance = self.fields[fromField]
+        toFieldInstance = self.fields[toField]
+        if fromFieldInstance.getNation() != nationType or toFieldInstance.getNation() != nationType:
+            return # TODO: ERROR MESSAGE
+        if fromFieldInstance.getVillager() < amount:
+            return # TODO: ERROR MESSAGE
+        if not self.borders.checkNeighbour(fromFieldInstance, toFieldInstance):
+            return # TODO: ERROR MESSAGE
+        fromFieldInstance.villagers -= amount
+        toFieldInstance.villagers += amount
+        
+    @pyqtSlot(NationType, int, int)
+    def developVillagers(self, nationType: NationType, field: int, amount: int):
+        fieldInstance = self.fields[field]
+        if fieldInstance.buildings.towncenter <= 0:
+            return # TODO: ERROR MESSAGE
+        if fieldInstance.getNation() != nationType:
+            return # TODO: ERROR MESSAGE
+        fieldInstance.villagers += amount
+        
+    @pyqtSlot(NationType, int, BuildingType)
+    def buildBuilding(self, nationType: NationType, field: int, buildingType: BuildingType):
+        fieldInstance = self.fields[field]
+        if fieldInstance.getNation() != nationType:
+            return # TODO: ERROR MESSAGE
+        fieldInstance.buildings.add(buildingType, 1)
+
+    @pyqtSlot(NationType, int, BuildingType)
+    def destroyBuilding(self, nationType: NationType, field: int, buildingType: BuildingType):
+        fieldInstance = self.fields[field]
+        if fieldInstance.getNation() != nationType:
+            return # TODO: ERROR MESSAGE
+        if fieldInstance.buildings.getBuilding(buildingType) <= 0:
+            return # TODO: ERROR MESSAGE
+        fieldInstance.buildings.remove(buildingType, 1)
 
     def serialize(self):
         bordersData = self.borders.serialize()

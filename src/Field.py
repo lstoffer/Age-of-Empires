@@ -1,5 +1,6 @@
 from utils.RessourceType import RessourceType
 from utils.NationType import NationType
+from utils.BuildingType import BuildingType
 from utils.Troops import Troops
 from utils.Buildings import Buildings
 

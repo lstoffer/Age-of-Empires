@@ -13,6 +13,11 @@ class GamePresenter:
         self.gui.addRessources.connect(self.model.addRessources)
         self.gui.applyDividends.connect(self.model.applyRessourceDividends)
 
+        self.gui.moveVillagers.connect(self.model.moveVillagers)
+        self.gui.developVillagers.connect(self.model.developVillagers)
+
+        self.gui.buildBuilding.connect(self.model.buildBuilding)
+        self.gui.destroyBuilding.connect(self.model.destroyBuilding)
 
         self.gui.show()
         app.exec()

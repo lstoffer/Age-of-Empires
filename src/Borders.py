@@ -9,6 +9,12 @@ class Borders:
             for outerKey, outerValue in borders.items()
         }
 
+    def checkNeighbour(self, fieldOne: int, fieldTwo: int) -> bool:
+        if fieldTwo in self.borders[fieldOne] and fieldOne in self.borders[fieldTwo]:
+            return True
+        else:
+            return False
+
     def getBorder(self, fieldOne: int, fieldTwo: int) -> Optional[NationType]:
         return self.borders[fieldOne][fieldTwo]
 
