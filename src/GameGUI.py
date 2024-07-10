@@ -179,7 +179,7 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
 
     def updateChinese(self, nation: Nation):
         self.chinese_points_label = nation.getPoints()
-        self.chinese_age_label = nation.age.value()
+        self.chinese_age_label = nation.age.value
         self.chinese_food_label = nation.ressources.food
         self.chinese_wood_label = nation.ressources.wood
         self.chinese_stone_label = nation.ressources.stone
