@@ -83,7 +83,7 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
         gold = self.stone_add_sub_spinBox.value()
         nation = NationType(self.nation_select_comboBox.currentData())
         ressources = Ressources(-food, -wood, -stone, -gold)
-        self.addRessources.emit(ressources, nation)
+        self.addRessources.emit(nation, ressources)
 
     def onRessourceDividendsClick(self):
         rounds = self.ressources_dividends_spinBox.value()
