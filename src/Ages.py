@@ -1,6 +1,7 @@
 from typing import Optional
 from utils.AgeType import AgeType
 from Age import Age
+from utils.Ressources import Ressources
 
 
 class Ages:
@@ -11,6 +12,9 @@ class Ages:
 
     def nextAge(self, age: AgeType) -> Optional[AgeType]:
         return self.ages[age].nextAge
+    
+    def nextAgeCost(self, age: AgeType) -> Ressources:
+        return self.ages[age].costs
 
     def serialize(self):
         ages = {

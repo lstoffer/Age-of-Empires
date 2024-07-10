@@ -21,6 +21,8 @@ class GamePresenter:
 
         self.gui.stopGame.connect(self.model.stopGame)
 
+        self.gui.updateAge.connect(self.model.updateAge)
+
         self.gui.show()
         app.exec()
 

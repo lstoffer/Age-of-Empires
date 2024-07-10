@@ -125,6 +125,19 @@ class Game(QObject):
             return # TODO: ERROR MESSAGE
         fieldInstance.buildings.remove(buildingType, 1)
 
+    @pyqtSlot(NationType)
+    def updateAge(self, nationType: NationType):
+        nation = self.nations.getNation(nationType)
+        currentAge = nation.age
+        nextAge = self.ages.nextAge(currentAge)
+        costs = self.ages.nextAgeCost(nextAge)
+
+        if not nation.ressources.isSufficient(costs):
+            return # TODO: ERROR MESSAGE
+        # TODO add check for buildings
+        
+        nation.age = nextAge
+
     def serialize(self):
         bordersData = self.borders.serialize()
         fieldsData = self.fields.serialize()

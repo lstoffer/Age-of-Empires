@@ -24,6 +24,8 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
     buildBuilding = pyqtSignal(NationType, int, BuildingType)
     destroyBuilding = pyqtSignal(NationType, int, BuildingType)
 
+    updateAge = pyqtSignal(NationType)
+
     def __init__(self, parent=None) -> None:
         super().__init__(parent)
         self.setupUi(self)
@@ -41,6 +43,9 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
         #Buildings
         self.buildings_build_btn.clicked.connect(self.onBuildingsBuildClick)
         self.buildings_destroy_btn.clicked.connect(self.onBuildingsDestroyClick)
+
+        # Ages
+        self.ages_update_btn.clicked.connect(self.onAgeUpdateClick)
         
 
     def closeEvent(self, event):
@@ -89,25 +94,29 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
         amount = self.villagers_move_amount_spinBox.value()
         fromField = self.villagers_move_from_spinBox.value()
         toField = self.villagers_move_to_spinBox.value()
-        self.moveVillagers(nation, amount, fromField, toField)
+        self.moveVillagers.emit(nation, amount, fromField, toField)
 
     def onVillagersDevelopClick(self):
         nation = NationType(self.nation_select_comboBox.currentData())
         amount = self.villagers_develop_amount_spinBox.value()
         field = self.villagers_develop_field_spinBox.value()
-        self.developVillagers(nation, field, amount)
+        self.developVillagers.emit(nation, field, amount)
 
     def onBuildingsBuildClick(self):
         nation = NationType(self.nation_select_comboBox.currentData())
         field = self.buildings_field_select_spinBox.value()
         buildingType = BuildingType(self.buildings_type_comboBox.currentData())
-        self.buildBuilding(nation, field, buildingType)
+        self.buildBuilding.emit(nation, field, buildingType)
 
     def onBuildingsDestroyClick(self):
         nation = NationType(self.nation_select_comboBox.currentData())
         field = self.buildings_field_select_spinBox.value()
         buildingType = BuildingType(self.buildings_type_comboBox.currentData())
         self.destroyBuilding(nation, field, buildingType)
+
+    def onAgeUpdateClick(self):
+        nation = NationType(self.nation_select_comboBox.currentData())
+        self.updateAge.emit(nation)
 
     
     @pyqtSlot(NationType, Nation)
