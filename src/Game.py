@@ -123,6 +123,7 @@ class Game(QObject):
         if not nation.ressources.isSufficient(costs):
             return # TODO: ERROR MESSAGE
         fieldInstance.buildings.add(buildingType, 1)
+        nation.buildings.add(buildingType, 1)
 
     @pyqtSlot(NationType, int, BuildingType)
     def destroyBuilding(self, nationType: NationType, field: int, buildingType: BuildingType):

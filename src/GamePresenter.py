@@ -28,6 +28,8 @@ class GamePresenter:
         try:
             self.gui.show()
             app.exec()
+
+            self.model.updateNations()
         except Exception:
             self.model.serialize()
 
