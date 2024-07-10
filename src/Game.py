@@ -72,6 +72,8 @@ class Game(QObject):
             ressourceType = field.ressource
             villagersAmount = field.villagers
             nationType = field.nation
+            if nationType == NationType.NONE:
+                continue
             nation = self.nations.getNation(nationType)
             amount = villagersAmount * nation.villagerInstance.profit.get(ressourceType)
             amount = amount * rounds
