@@ -156,7 +156,7 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
 
     def updateVikings(self, nation: Nation):
         self.vikings_points_label = nation.getPoints()
-        self.vikings_age_label = nation.age.value()
+        self.vikings_age_label = nation.age.value
         self.vikings_food_label = nation.ressources.food
         self.vikings_wood_label = nation.ressources.wood
         self.vikings_stone_label = nation.ressources.stone
@@ -202,7 +202,7 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
 
     def updateMongols(self, nation: Nation):
         self.mongols_points_label = nation.getPoints()
-        self.mongols_age_label = nation.age.value()
+        self.mongols_age_label = nation.age.value
         self.mongols_food_label = nation.ressources.food
         self.mongols_wood_label = nation.ressources.wood
         self.mongols_stone_label = nation.ressources.stone
