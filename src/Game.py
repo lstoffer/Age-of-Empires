@@ -88,32 +88,35 @@ class Game(QObject):
     def moveVillagers(self, nationType: NationType, amount: int, fromField: int, toField: int):
         fromFieldInstance = self.fields[fromField]
         toFieldInstance = self.fields[toField]
-        if fromFieldInstance.getNation() != nationType or toFieldInstance.getNation() != nationType:
+        if fromFieldInstance.getNation() != nationType or toFieldInstance.getNation() not in [nationType, NationType.NONE]:
             return # TODO: ERROR MESSAGE
         if fromFieldInstance.getVillager() < amount:
             return # TODO: ERROR MESSAGE
-        if not self.borders.checkNeighbour(fromFieldInstance, toFieldInstance):
-            return # TODO: ERROR MESSAGE
+        # if not self.borders.checkNeighbour(fromFieldInstance, toFieldInstance): TODO
+        #     return # TODO: ERROR MESSAGE
         fromFieldInstance.villagers -= amount
         toFieldInstance.villagers += amount
+        toFieldInstance.nation = nationType
         
     @pyqtSlot(NationType, int, int)
     def developVillagers(self, nationType: NationType, field: int, amount: int):
         fieldInstance = self.fields[field]
-        if fieldInstance.buildings.towncenter <= 0:
-            return # TODO: ERROR MESSAGE
-        if fieldInstance.getNation() != nationType:
+        # if fieldInstance.buildings.towncenter <= 0:
+        #     return # TODO: ERROR MESSAGE
+        if fieldInstance.getNation() not in [nationType, NationType.NONE]:
             return # TODO: ERROR MESSAGE
         nation = self.nations.getNation(nationType)
         costs = nation.villagerInstance.cost
         if not nation.ressources.isSufficient(costs):
+            return # TODO: ERROR MESSAGE
+        if nation.buildings.towncenter < 1:
             return # TODO: ERROR MESSAGE
         fieldInstance.villagers += amount
         
     @pyqtSlot(NationType, int, BuildingType)
     def buildBuilding(self, nationType: NationType, field: int, buildingType: BuildingType):
         fieldInstance = self.fields[field]
-        if fieldInstance.getNation() != nationType:
+        if fieldInstance.getNation() not in [nationType, NationType.NONE]:
             return # TODO: ERROR MESSAGE
         nation = self.nations.getNation(nationType)
         costs = nation.buildingInstances.get(buildingType).cost
