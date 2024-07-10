@@ -28,4 +28,5 @@ class GamePresenter:
         self.gui.show()
         app.exec()
 
+
 GamePresenter()
