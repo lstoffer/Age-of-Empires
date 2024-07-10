@@ -132,93 +132,93 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
             self.updateMongols(nation)
 
     def updateBritions(self, nation: Nation):
-        self.britons_points_label = nation.getPoints()
-        self.britons_age_label = nation.age.value
-        self.britons_food_label = nation.ressources.food
-        self.britons_wood_label = nation.ressources.wood
-        self.britons_stone_label = nation.ressources.stone
-        self.britons_gold_label = nation.ressources.gold
-        self.britons_archer_label = nation.troops.archer
-        self.britons_infantry_label = nation.troops.infantry
-        self.britons_cavalry_label = nation.troops.cavalry
-        self.britons_siege_label = nation.troops.siege
-        self.britons_towncenter_label = nation.buildings.towncenter
-        self.britons_market_label = nation.buildings.market
-        self.britons_barracks_label = nation.buildings.barracks
-        self.britons_wall_label = nation.buildings.wall
-        self.britons_castle_label = nation.buildings.castle
-        self.britons_universtity_label = nation.buildings.university
+        self.britons_points_label.setText(str(nation.getPoints())) 
+        self.britons_age_label.setText(str(nation.age.value))
+        self.britons_food_label.setText(str(nation.ressources.food))
+        self.britons_wood_label.setText(str(nation.ressources.wood))
+        self.britons_stone_label.setText(str(nation.ressources.stone))
+        self.britons_gold_label.setText(str(nation.ressources.gold))
+        self.britons_archer_label.setText(str(nation.troops.archer))
+        self.britons_infantry_label.setText(str(nation.troops.infantry))
+        self.britons_cavalry_label.setText(str(nation.troops.cavalry))
+        self.britons_siege_label.setText(str(nation.troops.siege))
+        self.britons_towncenter_label.setText(str(nation.buildings.towncenter))
+        self.britons_market_label.setText(str(nation.buildings.market))
+        self.britons_barracks_label.setText(str(nation.buildings.barracks))
+        self.britons_wall_label.setText(str(nation.buildings.wall))
+        self.britons_castle_label.setText(str(nation.buildings.castle))
+        self.britons_universtity_label.setText(str(nation.buildings.university))
 
         for update in nation.updates:
-            self.britons_updates_list.addItem(update.value())
+            self.britons_updates_list.addItem(update.value)
         for field in nation.fields:
-            self.britons_fields_list.addItem(field)
+            self.britons_fields_list.addItem(str(field))
 
     def updateVikings(self, nation: Nation):
-        self.vikings_points_label = nation.getPoints()
-        self.vikings_age_label = nation.age.value
-        self.vikings_food_label = nation.ressources.food
-        self.vikings_wood_label = nation.ressources.wood
-        self.vikings_stone_label = nation.ressources.stone
-        self.vikings_gold_label = nation.ressources.gold
-        self.vikings_archer_label = nation.troops.archer
-        self.vikings_infantry_label = nation.troops.infantry
-        self.vikings_cavalry_label = nation.troops.cavalry
-        self.vikings_siege_label = nation.troops.siege
-        self.vikings_towncenter_label = nation.buildings.towncenter
-        self.vikings_market_label = nation.buildings.market
-        self.vikings_barracks_label = nation.buildings.barracks
-        self.vikings_wall_label = nation.buildings.wall
-        self.vikings_castle_label = nation.buildings.castle
-        self.vikings_universtity_label = nation.buildings.university
+        self.vikings_points_label.setText(str(nation.getPoints())) 
+        self.vikings_age_label.setText(str(nation.age.value))
+        self.vikings_food_label.setText(str(nation.ressources.food))
+        self.vikings_wood_label.setText(str(nation.ressources.wood))
+        self.vikings_stone_label.setText(str(nation.ressources.stone))
+        self.vikings_gold_label.setText(str(nation.ressources.gold))
+        self.vikings_archer_label.setText(str(nation.troops.archer))
+        self.vikings_infantry_label.setText(str(nation.troops.infantry))
+        self.vikings_cavalry_label.setText(str(nation.troops.cavalry))
+        self.vikings_siege_label.setText(str(nation.troops.siege))
+        self.vikings_towncenter_label.setText(str(nation.buildings.towncenter))
+        self.vikings_market_label.setText(str(nation.buildings.market))
+        self.vikings_barracks_label.setText(str(nation.buildings.barracks))
+        self.vikings_wall_label.setText(str(nation.buildings.wall))
+        self.vikings_castle_label.setText(str(nation.buildings.castle))
+        self.vikings_universtity_label.setText(str(nation.buildings.university))
 
         for update in nation.updates:
-            self.vikings_updates_list.addItem(update.value())
+            self.vikings_updates_list.addItem(update.value)
         for field in nation.fields:
-            self.vikings_fields_list.addItem(field)
+            self.vikings_fields_list.addItem(str(field))
 
     def updateChinese(self, nation: Nation):
-        self.chinese_points_label = nation.getPoints()
-        self.chinese_age_label = nation.age.value
-        self.chinese_food_label = nation.ressources.food
-        self.chinese_wood_label = nation.ressources.wood
-        self.chinese_stone_label = nation.ressources.stone
-        self.chinese_gold_label = nation.ressources.gold
-        self.chinese_archer_label = nation.troops.archer
-        self.chinese_infantry_label = nation.troops.infantry
-        self.chinese_cavalry_label = nation.troops.cavalry
-        self.chinese_siege_label = nation.troops.siege
-        self.chinese_towncenter_label = nation.buildings.towncenter
-        self.chinese_market_label = nation.buildings.market
-        self.chinese_barracks_label = nation.buildings.barracks
-        self.chinese_wall_label = nation.buildings.wall
-        self.chinese_castle_label = nation.buildings.castle
-        self.chinese_universtity_label = nation.buildings.university
+        self.chinese_points_label.setText(str(nation.getPoints())) 
+        self.chinese_age_label.setText(str(nation.age.value))
+        self.chinese_food_label.setText(str(nation.ressources.food))
+        self.chinese_wood_label.setText(str(nation.ressources.wood))
+        self.chinese_stone_label.setText(str(nation.ressources.stone))
+        self.chinese_gold_label.setText(str(nation.ressources.gold))
+        self.chinese_archer_label.setText(str(nation.troops.archer))
+        self.chinese_infantry_label.setText(str(nation.troops.infantry))
+        self.chinese_cavalry_label.setText(str(nation.troops.cavalry))
+        self.chinese_siege_label.setText(str(nation.troops.siege))
+        self.chinese_towncenter_label.setText(str(nation.buildings.towncenter))
+        self.chinese_market_label.setText(str(nation.buildings.market))
+        self.chinese_barracks_label.setText(str(nation.buildings.barracks))
+        self.chinese_wall_label.setText(str(nation.buildings.wall))
+        self.chinese_castle_label.setText(str(nation.buildings.castle))
+        self.chinese_universtity_label.setText(str(nation.buildings.university))
 
         for update in nation.updates:
-            self.chinese_updates_list.addItem(update.value())
+            self.chinese_updates_list.addItem(update.value)
         for field in nation.fields:
-            self.chinese_fields_list.addItem(field)
+            self.chinese_fields_list.addItem(str(field))
 
     def updateMongols(self, nation: Nation):
-        self.mongols_points_label = nation.getPoints()
-        self.mongols_age_label = nation.age.value
-        self.mongols_food_label = nation.ressources.food
-        self.mongols_wood_label = nation.ressources.wood
-        self.mongols_stone_label = nation.ressources.stone
-        self.mongols_gold_label = nation.ressources.gold
-        self.mongols_archer_label = nation.troops.archer
-        self.mongols_infantry_label = nation.troops.infantry
-        self.mongols_cavalry_label = nation.troops.cavalry
-        self.mongols_siege_label = nation.troops.siege
-        self.mongols_towncenter_label = nation.buildings.towncenter
-        self.mongols_market_label = nation.buildings.market
-        self.mongols_barracks_label = nation.buildings.barracks
-        self.mongols_wall_label = nation.buildings.wall
-        self.mongols_castle_label = nation.buildings.castle
-        self.mongols_universtity_label = nation.buildings.university
+        self.mongols_points_label.setText(str(nation.getPoints())) 
+        self.mongols_age_label.setText(str(nation.age.value))
+        self.mongols_food_label.setText(str(nation.ressources.food))
+        self.mongols_wood_label.setText(str(nation.ressources.wood))
+        self.mongols_stone_label.setText(str(nation.ressources.stone))
+        self.mongols_gold_label.setText(str(nation.ressources.gold))
+        self.mongols_archer_label.setText(str(nation.troops.archer))
+        self.mongols_infantry_label.setText(str(nation.troops.infantry))
+        self.mongols_cavalry_label.setText(str(nation.troops.cavalry))
+        self.mongols_siege_label.setText(str(nation.troops.siege))
+        self.mongols_towncenter_label.setText(str(nation.buildings.towncenter))
+        self.mongols_market_label.setText(str(nation.buildings.market))
+        self.mongols_barracks_label.setText(str(nation.buildings.barracks))
+        self.mongols_wall_label.setText(str(nation.buildings.wall))
+        self.mongols_castle_label.setText(str(nation.buildings.castle))
+        self.mongols_universtity_label.setText(str(nation.buildings.university))
 
         for update in nation.updates:
-            self.mongols_updates_list.addItem(update.value())
+            self.mongols_updates_list.addItem(update.value)
         for field in nation.fields:
-            self.mongols_fields_list.addItem(field)
+            self.mongols_fields_list.addItem(str(field))
