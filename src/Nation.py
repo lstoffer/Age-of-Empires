@@ -86,7 +86,7 @@ class Nation:
         return archerDef + infantryDef + cavalryDef
     
     def getPoints(self, points: Points) -> int:
-        # nationPoints = points.ages[self.age]
+        # nationPoints = points.ages[self.age] TODO
         # nationPoints += points.field * len(self.fields)
         nationPoints += self.troops.archer * self.troopInstances.archer.points
         nationPoints += self.troops.infantry * self.troopInstances.infantry.points

@@ -25,8 +25,11 @@ class GamePresenter:
 
         self.gui.updateAge.connect(self.model.updateAge)
 
-        self.gui.show()
-        app.exec()
+        try:
+            self.gui.show()
+            app.exec()
+        except Exception:
+            self.model.serialize()
 
 
 GamePresenter()
