@@ -117,16 +117,32 @@
                       </widget>
                      </item>
                      <item row="0" column="1">
-                      <widget class="QSpinBox" name="food_add_sub_spinBox"/>
+                      <widget class="QSpinBox" name="food_add_sub_spinBox">
+                       <property name="maximum">
+                        <number>1000</number>
+                       </property>
+                      </widget>
                      </item>
                      <item row="1" column="1">
-                      <widget class="QSpinBox" name="wood_add_sub_spinBox"/>
+                      <widget class="QSpinBox" name="wood_add_sub_spinBox">
+                       <property name="maximum">
+                        <number>1000</number>
+                       </property>
+                      </widget>
                      </item>
                      <item row="2" column="1">
-                      <widget class="QSpinBox" name="stone_add_sub_spinBox"/>
+                      <widget class="QSpinBox" name="stone_add_sub_spinBox">
+                       <property name="maximum">
+                        <number>1000</number>
+                       </property>
+                      </widget>
                      </item>
                      <item row="3" column="1">
-                      <widget class="QSpinBox" name="gold_add_sub_spinBox"/>
+                      <widget class="QSpinBox" name="gold_add_sub_spinBox">
+                       <property name="maximum">
+                        <number>1000</number>
+                       </property>
+                      </widget>
                      </item>
                     </layout>
                    </item>
@@ -216,7 +232,7 @@
                  <x>0</x>
                  <y>0</y>
                  <width>1036</width>
-                 <height>785</height>
+                 <height>745</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_5">
@@ -243,10 +259,18 @@
                       </widget>
                      </item>
                      <item row="1" column="1">
-                      <widget class="QSpinBox" name="villagers_develop_amount_spinBox"/>
+                      <widget class="QSpinBox" name="villagers_develop_amount_spinBox">
+                       <property name="maximum">
+                        <number>1000</number>
+                       </property>
+                      </widget>
                      </item>
                      <item row="0" column="1">
-                      <widget class="QSpinBox" name="villagers_develop_field_spinBox"/>
+                      <widget class="QSpinBox" name="villagers_develop_field_spinBox">
+                       <property name="maximum">
+                        <number>1000</number>
+                       </property>
+                      </widget>
                      </item>
                     </layout>
                    </item>
@@ -290,13 +314,25 @@
                       </widget>
                      </item>
                      <item row="0" column="1">
-                      <widget class="QSpinBox" name="villagers_move_amount_spinBox"/>
+                      <widget class="QSpinBox" name="villagers_move_amount_spinBox">
+                       <property name="maximum">
+                        <number>1000</number>
+                       </property>
+                      </widget>
                      </item>
                      <item row="2" column="1">
-                      <widget class="QSpinBox" name="villagers_move_from_spinBox"/>
+                      <widget class="QSpinBox" name="villagers_move_from_spinBox">
+                       <property name="maximum">
+                        <number>1000</number>
+                       </property>
+                      </widget>
                      </item>
                      <item row="3" column="1">
-                      <widget class="QSpinBox" name="villagers_move_to_spinBox"/>
+                      <widget class="QSpinBox" name="villagers_move_to_spinBox">
+                       <property name="maximum">
+                        <number>1000</number>
+                       </property>
+                      </widget>
                      </item>
                      <item row="1" column="0" colspan="2">
                       <widget class="Line" name="line_9">
@@ -352,7 +388,7 @@
                  <x>0</x>
                  <y>0</y>
                  <width>1036</width>
-                 <height>785</height>
+                 <height>745</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_9">
@@ -382,7 +418,11 @@
                       </widget>
                      </item>
                      <item row="1" column="1">
-                      <widget class="QSpinBox" name="troops_develop_amount_spinBox"/>
+                      <widget class="QSpinBox" name="troops_develop_amount_spinBox">
+                       <property name="maximum">
+                        <number>1000</number>
+                       </property>
+                      </widget>
                      </item>
                     </layout>
                    </item>
@@ -412,7 +452,11 @@
                       </widget>
                      </item>
                      <item row="0" column="1">
-                      <widget class="QSpinBox" name="troops_move_archer_amount_spinBox"/>
+                      <widget class="QSpinBox" name="troops_move_archer_amount_spinBox">
+                       <property name="maximum">
+                        <number>1000</number>
+                       </property>
+                      </widget>
                      </item>
                      <item row="1" column="0">
                       <widget class="QLabel" name="label_66">
@@ -422,7 +466,11 @@
                       </widget>
                      </item>
                      <item row="1" column="1">
-                      <widget class="QSpinBox" name="troops_move_infantry_amount_spinBox"/>
+                      <widget class="QSpinBox" name="troops_move_infantry_amount_spinBox">
+                       <property name="maximum">
+                        <number>1000</number>
+                       </property>
+                      </widget>
                      </item>
                      <item row="2" column="0">
                       <widget class="QLabel" name="label_67">
@@ -432,7 +480,11 @@
                       </widget>
                      </item>
                      <item row="2" column="1">
-                      <widget class="QSpinBox" name="troops_move_cavalry_amoutn_spinBox"/>
+                      <widget class="QSpinBox" name="troops_move_cavalry_amoutn_spinBox">
+                       <property name="maximum">
+                        <number>1000</number>
+                       </property>
+                      </widget>
                      </item>
                      <item row="3" column="0">
                       <widget class="QLabel" name="label_68">
@@ -442,7 +494,11 @@
                       </widget>
                      </item>
                      <item row="3" column="1">
-                      <widget class="QSpinBox" name="troops_move_siege_amount_spinBox"/>
+                      <widget class="QSpinBox" name="troops_move_siege_amount_spinBox">
+                       <property name="maximum">
+                        <number>1000</number>
+                       </property>
+                      </widget>
                      </item>
                      <item row="5" column="0">
                       <widget class="QLabel" name="label_62">
@@ -452,7 +508,11 @@
                       </widget>
                      </item>
                      <item row="5" column="1">
-                      <widget class="QSpinBox" name="troops_move_from_spinBox"/>
+                      <widget class="QSpinBox" name="troops_move_from_spinBox">
+                       <property name="maximum">
+                        <number>1000</number>
+                       </property>
+                      </widget>
                      </item>
                      <item row="6" column="0">
                       <widget class="QLabel" name="label_63">
@@ -462,7 +522,11 @@
                       </widget>
                      </item>
                      <item row="6" column="1">
-                      <widget class="QSpinBox" name="troops_move_to_spinBox"/>
+                      <widget class="QSpinBox" name="troops_move_to_spinBox">
+                       <property name="maximum">
+                        <number>1000</number>
+                       </property>
+                      </widget>
                      </item>
                      <item row="4" column="0" colspan="2">
                       <widget class="Line" name="line">
@@ -506,10 +570,18 @@
                       </widget>
                      </item>
                      <item row="0" column="1">
-                      <widget class="QSpinBox" name="troops_attack_from_spinBox"/>
+                      <widget class="QSpinBox" name="troops_attack_from_spinBox">
+                       <property name="maximum">
+                        <number>1000</number>
+                       </property>
+                      </widget>
                      </item>
                      <item row="1" column="1">
-                      <widget class="QSpinBox" name="troops_attack_to_spinBox"/>
+                      <widget class="QSpinBox" name="troops_attack_to_spinBox">
+                       <property name="maximum">
+                        <number>1000</number>
+                       </property>
+                      </widget>
                      </item>
                     </layout>
                    </item>
@@ -558,7 +630,7 @@
                  <x>0</x>
                  <y>0</y>
                  <width>1036</width>
-                 <height>785</height>
+                 <height>745</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_25">
@@ -588,7 +660,11 @@
                       <widget class="QComboBox" name="buildings_type_comboBox"/>
                      </item>
                      <item row="0" column="1">
-                      <widget class="QSpinBox" name="buildings_field_select_spinBox"/>
+                      <widget class="QSpinBox" name="buildings_field_select_spinBox">
+                       <property name="maximum">
+                        <number>1000</number>
+                       </property>
+                      </widget>
                      </item>
                     </layout>
                    </item>
@@ -653,7 +729,7 @@
                  <x>0</x>
                  <y>0</y>
                  <width>1036</width>
-                 <height>785</height>
+                 <height>745</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_30">
@@ -1819,7 +1895,7 @@
                  <x>0</x>
                  <y>0</y>
                  <width>1036</width>
-                 <height>857</height>
+                 <height>817</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_18">
