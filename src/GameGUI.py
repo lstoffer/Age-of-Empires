@@ -71,7 +71,7 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
         food = self.food_add_sub_spinBox.value()
         wood = self.wood_add_sub_spinBox.value()
         stone = self.stone_add_sub_spinBox.value()
-        gold = self.stone_add_sub_spinBox.value()
+        gold = self.gold_add_sub_spinBox.value()
         nation = NationType(self.nation_select_comboBox.currentData())
         ressources = Ressources(food, wood, stone, gold)
         self.addRessources.emit(nation, ressources)
