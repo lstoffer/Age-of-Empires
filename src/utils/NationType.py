@@ -6,3 +6,4 @@ class NationType(Enum):
     VIKINGS = 'vikings'
     CHINESE = 'chinese'
     MONGOLS = 'mongols'
+    NONE = ''

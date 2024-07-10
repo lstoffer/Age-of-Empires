@@ -1,15 +1,54 @@
 from PyQt5 import QtWidgets, QtCore
 from PyQt5.QtCore import pyqtSignal
 from PyQt5.QtCore import pyqtSlot
+from PyQt5.QtWidgets import QPushButton, QSpinBox, QComboBox
 from ui import GameUI
 from Nation import Nation
 from utils.NationType import NationType
+from utils.Ressources import Ressources
 
 class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
+    
+    addRessources = pyqtSignal(Ressources, NationType)
+    applyDividends = pyqtSignal(int)
+
     def __init__(self, parent=None) -> None:
         super().__init__(parent)
         self.setupUi(self)
+        self.ressources_add_btn.clicked.connect(self.onRssourcesAddClick)
+        self.ressources_sub_btn.clicked.connect(self.onRessourcesSubClick)
+        self.ressources_dividends_btn.clicked.connect(self.onRessourceDividendsClick)
 
+    def setupNationSelect(self):
+        self.nation_select_comboBox.addItem('Briten', 'britons')
+        self.nation_select_comboBox.addItem('Wikinger', 'vikings')
+        self.nation_select_comboBox.addItem('Chinesen', 'chinese')
+        self.nation_select_comboBox.addItem('Mongolen', 'mongols')
+    
+    def onRssourcesAddClick(self):
+        food = self.food_add_sub_spinBox.value()
+        wood = self.wood_add_sub_spinBox.value()
+        stone = self.stone_add_sub_spinBox.value()
+        gold = self.stone_add_sub_spinBox.value()
+        nation = NationType(self.nation_select_comboBox.currentData())
+        ressources = Ressources(food, wood, stone, gold)
+        self.addRessources.emit(ressources, nation)
+
+    def onRessourcesSubClick(self):
+        food = self.food_add_sub_spinBox.value()
+        wood = self.wood_add_sub_spinBox.value()
+        stone = self.stone_add_sub_spinBox.value()
+        gold = self.stone_add_sub_spinBox.value()
+        nation = NationType(self.nation_select_comboBox.currentData())
+        ressources = Ressources(-food, -wood, -stone, -gold)
+        self.addRessources.emit(ressources, nation)
+
+    def onRessourceDividendsClick(self):
+        rounds = self.ressources_dividends_spinBox.value()
+        nation = NationType(self.nation_select_comboBox.currentData())
+        self.applyDividends.emit(rounds)
+
+    
     @pyqtSlot(NationType, Nation)
     def updateNation(self, nationType: NationType, nation: Nation):
         if nationType == NationType.BRITONS:

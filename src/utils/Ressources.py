@@ -41,6 +41,13 @@ class Ressources:
                               self.stone + other.stone,
                               self.gold + other.gold)
         
+    def __mul__(self, scalar):
+        if isinstance(scalar, int):
+            return Ressources(self.food * scalar,
+                              self.wood * scalar,
+                              self.stone * scalar,
+                              self.gold * scalar)
+        
     def serialize(self) -> dict:
         ressourcesData = {}
         ressourcesData[RessourceType.FOOD.value] = self.food

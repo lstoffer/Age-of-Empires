@@ -9,6 +9,11 @@ class GamePresenter:
         app = QApplication(sys.argv)
         self.gui = GameGUI()
 
+
+        self.gui.addRessources.connect(self.model.addRessources)
+        self.gui.applyDividends.connect(self.model.applyRessourceDividends)
+
+
         self.gui.show()
         app.exec()
 

@@ -1,11 +1,13 @@
 from utils.NationType import NationType
 from DataAccess import DataAccess
+from PyQt5.QtCore import pyqtSlot
 from Borders import Borders
 from Nation import Nation
 from Nations import Nations
 from Fields import Fields
 from Points import Points
 from Ages import Ages
+from utils.Ressources import Ressources
 
 
 class Game:
@@ -54,7 +56,8 @@ class Game:
 
         self.ages = Ages(self.__agesData)
 
-    def applyRessourceDividends(self):
+    @pyqtSlot(int)
+    def applyRessourceDividends(self, rounds: int = 1):
         '''adds all ressources earned by all the villagers of a nation to the nation'''
         for field in self.fields.fields.values():
             ressourceType = field.ressource
@@ -62,7 +65,13 @@ class Game:
             nationType = field.nation
             nation = self.nations.getNation(nationType)
             amount = villagersAmount * nation.villagerInstance.profit.get(ressourceType)
+            amount = amount * rounds
             nation.ressources.add(ressourceType=ressourceType, amount=amount)
+
+    @pyqtSlot(NationType, Ressources)
+    def addRessources(self, nationType: NationType, ressources: Ressources):
+        nation = self.nations.getNation(nationType)
+        nation.addRessources(ressources)
 
 
     def serialize(self):
