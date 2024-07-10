@@ -31,6 +31,7 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
         self.setupUi(self)
         self.setupNationSelect()
         self.setupBuildingSelect()
+
         # Ressources
         self.ressources_add_btn.clicked.connect(self.onRssourcesAddClick)
         self.ressources_sub_btn.clicked.connect(self.onRessourcesSubClick)

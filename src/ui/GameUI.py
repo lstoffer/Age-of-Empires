@@ -19,6 +19,9 @@ class Ui_MainWindow(object):
         self.centralwidget.setObjectName("centralwidget")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.centralwidget)
         self.verticalLayout.setObjectName("verticalLayout")
+        self.refresh_btn = QtWidgets.QPushButton(self.centralwidget)
+        self.refresh_btn.setObjectName("refresh_btn")
+        self.verticalLayout.addWidget(self.refresh_btn)
         self.tabWidget = QtWidgets.QTabWidget(self.centralwidget)
         self.tabWidget.setTabPosition(QtWidgets.QTabWidget.North)
         self.tabWidget.setObjectName("tabWidget")
@@ -48,7 +51,7 @@ class Ui_MainWindow(object):
         self.scrollArea_4.setWidgetResizable(True)
         self.scrollArea_4.setObjectName("scrollArea_4")
         self.scrollAreaWidgetContents_5 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_5.setGeometry(QtCore.QRect(0, 0, 1036, 785))
+        self.scrollAreaWidgetContents_5.setGeometry(QtCore.QRect(0, 0, 1036, 745))
         self.scrollAreaWidgetContents_5.setObjectName("scrollAreaWidgetContents_5")
         self.verticalLayout_26 = QtWidgets.QVBoxLayout(self.scrollAreaWidgetContents_5)
         self.verticalLayout_26.setObjectName("verticalLayout_26")
@@ -1263,13 +1266,14 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
         self.tabWidget.setCurrentIndex(0)
-        self.tabWidget_3.setCurrentIndex(5)
+        self.tabWidget_3.setCurrentIndex(0)
         self.tabWidget_2.setCurrentIndex(3)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.refresh_btn.setText(_translate("MainWindow", "Aktualisieren"))
         self.nation_select_title.setText(_translate("MainWindow", "Nation"))
         self.groupBox_7.setTitle(_translate("MainWindow", "Vergeben / Abziehen"))
         self.label_71.setText(_translate("MainWindow", "Nahrung"))

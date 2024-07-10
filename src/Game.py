@@ -12,6 +12,9 @@ from utils.BuildingType import BuildingType
 
 
 class Game(QObject):
+
+    updateNation = pyqtSignal(NationType, Nation)
+
     def __init__(self) -> None:
         super().__init__()
         self.dataAccess = DataAccess()
@@ -137,6 +140,13 @@ class Game(QObject):
         # TODO add check for buildings
         
         nation.age = nextAge
+
+    @pyqtSlot()
+    def updateNations(self):
+        self.updateNation.emit(NationType.BRITONS, self.nations.britons)
+        self.updateNation.emit(NationType.VIKINGS, self.nations.vikings)
+        self.updateNation.emit(NationType.CHINESE, self.nations.chinese)
+        self.updateNation.emit(NationType.MONGOLS, self.nations.mongols)
 
     def serialize(self):
         bordersData = self.borders.serialize()

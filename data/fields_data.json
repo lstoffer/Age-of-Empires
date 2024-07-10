@@ -1,7 +1,7 @@
 {
   "111": {
     "index": 111,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -61,7 +61,7 @@
   },
   "114": {
     "index": 114,
-    "ressource": "food",
+    "ressource": "gold",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -81,7 +81,7 @@
   },
   "115": {
     "index": 115,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -101,7 +101,7 @@
   },
   "121": {
     "index": 121,
-    "ressource": "food",
+    "ressource": "stone",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -121,7 +121,7 @@
   },
   "122": {
     "index": 122,
-    "ressource": "food",
+    "ressource": "gold",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -141,7 +141,7 @@
   },
   "123": {
     "index": 123,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -161,7 +161,7 @@
   },
   "124": {
     "index": 124,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -201,7 +201,7 @@
   },
   "131": {
     "index": 131,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -221,7 +221,7 @@
   },
   "132": {
     "index": 132,
-    "ressource": "food",
+    "ressource": "gold",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -241,8 +241,8 @@
   },
   "133": {
     "index": 133,
-    "ressource": "food",
-    "nation": "",
+    "ressource": "stone",
+    "nation": "britons",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -257,11 +257,11 @@
       "market": 0,
       "towncenter": 0
     },
-    "villagers": 0
+    "villagers": 2
   },
   "134": {
     "index": 134,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -301,7 +301,7 @@
   },
   "141": {
     "index": 141,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -341,8 +341,8 @@
   },
   "143": {
     "index": 143,
-    "ressource": "food",
-    "nation": "",
+    "ressource": "wood",
+    "nation": "britons",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -355,14 +355,14 @@
       "wall": 0,
       "barracks": 0,
       "market": 0,
-      "towncenter": 0
+      "towncenter": 1
     },
     "villagers": 0
   },
   "144": {
     "index": 144,
-    "ressource": "food",
-    "nation": "",
+    "ressource": "gold",
+    "nation": "britons",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -377,7 +377,7 @@
       "market": 0,
       "towncenter": 0
     },
-    "villagers": 0
+    "villagers": 1
   },
   "145": {
     "index": 145,
@@ -401,7 +401,7 @@
   },
   "151": {
     "index": 151,
-    "ressource": "food",
+    "ressource": "gold",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -421,8 +421,8 @@
   },
   "152": {
     "index": 152,
-    "ressource": "food",
-    "nation": "",
+    "ressource": "wood",
+    "nation": "britons",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -437,12 +437,12 @@
       "market": 0,
       "towncenter": 0
     },
-    "villagers": 0
+    "villagers": 1
   },
   "153": {
     "index": 153,
     "ressource": "food",
-    "nation": "",
+    "nation": "britons",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -457,11 +457,11 @@
       "market": 0,
       "towncenter": 0
     },
-    "villagers": 0
+    "villagers": 2
   },
   "154": {
     "index": 154,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -481,7 +481,7 @@
   },
   "155": {
     "index": 155,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -501,7 +501,7 @@
   },
   "161": {
     "index": 161,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -541,7 +541,7 @@
   },
   "163": {
     "index": 163,
-    "ressource": "food",
+    "ressource": "gold",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -581,7 +581,7 @@
   },
   "165": {
     "index": 165,
-    "ressource": "food",
+    "ressource": "stone",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -601,7 +601,7 @@
   },
   "171": {
     "index": 171,
-    "ressource": "food",
+    "ressource": "stone",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -621,7 +621,7 @@
   },
   "172": {
     "index": 172,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -641,7 +641,7 @@
   },
   "173": {
     "index": 173,
-    "ressource": "food",
+    "ressource": "stone",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -661,7 +661,7 @@
   },
   "174": {
     "index": 174,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -681,7 +681,7 @@
   },
   "175": {
     "index": 175,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -721,7 +721,7 @@
   },
   "182": {
     "index": 182,
-    "ressource": "food",
+    "ressource": "gold",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -761,7 +761,7 @@
   },
   "184": {
     "index": 184,
-    "ressource": "food",
+    "ressource": "gold",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -801,7 +801,7 @@
   },
   "211": {
     "index": 211,
-    "ressource": "food",
+    "ressource": "gold",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -841,7 +841,7 @@
   },
   "213": {
     "index": 213,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -861,7 +861,7 @@
   },
   "214": {
     "index": 214,
-    "ressource": "food",
+    "ressource": "gold",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -881,7 +881,7 @@
   },
   "215": {
     "index": 215,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -921,7 +921,7 @@
   },
   "222": {
     "index": 222,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -941,7 +941,7 @@
   },
   "223": {
     "index": 223,
-    "ressource": "food",
+    "ressource": "stone",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -961,7 +961,7 @@
   },
   "224": {
     "index": 224,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -981,7 +981,7 @@
   },
   "225": {
     "index": 225,
-    "ressource": "food",
+    "ressource": "stone",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -1001,7 +1001,7 @@
   },
   "231": {
     "index": 231,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -1081,7 +1081,7 @@
   },
   "235": {
     "index": 235,
-    "ressource": "food",
+    "ressource": "gold",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -1101,7 +1101,7 @@
   },
   "241": {
     "index": 241,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -1121,7 +1121,7 @@
   },
   "242": {
     "index": 242,
-    "ressource": "food",
+    "ressource": "gold",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -1141,7 +1141,7 @@
   },
   "243": {
     "index": 243,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -1161,7 +1161,7 @@
   },
   "244": {
     "index": 244,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -1181,7 +1181,7 @@
   },
   "245": {
     "index": 245,
-    "ressource": "food",
+    "ressource": "stone",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -1221,8 +1221,8 @@
   },
   "252": {
     "index": 252,
-    "ressource": "food",
-    "nation": "",
+    "ressource": "wood",
+    "nation": "vikings",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1237,12 +1237,12 @@
       "market": 0,
       "towncenter": 0
     },
-    "villagers": 0
+    "villagers": 1
   },
   "253": {
     "index": 253,
-    "ressource": "food",
-    "nation": "",
+    "ressource": "gold",
+    "nation": "vikings",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1257,11 +1257,11 @@
       "market": 0,
       "towncenter": 0
     },
-    "villagers": 0
+    "villagers": 1
   },
   "254": {
     "index": 254,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -1281,7 +1281,7 @@
   },
   "255": {
     "index": 255,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -1301,7 +1301,7 @@
   },
   "261": {
     "index": 261,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -1321,8 +1321,8 @@
   },
   "262": {
     "index": 262,
-    "ressource": "food",
-    "nation": "",
+    "ressource": "stone",
+    "nation": "vikings",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1337,12 +1337,12 @@
       "market": 0,
       "towncenter": 0
     },
-    "villagers": 0
+    "villagers": 1
   },
   "263": {
     "index": 263,
     "ressource": "food",
-    "nation": "",
+    "nation": "vikings",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1355,14 +1355,14 @@
       "wall": 0,
       "barracks": 0,
       "market": 0,
-      "towncenter": 0
+      "towncenter": 1
     },
-    "villagers": 0
+    "villagers": 2
   },
   "264": {
     "index": 264,
-    "ressource": "food",
-    "nation": "",
+    "ressource": "gold",
+    "nation": "vikings",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -1377,11 +1377,11 @@
       "market": 0,
       "towncenter": 0
     },
-    "villagers": 0
+    "villagers": 1
   },
   "265": {
     "index": 265,
-    "ressource": "food",
+    "ressource": "stone",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -1401,7 +1401,7 @@
   },
   "271": {
     "index": 271,
-    "ressource": "food",
+    "ressource": "gold",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -1421,7 +1421,7 @@
   },
   "272": {
     "index": 272,
-    "ressource": "food",
+    "ressource": "stone",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -1441,7 +1441,7 @@
   },
   "273": {
     "index": 273,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -1481,7 +1481,7 @@
   },
   "275": {
     "index": 275,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -1521,7 +1521,7 @@
   },
   "282": {
     "index": 282,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -1541,7 +1541,7 @@
   },
   "283": {
     "index": 283,
-    "ressource": "food",
+    "ressource": "gold",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -1601,7 +1601,7 @@
   },
   "311": {
     "index": 311,
-    "ressource": "food",
+    "ressource": "stone",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -1621,7 +1621,7 @@
   },
   "312": {
     "index": 312,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -1641,7 +1641,7 @@
   },
   "313": {
     "index": 313,
-    "ressource": "food",
+    "ressource": "stone",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -1661,7 +1661,7 @@
   },
   "314": {
     "index": 314,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -1681,7 +1681,7 @@
   },
   "315": {
     "index": 315,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -1721,7 +1721,7 @@
   },
   "322": {
     "index": 322,
-    "ressource": "food",
+    "ressource": "gold",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -1761,7 +1761,7 @@
   },
   "324": {
     "index": 324,
-    "ressource": "food",
+    "ressource": "gold",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -1801,7 +1801,7 @@
   },
   "331": {
     "index": 331,
-    "ressource": "food",
+    "ressource": "stone",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -1821,7 +1821,7 @@
   },
   "332": {
     "index": 332,
-    "ressource": "food",
+    "ressource": "gold",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -1841,7 +1841,7 @@
   },
   "333": {
     "index": 333,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -1861,7 +1861,7 @@
   },
   "334": {
     "index": 334,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -1901,7 +1901,7 @@
   },
   "341": {
     "index": 341,
-    "ressource": "food",
+    "ressource": "stone",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -1921,7 +1921,7 @@
   },
   "342": {
     "index": 342,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -1961,7 +1961,7 @@
   },
   "344": {
     "index": 344,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -1981,7 +1981,7 @@
   },
   "345": {
     "index": 345,
-    "ressource": "food",
+    "ressource": "gold",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -2001,7 +2001,7 @@
   },
   "351": {
     "index": 351,
-    "ressource": "food",
+    "ressource": "gold",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -2021,7 +2021,7 @@
   },
   "352": {
     "index": 352,
-    "ressource": "food",
+    "ressource": "stone",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -2041,7 +2041,7 @@
   },
   "353": {
     "index": 353,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -2081,7 +2081,7 @@
   },
   "355": {
     "index": 355,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -2102,7 +2102,7 @@
   "361": {
     "index": 361,
     "ressource": "food",
-    "nation": "",
+    "nation": "chinese",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2117,12 +2117,12 @@
       "market": 0,
       "towncenter": 0
     },
-    "villagers": 0
+    "villagers": 2
   },
   "362": {
     "index": 362,
-    "ressource": "food",
-    "nation": "",
+    "ressource": "wood",
+    "nation": "chinese",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2135,13 +2135,13 @@
       "wall": 0,
       "barracks": 0,
       "market": 0,
-      "towncenter": 0
+      "towncenter": 1
     },
-    "villagers": 0
+    "villagers": 2
   },
   "363": {
     "index": 363,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -2161,7 +2161,7 @@
   },
   "364": {
     "index": 364,
-    "ressource": "food",
+    "ressource": "gold",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -2181,7 +2181,7 @@
   },
   "365": {
     "index": 365,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -2221,8 +2221,8 @@
   },
   "372": {
     "index": 372,
-    "ressource": "food",
-    "nation": "",
+    "ressource": "stone",
+    "nation": "chinese",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2237,11 +2237,11 @@
       "market": 0,
       "towncenter": 0
     },
-    "villagers": 0
+    "villagers": 2
   },
   "373": {
     "index": 373,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -2281,7 +2281,7 @@
   },
   "375": {
     "index": 375,
-    "ressource": "food",
+    "ressource": "gold",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -2301,7 +2301,7 @@
   },
   "381": {
     "index": 381,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -2361,7 +2361,7 @@
   },
   "384": {
     "index": 384,
-    "ressource": "food",
+    "ressource": "gold",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -2381,7 +2381,7 @@
   },
   "385": {
     "index": 385,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -2401,7 +2401,7 @@
   },
   "411": {
     "index": 411,
-    "ressource": "food",
+    "ressource": "gold",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -2421,7 +2421,7 @@
   },
   "412": {
     "index": 412,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -2481,7 +2481,7 @@
   },
   "415": {
     "index": 415,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -2501,7 +2501,7 @@
   },
   "421": {
     "index": 421,
-    "ressource": "food",
+    "ressource": "stone",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -2541,7 +2541,7 @@
   },
   "423": {
     "index": 423,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -2561,7 +2561,7 @@
   },
   "424": {
     "index": 424,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -2581,7 +2581,7 @@
   },
   "425": {
     "index": 425,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -2601,7 +2601,7 @@
   },
   "431": {
     "index": 431,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -2641,7 +2641,7 @@
   },
   "433": {
     "index": 433,
-    "ressource": "food",
+    "ressource": "gold",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -2661,7 +2661,7 @@
   },
   "434": {
     "index": 434,
-    "ressource": "food",
+    "ressource": "stone",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -2681,7 +2681,7 @@
   },
   "435": {
     "index": 435,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -2701,7 +2701,7 @@
   },
   "441": {
     "index": 441,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -2737,12 +2737,12 @@
       "market": 0,
       "towncenter": 0
     },
-    "villagers": 0
+    "villagers": 2
   },
   "443": {
     "index": 443,
-    "ressource": "food",
-    "nation": "",
+    "ressource": "stone",
+    "nation": "mongols",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2757,12 +2757,12 @@
       "market": 0,
       "towncenter": 0
     },
-    "villagers": 0
+    "villagers": 1
   },
   "444": {
     "index": 444,
-    "ressource": "food",
-    "nation": "",
+    "ressource": "wood",
+    "nation": "mongols",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2777,11 +2777,11 @@
       "market": 0,
       "towncenter": 0
     },
-    "villagers": 0
+    "villagers": 1
   },
   "445": {
     "index": 445,
-    "ressource": "food",
+    "ressource": "gold",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -2801,7 +2801,7 @@
   },
   "451": {
     "index": 451,
-    "ressource": "food",
+    "ressource": "gold",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -2822,7 +2822,7 @@
   "452": {
     "index": 452,
     "ressource": "food",
-    "nation": "",
+    "nation": "mongols",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2837,12 +2837,12 @@
       "market": 0,
       "towncenter": 0
     },
-    "villagers": 0
+    "villagers": 1
   },
   "453": {
     "index": 453,
-    "ressource": "food",
-    "nation": "",
+    "ressource": "stone",
+    "nation": "mongols",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2855,14 +2855,14 @@
       "wall": 0,
       "barracks": 0,
       "market": 0,
-      "towncenter": 0
+      "towncenter": 1
     },
     "villagers": 0
   },
   "454": {
     "index": 454,
-    "ressource": "food",
-    "nation": "",
+    "ressource": "gold",
+    "nation": "mongols",
     "troops": {
       "archer": 0,
       "infantry": 0,
@@ -2877,11 +2877,11 @@
       "market": 0,
       "towncenter": 0
     },
-    "villagers": 0
+    "villagers": 2
   },
   "455": {
     "index": 455,
-    "ressource": "food",
+    "ressource": "gold",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -2901,7 +2901,7 @@
   },
   "461": {
     "index": 461,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -2921,7 +2921,7 @@
   },
   "462": {
     "index": 462,
-    "ressource": "food",
+    "ressource": "stone",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -2941,7 +2941,7 @@
   },
   "463": {
     "index": 463,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -2961,7 +2961,7 @@
   },
   "464": {
     "index": 464,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -3021,7 +3021,7 @@
   },
   "472": {
     "index": 472,
-    "ressource": "food",
+    "ressource": "gold",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -3041,7 +3041,7 @@
   },
   "473": {
     "index": 473,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -3081,7 +3081,7 @@
   },
   "475": {
     "index": 475,
-    "ressource": "food",
+    "ressource": "stone",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -3121,7 +3121,7 @@
   },
   "482": {
     "index": 482,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -3141,7 +3141,7 @@
   },
   "483": {
     "index": 483,
-    "ressource": "food",
+    "ressource": "wood",
     "nation": "",
     "troops": {
       "archer": 0,
@@ -3181,7 +3181,7 @@
   },
   "485": {
     "index": 485,
-    "ressource": "food",
+    "ressource": "gold",
     "nation": "",
     "troops": {
       "archer": 0,

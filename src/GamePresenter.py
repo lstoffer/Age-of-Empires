@@ -9,6 +9,8 @@ class GamePresenter:
         app = QApplication(sys.argv)
         self.gui = GameGUI()
 
+        self.gui.refresh_btn.clicked.connect(self.model.updateNations)
+        self.model.updateNation.connect(self.gui.updateNation)
 
         self.gui.addRessources.connect(self.model.addRessources)
         self.gui.applyDividends.connect(self.model.applyRessourceDividends)
