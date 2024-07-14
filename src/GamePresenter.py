@@ -12,6 +12,9 @@ class GamePresenter:
         self.gui.refresh_btn.clicked.connect(self.model.updateNations)
         self.model.updateNation.connect(self.gui.updateNation)
 
+        self.gui.field_select_spinBox.valueChanged.connect(self.model.updateFields)
+        self.model.updateField.connect(self.gui.updateField)
+
         self.gui.addRessources.connect(self.model.addRessources)
         self.gui.applyDividends.connect(self.model.applyRessourceDividends)
 

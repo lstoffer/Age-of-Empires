@@ -4,6 +4,7 @@ from PyQt5.QtCore import pyqtSlot
 from PyQt5.QtWidgets import QPushButton, QSpinBox, QComboBox
 from ui import GameUI
 from Nation import Nation
+from Field import Field
 from utils.NationType import NationType
 from utils.Ressources import Ressources
 from utils.BuildingType import BuildingType
@@ -119,6 +120,21 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
         nation = NationType(self.nation_select_comboBox.currentData())
         self.updateAge.emit(nation)
 
+    @pyqtSlot(Field)
+    def updateField(self, field: Field):
+        self.field_ressource_label.setText(field.ressource.value)
+        self.field_nation_label.setText(field.nation.value)
+        self.field_villager_amount_label.setText(str(field.villagers))
+        self.field_archer_amount_label.setText(str(field.troops.archer))
+        self.field_infantry_amount_label.setText(str(field.troops.infantry))
+        self.field_cavalry_amount_label.setText(str(field.troops.cavalry))
+        self.field_siege_amount_label.setText(str(field.troops.siege))
+        self.field_towncenter_amount_label.setText(str(field.buildings.towncenter))
+        self.field_market_amount_label.setText(str(field.buildings.market))
+        self.field_barracks_amount_label.setText(str(field.buildings.barracks))
+        self.field_wall_amount_label.setText(str(field.buildings.wall))
+        self.field_castle_amount_label.setText(str(field.buildings.castle))
+        self.field_university_amount_label.setText(str(field.buildings.university))
     
     @pyqtSlot(NationType, Nation)
     def updateNation(self, nationType: NationType, nation: Nation):
@@ -226,3 +242,4 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
             self.mongols_updates_list.addItem(update.value)
         for field in nation.fields:
             self.mongols_fields_list.addItem(str(field))
+        

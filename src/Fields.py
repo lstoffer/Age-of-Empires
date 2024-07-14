@@ -11,6 +11,9 @@ class Fields:
     def __getitem__(self, key: int) -> Field:
         return self.fields[key]
 
+    def fieldNumbers(self):
+        return list(self.fields.keys())
+
     def serialize(self):
         fields = {str(key): value.serialize() for key, value in self.fields.items()}
         return fields

@@ -4,6 +4,7 @@ from PyQt5.QtCore import pyqtSignal, pyqtSlot, QObject
 from Borders import Borders
 from Nation import Nation
 from Nations import Nations
+from Field import Field
 from Fields import Fields
 from Points import Points
 from Ages import Ages
@@ -14,6 +15,7 @@ from utils.BuildingType import BuildingType
 class Game(QObject):
 
     updateNation = pyqtSignal(NationType, Nation)
+    updateField = pyqtSignal(Field)
 
     def __init__(self) -> None:
         super().__init__()
@@ -146,6 +148,12 @@ class Game(QObject):
         # TODO add check for buildings
         
         nation.age = nextAge
+
+    @pyqtSlot(int)
+    def updateFields(self, fieldNumber: int):
+        if fieldNumber in self.fields.fieldNumbers():
+            field = self.fields[fieldNumber]
+            self.updateField.emit(field)
 
     @pyqtSlot()
     def updateNations(self):
