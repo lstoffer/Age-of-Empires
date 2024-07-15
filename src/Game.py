@@ -231,14 +231,14 @@ class Game(QObject):
         toFieldInstance.nation = nationType
 
     @pyqtSlot(int, int)
-    def attack(fromField: int, toField: int):
+    def attack(self, fromField: int, toField: int):
         fromFieldInstance = self.fields[fromField]
         toFieldInstance = self.fields[toField]
         attackNation = self.nations.getNation(fromFieldInstance.nation)
         defenceNation = self.nations.getNation(toFieldInstance.nation)
         
         attackValue = fromFieldInstance.troops.archer * attackNation.troopInstances.archer.attack
-        attackValue += fromFieldInstancetroops.cavalry * attackNation.troopInstances.cavalry.attack
+        attackValue += fromFieldInstance.troops.cavalry * attackNation.troopInstances.cavalry.attack
         attackValue += fromFieldInstance.troops.infantry * attackNation.troopInstances.infantry.attack
         
         defenceValue = toFieldInstance.troops.archer * defenceNation.troopInstances.archer.defence
@@ -258,7 +258,7 @@ class Game(QObject):
             defenceNation.troops.archer -= archerLoss
             defenceNation.troops.infantry -= infantryLoss
             defenceNation.troops.cavalry -= cavalryLoss
-            self.displayError(f'Defender lost {archerLoss} archers, {infantryLoss} infantry and {cavalryLoss} cavalry')
+            self.displayError.emit(f'Defender lost {archerLoss} archers, {infantryLoss} infantry and {cavalryLoss} cavalry')
         else:
             archerLoss = 10 if fromFieldInstance.troops.archer >= 10 else fromFieldInstance.troops.archer
             fromFieldInstance.troops.archer -= archerLoss
@@ -269,9 +269,8 @@ class Game(QObject):
             attackNation.troops.archer -= archerLoss
             attackNation.troops.infantry -= infantryLoss
             attackNation.troops.cavalry -= cavalryLoss
-            self.displayError(f'Attacker lost {archerLoss} archers, {infantryLoss} infantry and {cavalryLoss} cavalry')
+            self.displayError.emit(f'Attacker lost {archerLoss} archers, {infantryLoss} infantry and {cavalryLoss} cavalry')
 
-        # TODO: belagerungslogik
         if toFieldInstance.troops.archer == 0 and toFieldInstance.troops.infantry == 0 and toFieldInstance.troops.cavalry == 0:
             defenceNation.troops.siege -= toFieldInstance.troops.siege
             toFieldInstance.troops.siege = 0
@@ -282,19 +281,19 @@ class Game(QObject):
             destruction = fromFieldInstance.troops.siege * attackNation.troopInstances.siege.attack
 
             if structure <= destruction:
-                defenceNation.buidlings.towncenter -= toFieldInstance.buildings.towncenter
+                defenceNation.buildings.towncenter -= toFieldInstance.buildings.towncenter
                 defenceNation.buildings.castle -= toFieldInstance.buildings.castle
                 toFieldInstance.buildings.towncenter = 0
-                toFieldInstance.buidlings.castle = 0
-                self.displayError('All buildings destroyed')
+                toFieldInstance.buildings.castle = 0
+                self.displayError.emit('All buildings destroyed')
 
-                toFieldInstance.nation = fromFieldInstance.nation
+                toFieldInstance.nation = NationType.NONE
             else:
-                self.displayError('Not able to destroy buildings')
+                self.displayError.emit(f'Not able to destroy buildings: destruction was {destruction} and structure was {structure}')
 
         # TODO: Felder zurückgeben
         if fromFieldInstance.troops.infantry == 0 and fromFieldInstance.troops.cavalry == 0 and fromFieldInstance.troops.archer == 0 and fromFieldInstance.buildings.towncenter == 0 and fromFieldInstance.castle == 0:
-            fromFieldInstance.nation = ''
+            fromFieldInstance.nation = NationType.NONE
 
         
 

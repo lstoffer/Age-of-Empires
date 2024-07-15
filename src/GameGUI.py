@@ -83,7 +83,7 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
         self.buildings_type_comboBox.addItem('Markt', 'market')
         self.buildings_type_comboBox.addItem('Kaserne', 'barracks')
         self.buildings_type_comboBox.addItem('Wall', 'wall')
-        self.buildings_type_comboBox.addItem('Burg', 'Castle')
+        self.buildings_type_comboBox.addItem('Burg', 'castle')
         self.buildings_type_comboBox.addItem('Universität', 'university')
 
     def setupTroopTypeSelect(self):
