@@ -31,6 +31,7 @@ class GamePresenter:
         self.gui.updateAge.connect(self.model.updateAge)
 
         self.gui.developTroops.connect(self.model.developTroops)
+        self.gui.moveTroops.connect(self.model.moveTroops)
 
         self.model.updateNations()
         

@@ -29,6 +29,7 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
     updateAge = pyqtSignal(NationType)
 
     developTroops = pyqtSignal(NationType, TroopType, int, int)
+    moveTroops = pyqtSignal(NationType, int, int, int, int, int, int)
 
     def __init__(self, parent=None) -> None:
         super().__init__(parent)
@@ -55,6 +56,7 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
 
         # Troops
         self.troops_develop_btn.clicked.connect(self.onTroopsDevelopClick)
+        self.troops_move_btn.clicked.connect(self.onTroopMoveClick)
         
 
     def closeEvent(self, event):
@@ -139,6 +141,16 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
         amount = self.troops_develop_amount_spinBox.value()
         fieldNumber = self.troops_develop_field_spinBox.value()
         self.developTroops.emit(nationType, troopType, fieldNumber, amount)
+
+    def onTroopMoveClick(self):
+        nationType = NationType(self.nation_select_comboBox.currentData())
+        archerAmount = self.troops_move_archer_amount_spinBox.value()
+        infantryAmount = self.troops_move_infantry_amount_spinBox.value()
+        cavalryAmount = self.troops_move_cavalry_amoutn_spinBox.value()
+        siegeAmount = self.troops_move_siege_amount_spinBox.value()
+        fromField = self.troops_move_from_spinBox.value()
+        toField = self.troops_move_to_spinBox.value()
+        self.moveTroops.emit(nationType, archerAmount, infantryAmount, cavalryAmount, siegeAmount, fromField, toField)
 
     @pyqtSlot(str)
     def displayError(self, message: str):

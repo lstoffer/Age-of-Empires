@@ -175,7 +175,7 @@ class Game(QObject):
         nation = self.nations.getNation(nationType)
         troopInstance = nation.getTroopInstance(troopType)
         costs = troopInstance.cost
-        if not nation.ressources.isSufficient(costs):
+        if not nation.ressources.isSufficient(amount * costs):
             self.displayError.emit("Not enough ressources to develop troops")
             return
         if nation.buildings.barracks < 0:
@@ -183,19 +183,50 @@ class Game(QObject):
             return
         
         if troopType == TroopType.ARCHER:
-            nation.troops.infantry += amount
-            fieldInstance.troops.archer += amoutn
+            nation.troops.archer += amount
+            fieldInstance.troops.archer += amount
         elif troopType == TroopType.INFANTRY:
             nation.troops.infantry += amount
             fieldInstance.troops.infantry += amount
         elif troopType == TroopType.CAVALRY:
             nation.troops.cavalry += amount
-            fieldInstance.troos.cavalry += amount
+            fieldInstance.troops.cavalry += amount
         elif troopType == TroopType.SIEGE:
             nation.troops.siege += amount
             fieldInstance.troops.siege += amount
 
         nation.ressources -= amount*costs 
+
+    @pyqtSlot(NationType, int, int, int, int, int, int)
+    def moveTroops(self, nationType: NationType, archerAmount: int, infantryAmount: int, cavalryAmount: int, siegeAmount: int, fromField: int, toField: int):
+        fromFieldInstance = self.fields[fromField]
+        toFieldInstance = self.fields[toField]
+        if fromFieldInstance.getNation() != nationType or toFieldInstance.getNation() not in [nationType, NationType.NONE]:
+            self.displayError.emit("Not able to move troops from or two enemy fields")
+            return
+        if fromFieldInstance.troops.archer < archerAmount:
+            self.displayError.emit("Not so many archers on from field")
+            return
+        elif fromFieldInstance.troops.infantry < infantryAmount:
+            self.displayError.emit("Not so many infantry on from field")
+            return
+        elif fromFieldInstance.troops.cavalry < cavalryAmount:
+            self.displayError.emit("Not so many cavalry on from field")
+            return
+        elif fromFieldInstance.troops.siege < siegeAmount:
+            self.displayError.emit("Not so many siege on from field")
+            return
+        # if not self.borders.checkNeighbour(fromFieldInstance, toFieldInstance): TODO
+        #     return # TODO: ERROR MESSAGE
+        fromFieldInstance.troops.archer -= archerAmount
+        fromFieldInstance.troops.infantry -= infantryAmount
+        fromFieldInstance.troops.cavalry -= cavalryAmount
+        fromFieldInstance.troops.siege -= siegeAmount
+        toFieldInstance.troops.archer += archerAmount
+        toFieldInstance.troops.infantry += infantryAmount
+        toFieldInstance.troops.cavalry += cavalryAmount
+        toFieldInstance.troops.siege += siegeAmount
+        toFieldInstance.nation = nationType
 
     @pyqtSlot(int)
     def updateFields(self, fieldNumber: int):
