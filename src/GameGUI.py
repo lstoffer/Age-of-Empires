@@ -9,6 +9,7 @@ from utils.TroopType import TroopType
 from utils.NationType import NationType
 from utils.Ressources import Ressources
 from utils.BuildingType import BuildingType
+from utils.RessourceType import RessourceType
 
 class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
     
@@ -31,12 +32,15 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
     developTroops = pyqtSignal(NationType, TroopType, int, int)
     moveTroops = pyqtSignal(NationType, int, int, int, int, int, int)
 
+    trade = pyqtSignal(NationType, RessourceType, RessourceType, int, int)
+
     def __init__(self, parent=None) -> None:
         super().__init__(parent)
         self.setupUi(self)
         self.setupNationSelect()
         self.setupBuildingSelect()
         self.setupTroopTypeSelect()
+        self.setupTradeRessourceSelect()
 
         # Ressources
         self.ressources_add_btn.clicked.connect(self.onRssourcesAddClick)
@@ -57,7 +61,10 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
         # Troops
         self.troops_develop_btn.clicked.connect(self.onTroopsDevelopClick)
         self.troops_move_btn.clicked.connect(self.onTroopMoveClick)
-        
+
+        # Trade
+        self.trade_from_amount_spinBox.valueChanged.connect(self.tradeToAmountUpdate)
+        self.trade_btn.clicked.connect(self.onTradeClick)
 
     def closeEvent(self, event):
         super().closeEvent(event)
@@ -82,6 +89,16 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
         self.troops_develop_typ_comboBox.addItem('Bogenschützen', 'archer')
         self.troops_develop_typ_comboBox.addItem('Kavallerie', 'cavalry')
         self.troops_develop_typ_comboBox.addItem('Belagerungswaffen', 'siege')
+
+    def setupTradeRessourceSelect(self):
+        self.trade_from_comboBox.addItem('Nahrung', 'food')
+        self.trade_from_comboBox.addItem('Holz', 'wood')
+        self.trade_from_comboBox.addItem('Stein', 'stone')
+        self.trade_from_comboBox.addItem('Gold', 'gold')
+        self.trade_to_comboBox.addItem('Nahrung', 'food')
+        self.trade_to_comboBox.addItem('Holz', 'wood')
+        self.trade_to_comboBox.addItem('Stein', 'stone')
+        self.trade_to_comboBox.addItem('Gold', 'gold')
     
     def onRssourcesAddClick(self):
         food = self.food_add_sub_spinBox.value()
@@ -152,6 +169,18 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
         toField = self.troops_move_to_spinBox.value()
         self.moveTroops.emit(nationType, archerAmount, infantryAmount, cavalryAmount, siegeAmount, fromField, toField)
 
+    def tradeToAmountUpdate(self, fromAmount: int):
+        toAmount = int(fromAmount * 0.9)
+        self.trade_to_amount_spinBox.setValue(toAmount)
+
+    def onTradeClick(self):
+        nationType = NationType(self.nation_select_comboBox.currentData())
+        fromRessourceType = RessourceType(self.trade_from_comboBox.currentData())
+        toRessourceType = RessourceType(self.trade_to_comboBox.currentData())
+        fromAmount = self.trade_from_amount_spinBox.value()
+        toAmoutn = self.trade_to_amount_spinBox.value()
+        self.trade.emit(nationType, fromRessourceType, toRessourceType, fromAmount, toAmoutn)
+ 
     @pyqtSlot(str)
     def displayError(self, message: str):
         msg = QMessageBox()

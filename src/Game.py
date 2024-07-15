@@ -11,6 +11,7 @@ from Ages import Ages
 from utils.TroopType import TroopType
 from utils.Ressources import Ressources
 from utils.BuildingType import BuildingType
+from utils.RessourceType import RessourceType
 
 
 class Game(QObject):
@@ -227,6 +228,16 @@ class Game(QObject):
         toFieldInstance.troops.cavalry += cavalryAmount
         toFieldInstance.troops.siege += siegeAmount
         toFieldInstance.nation = nationType
+
+    @pyqtSlot(NationType, RessourceType, RessourceType, int, int)
+    def trade(self, nationType: NationType, fromRessourceType: RessourceType, toRessourceType: RessourceType, fromAmount: int, toAmount: int):
+        nation = self.nations.getNation(nationType)
+        available = nation.ressources.get(fromRessourceType)
+        if available < fromAmount:
+            self.displayError.emit("Not enough ressources")
+            return
+        nation.ressources.add(toRessourceType, toAmount)
+        nation.ressources.add(fromRessourceType, -fromAmount)
 
     @pyqtSlot(int)
     def updateFields(self, fieldNumber: int):
