@@ -4,6 +4,7 @@
     "updates": [],
     "age": "castle-age",
     "fields": [
+      "111",
       "121",
       "122",
       "123",
@@ -24,17 +25,17 @@
       "173",
       "184"
     ],
-    "ressources": { "food": 435, "wood": 280, "stone": 255, "gold": 372 },
-    "troops": { "archer": 0, "infantry": 0, "cavalry": 0, "siege": 0 },
+    "ressources": { "food": 375, "wood": 0, "stone": 235, "gold": 792 },
+    "troops": { "archer": 3, "infantry": 0, "cavalry": 0, "siege": 0 },
     "buildings": {
       "towncenter": 3,
       "market": 1,
-      "barracks": 0,
+      "barracks": 1,
       "wall": 0,
       "castle": 1,
       "university": 0
     },
-    "villagers": 42
+    "villagers": 50
   },
   "vikings": {
     "points": 4250,
@@ -58,23 +59,25 @@
       "273",
       "274"
     ],
-    "ressources": { "food": 810, "wood": 230, "stone": 190, "gold": 406 },
+    "ressources": { "food": 580, "wood": 130, "stone": 130, "gold": 846 },
     "troops": { "archer": 0, "infantry": 0, "cavalry": 0, "siege": 0 },
     "buildings": {
       "towncenter": 3,
       "market": 1,
-      "barracks": 0,
+      "barracks": 1,
       "wall": 0,
       "castle": 1,
       "university": 0
     },
-    "villagers": 35
+    "villagers": 50
   },
   "chinese": {
     "points": 4000,
     "updates": [],
     "age": "castle-age",
     "fields": [
+      "311",
+      "344",
       "323",
       "324",
       "331",
@@ -89,8 +92,8 @@
       "372",
       "373"
     ],
-    "ressources": { "food": 345, "wood": 285, "stone": 360, "gold": 460 },
-    "troops": { "archer": 0, "infantry": 0, "cavalry": 0, "siege": 0 },
+    "ressources": { "food": 695, "wood": 185, "stone": 310, "gold": 20 },
+    "troops": { "archer": 2, "infantry": 0, "cavalry": 0, "siege": 0 },
     "buildings": {
       "towncenter": 3,
       "market": 1,
@@ -105,17 +108,29 @@
     "points": 3550,
     "updates": [],
     "age": "castle-age",
-    "fields": ["432", "442", "443", "444", "452", "453", "454", "463", "472"],
-    "ressources": { "food": 285, "wood": 110, "stone": 155, "gold": 1560 },
+    "fields": [
+      "411",
+      "474",
+      "432",
+      "442",
+      "443",
+      "444",
+      "452",
+      "453",
+      "454",
+      "463",
+      "472"
+    ],
+    "ressources": { "food": 725, "wood": 270, "stone": 395, "gold": 1720 },
     "troops": { "archer": 0, "infantry": 0, "cavalry": 0, "siege": 0 },
     "buildings": {
       "towncenter": 2,
       "market": 1,
-      "barracks": 0,
+      "barracks": 1,
       "wall": 0,
-      "castle": 1,
+      "castle": 2,
       "university": 0
     },
-    "villagers": 25
+    "villagers": 30
   }
 }

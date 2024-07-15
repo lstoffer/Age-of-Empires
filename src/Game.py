@@ -129,6 +129,7 @@ class Game(QObject):
             return # TODO: ERROR MESSAGE
         fieldInstance.buildings.add(buildingType, 1)
         nation.buildings.add(buildingType, 1)
+        nation.ressources -= costs
 
     @pyqtSlot(NationType, int, BuildingType)
     def destroyBuilding(self, nationType: NationType, field: int, buildingType: BuildingType):
@@ -179,7 +180,9 @@ class Game(QObject):
             fieldInstance.troos.cavalry += amount
         elif troopType == TroopType.SIEGE:
             nation.troops.siege += amount
-            fieldInstance.troops.siege += amount 
+            fieldInstance.troops.siege += amount
+
+        nation.ressources -= costs 
 
     @pyqtSlot(int)
     def updateFields(self, fieldNumber: int):
