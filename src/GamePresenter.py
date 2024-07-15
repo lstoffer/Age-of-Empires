@@ -32,6 +32,7 @@ class GamePresenter:
 
         self.gui.developTroops.connect(self.model.developTroops)
         self.gui.moveTroops.connect(self.model.moveTroops)
+        self.gui.attack.connect(self.model.attack)
 
         self.gui.trade.connect(self.model.trade)
 

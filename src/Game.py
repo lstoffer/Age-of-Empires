@@ -1,3 +1,4 @@
+import random
 from utils.NationType import NationType
 from DataAccess import DataAccess
 from PyQt5.QtCore import pyqtSignal, pyqtSlot, QObject
@@ -228,6 +229,74 @@ class Game(QObject):
         toFieldInstance.troops.cavalry += cavalryAmount
         toFieldInstance.troops.siege += siegeAmount
         toFieldInstance.nation = nationType
+
+    @pyqtSlot(int, int)
+    def attack(fromField: int, toField: int):
+        fromFieldInstance = self.fields[fromField]
+        toFieldInstance = self.fields[toField]
+        attackNation = self.nations.getNation(fromFieldInstance.nation)
+        defenceNation = self.nations.getNation(toFieldInstance.nation)
+        
+        attackValue = fromFieldInstance.troops.archer * attackNation.troopInstances.archer.attack
+        attackValue += fromFieldInstancetroops.cavalry * attackNation.troopInstances.cavalry.attack
+        attackValue += fromFieldInstance.troops.infantry * attackNation.troopInstances.infantry.attack
+        
+        defenceValue = toFieldInstance.troops.archer * defenceNation.troopInstances.archer.defence
+        defenceValue += toFieldInstance.troops.cavalry * defenceNation.troopInstances.cavalry.defence
+        defenceValue += toFieldInstance.troops.infantry * defenceNation.troopInstances.infantry.defence
+
+        successProb = attackValue / (attackValue + defenceValue)
+        success = random.random() < successProb
+
+        if success:
+            archerLoss = 10 if toFieldInstance.troops.archer >= 10 else toFieldInstance.troops.archer
+            toFieldInstance.troops.archer -= archerLoss
+            infantryLoss = 10 if toFieldInstance.troops.infantry >= 10 else toFieldInstance.troops.infantry
+            toFieldInstance.troops.infantry -= infantryLoss
+            cavalryLoss = 10 if toFieldInstance.troops.cavalry >= 10 else toFieldInstance.troops.cavalry
+            toFieldInstance.troops.cavalry -= cavalryLoss
+            defenceNation.troops.archer -= archerLoss
+            defenceNation.troops.infantry -= infantryLoss
+            defenceNation.troops.cavalry -= cavalryLoss
+            self.displayError(f'Defender lost {archerLoss} archers, {infantryLoss} infantry and {cavalryLoss} cavalry')
+        else:
+            archerLoss = 10 if fromFieldInstance.troops.archer >= 10 else fromFieldInstance.troops.archer
+            fromFieldInstance.troops.archer -= archerLoss
+            infantryLoss = 10 if fromFieldInstance.troops.infantry >= 10 else fromFieldInstance.troops.infantry
+            fromFieldInstance.troops.infantry -= infantryLoss
+            cavalryLoss = 10 if fromFieldInstance.troops.cavalry >= 10 else fromFieldInstance.troops.cavalry
+            fromFieldInstance.troops.cavalry -= cavalryLoss
+            attackNation.troops.archer -= archerLoss
+            attackNation.troops.infantry -= infantryLoss
+            attackNation.troops.cavalry -= cavalryLoss
+            self.displayError(f'Attacker lost {archerLoss} archers, {infantryLoss} infantry and {cavalryLoss} cavalry')
+
+        # TODO: belagerungslogik
+        if toFieldInstance.troops.archer == 0 and toFieldInstance.troops.infantry == 0 and toFieldInstance.troops.cavalry == 0:
+            defenceNation.troops.siege -= toFieldInstance.troops.siege
+            toFieldInstance.troops.siege = 0
+
+            structure = toFieldInstance.buildings.towncenter * defenceNation.buildingInstances.towncenter.structure
+            structure += toFieldInstance.buildings.castle * defenceNation.buildingInstances.castle.structure
+
+            destruction = fromFieldInstance.troops.siege * attackNation.troopInstances.siege.attack
+
+            if structure <= destruction:
+                defenceNation.buidlings.towncenter -= toFieldInstance.buildings.towncenter
+                defenceNation.buildings.castle -= toFieldInstance.buildings.castle
+                toFieldInstance.buildings.towncenter = 0
+                toFieldInstance.buidlings.castle = 0
+                self.displayError('All buildings destroyed')
+
+                toFieldInstance.nation = fromFieldInstance.nation
+            else:
+                self.displayError('Not able to destroy buildings')
+
+        # TODO: Felder zurückgeben
+        if fromFieldInstance.troops.infantry == 0 and fromFieldInstance.troops.cavalry == 0 and fromFieldInstance.troops.archer == 0 and fromFieldInstance.buildings.towncenter == 0 and fromFieldInstance.castle == 0:
+            fromFieldInstance.nation = ''
+
+        
 
     @pyqtSlot(NationType, RessourceType, RessourceType, int, int)
     def trade(self, nationType: NationType, fromRessourceType: RessourceType, toRessourceType: RessourceType, fromAmount: int, toAmount: int):

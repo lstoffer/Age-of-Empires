@@ -31,6 +31,7 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
 
     developTroops = pyqtSignal(NationType, TroopType, int, int)
     moveTroops = pyqtSignal(NationType, int, int, int, int, int, int)
+    attack = pyqtSignal(int, int)
 
     trade = pyqtSignal(NationType, RessourceType, RessourceType, int, int)
 
@@ -61,6 +62,7 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
         # Troops
         self.troops_develop_btn.clicked.connect(self.onTroopsDevelopClick)
         self.troops_move_btn.clicked.connect(self.onTroopMoveClick)
+        self.troops_attack_btn.clicked.connect(self.onAttackClick)
 
         # Trade
         self.trade_from_amount_spinBox.valueChanged.connect(self.tradeToAmountUpdate)
@@ -168,6 +170,11 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
         fromField = self.troops_move_from_spinBox.value()
         toField = self.troops_move_to_spinBox.value()
         self.moveTroops.emit(nationType, archerAmount, infantryAmount, cavalryAmount, siegeAmount, fromField, toField)
+
+    def onAttackClick(self):
+        fromField = self.troops_attack_from_spinBox.value()
+        toField = self.troops_attack_to_spinBox.value()
+        self.attack.emit(fromField, toField)
 
     def tradeToAmountUpdate(self, fromAmount: int):
         toAmount = int(fromAmount * 0.9)
