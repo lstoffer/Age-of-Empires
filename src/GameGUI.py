@@ -197,6 +197,14 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
         msg.setWindowTitle("Error")
         msg.exec_()
 
+    def displayInfo(self, message: str):
+        msg = QMessageBox()
+        msg.setIcon(QMessageBox.Information)
+        msg.setText('Info')
+        msg.setInformativeText(message)
+        msg.setWindowTitle("Info")
+        msg.exec_()
+
     @pyqtSlot(Field)
     def updateField(self, field: Field):
         self.field_ressource_label.setText(field.ressource.value)

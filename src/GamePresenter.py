@@ -10,6 +10,7 @@ class GamePresenter:
         self.gui = GameGUI()
 
         self.model.displayError.connect(self.gui.displayError)
+        self.model.displayInfo.connect(self.gui.displayInfo)
 
         self.gui.refresh_btn.clicked.connect(self.model.updateNations)
         self.model.updateNation.connect(self.gui.updateNation)

@@ -20,6 +20,7 @@ class Game(QObject):
     updateNation = pyqtSignal(NationType, Nation)
     updateField = pyqtSignal(Field)
     displayError = pyqtSignal(str)
+    displayInfo = pyqtSignal(str)
 
     def __init__(self) -> None:
         super().__init__()
@@ -261,7 +262,7 @@ class Game(QObject):
             defenceNation.troops.archer -= archerLoss
             defenceNation.troops.infantry -= infantryLoss
             defenceNation.troops.cavalry -= cavalryLoss
-            self.displayError.emit(f'Defender lost {archerLoss} archers, {infantryLoss} infantry and {cavalryLoss} cavalry')
+            self.displayInfo.emit(f'Defender lost {archerLoss} archers, {infantryLoss} infantry and {cavalryLoss} cavalry')
         else:
             archerLoss = 10 if fromFieldInstance.troops.archer >= 10 else fromFieldInstance.troops.archer
             fromFieldInstance.troops.archer -= archerLoss
@@ -272,7 +273,7 @@ class Game(QObject):
             attackNation.troops.archer -= archerLoss
             attackNation.troops.infantry -= infantryLoss
             attackNation.troops.cavalry -= cavalryLoss
-            self.displayError.emit(f'Attacker lost {archerLoss} archers, {infantryLoss} infantry and {cavalryLoss} cavalry')
+            self.displayInfo.emit(f'Attacker lost {archerLoss} archers, {infantryLoss} infantry and {cavalryLoss} cavalry')
 
         if toFieldInstance.troops.archer == 0 and toFieldInstance.troops.infantry == 0 and toFieldInstance.troops.cavalry == 0:
             defenceNation.troops.siege -= toFieldInstance.troops.siege
@@ -291,11 +292,11 @@ class Game(QObject):
                 defenceNation.buildings.castle -= toFieldInstance.buildings.castle
                 toFieldInstance.buildings.towncenter = 0
                 toFieldInstance.buildings.castle = 0
-                self.displayError.emit('All buildings destroyed')
+                self.displayInfo.emit('All buildings destroyed')
 
                 toFieldInstance.nation = NationType.NONE
             else:
-                self.displayError.emit(f'Not able to destroy buildings: destruction was {destruction} and structure was {structure}')
+                self.displayInfo.emit(f'Not able to destroy buildings: destruction was {destruction} and structure was {structure}')
 
         # TODO: Felder zurückgeben
         if fromFieldInstance.troops.infantry == 0 and fromFieldInstance.troops.cavalry == 0 and fromFieldInstance.troops.archer == 0 and fromFieldInstance.buildings.towncenter == 0 and fromFieldInstance.castle == 0:
