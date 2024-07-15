@@ -123,6 +123,7 @@ class Game(QObject):
             self.displayError.emit("Not able to develop villagers without towncenter")
             return
         fieldInstance.villagers += amount
+        fieldInstance.nation = nationType
         nation.villagers += amount
         nation.ressources -= amount*costs
         
@@ -140,6 +141,7 @@ class Game(QObject):
         fieldInstance.buildings.add(buildingType, 1)
         nation.buildings.add(buildingType, 1)
         nation.ressources -= costs
+        fieldInstance.nation = nationType
 
     @pyqtSlot(NationType, int, BuildingType)
     def destroyBuilding(self, nationType: NationType, field: int, buildingType: BuildingType):
@@ -197,7 +199,8 @@ class Game(QObject):
             nation.troops.siege += amount
             fieldInstance.troops.siege += amount
 
-        nation.ressources -= amount*costs 
+        nation.ressources -= amount*costs
+        fieldInstance.nation = nationType
 
     @pyqtSlot(NationType, int, int, int, int, int, int)
     def moveTroops(self, nationType: NationType, archerAmount: int, infantryAmount: int, cavalryAmount: int, siegeAmount: int, fromField: int, toField: int):
@@ -274,6 +277,9 @@ class Game(QObject):
         if toFieldInstance.troops.archer == 0 and toFieldInstance.troops.infantry == 0 and toFieldInstance.troops.cavalry == 0:
             defenceNation.troops.siege -= toFieldInstance.troops.siege
             toFieldInstance.troops.siege = 0
+
+            defenceNation.villagers -= toFieldInstance.villagers
+            toFieldInstance.villagers = 0
 
             structure = toFieldInstance.buildings.towncenter * defenceNation.buildingInstances.towncenter.structure
             structure += toFieldInstance.buildings.castle * defenceNation.buildingInstances.castle.structure
