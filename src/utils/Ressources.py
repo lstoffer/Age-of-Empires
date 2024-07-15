@@ -44,6 +44,13 @@ class Ressources:
                               self.wood + other.wood,
                               self.stone + other.stone,
                               self.gold + other.gold)
+
+    def __sub__(self, other):
+        if isinstance(other, Ressources):
+            return Ressources(self.food - other.food,
+                                self.wood - other.wood,
+                                self.stone - other.stone,
+                                self.gold - other.gold)
         
     def __mul__(self, scalar):
         if isinstance(scalar, int):
@@ -51,6 +58,9 @@ class Ressources:
                               self.wood * scalar,
                               self.stone * scalar,
                               self.gold * scalar)
+
+    def __rmul__(self, scalar: int):
+        return self.__mul__(scalar)
         
     def serialize(self) -> dict:
         ressourcesData = {}
