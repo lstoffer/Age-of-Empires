@@ -1,5 +1,6 @@
 from typing import List
 from typing import Dict
+from utils.TroopType import TroopType
 from utils.UpdateType import UpdateType
 from utils.AgeType import AgeType
 from utils.Ressources import Ressources
@@ -10,6 +11,7 @@ from utils.TroopInstances import TroopInstances
 from Villager import Villager
 from Update import Update
 from Points import Points
+from Troop import Troop
 
 class Nation:
     def __init__(
@@ -84,6 +86,16 @@ class Nation:
         infantryDef = troops.infantry * self.troopInstances.infantry.defence
         cavalryDef = troops.cavalry * self.troopInstances.cavalry.defence
         return archerDef + infantryDef + cavalryDef
+
+    def getTroopInstance(self, troopType: TroopType) -> Troop:
+        if troopType == TroopType.ARCHER:
+            return self.troopInstances.archer
+        elif troopType == TroopType.INFANTRY:
+            return self.troopInstances.infantry
+        elif troopType == TroopType.CAVALRY:
+            return self.troopInstances.cavalry
+        elif troopType == TroopType.SIEGE:
+            return self.troopInstances.siege
     
     def getPoints(self) -> int:
         # nationPoints = points.ages[self.age] TODO

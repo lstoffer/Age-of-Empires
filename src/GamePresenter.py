@@ -9,6 +9,8 @@ class GamePresenter:
         app = QApplication(sys.argv)
         self.gui = GameGUI()
 
+        self.model.displayError.connect(self.gui.displayError)
+
         self.gui.refresh_btn.clicked.connect(self.model.updateNations)
         self.model.updateNation.connect(self.gui.updateNation)
 
@@ -27,6 +29,8 @@ class GamePresenter:
         self.gui.stopGame.connect(self.model.stopGame)
 
         self.gui.updateAge.connect(self.model.updateAge)
+
+        self.gui.developTroops.connect(self.model.developTroops)
 
         self.model.updateNations()
         

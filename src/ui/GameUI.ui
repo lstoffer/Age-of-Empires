@@ -28,7 +28,7 @@
        <enum>QTabWidget::North</enum>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="control_tab">
        <attribute name="title">
@@ -58,7 +58,7 @@
         <item>
          <widget class="QTabWidget" name="tabWidget_3">
           <property name="currentIndex">
-           <number>0</number>
+           <number>2</number>
           </property>
           <widget class="QWidget" name="ressources_controlTab">
            <attribute name="title">
@@ -75,8 +75,8 @@
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>1036</width>
-                 <height>745</height>
+                 <width>1024</width>
+                 <height>790</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_26">
@@ -118,29 +118,41 @@
                      </item>
                      <item row="0" column="1">
                       <widget class="QSpinBox" name="food_add_sub_spinBox">
+                       <property name="minimum">
+                        <number>-1000000</number>
+                       </property>
                        <property name="maximum">
-                        <number>1000</number>
+                        <number>1000000</number>
                        </property>
                       </widget>
                      </item>
                      <item row="1" column="1">
                       <widget class="QSpinBox" name="wood_add_sub_spinBox">
+                       <property name="minimum">
+                        <number>-1000000</number>
+                       </property>
                        <property name="maximum">
-                        <number>1000</number>
+                        <number>1000000</number>
                        </property>
                       </widget>
                      </item>
                      <item row="2" column="1">
                       <widget class="QSpinBox" name="stone_add_sub_spinBox">
+                       <property name="minimum">
+                        <number>-1000000</number>
+                       </property>
                        <property name="maximum">
-                        <number>1000</number>
+                        <number>1000000</number>
                        </property>
                       </widget>
                      </item>
                      <item row="3" column="1">
                       <widget class="QSpinBox" name="gold_add_sub_spinBox">
+                       <property name="minimum">
+                        <number>-1000000</number>
+                       </property>
                        <property name="maximum">
-                        <number>1000</number>
+                        <number>1000000</number>
                        </property>
                       </widget>
                      </item>
@@ -231,8 +243,8 @@
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>1036</width>
-                 <height>745</height>
+                 <width>1024</width>
+                 <height>790</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_5">
@@ -260,6 +272,9 @@
                      </item>
                      <item row="1" column="1">
                       <widget class="QSpinBox" name="villagers_develop_amount_spinBox">
+                       <property name="minimum">
+                        <number>-1000</number>
+                       </property>
                        <property name="maximum">
                         <number>1000</number>
                        </property>
@@ -387,8 +402,8 @@
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>1036</width>
-                 <height>745</height>
+                 <width>1024</width>
+                 <height>790</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_9">
@@ -403,24 +418,41 @@
                      <item row="0" column="0">
                       <widget class="QLabel" name="label_59">
                        <property name="text">
-                        <string>Dofzentrum</string>
+                        <string>Feld</string>
                        </property>
                       </widget>
                      </item>
                      <item row="0" column="1">
-                      <widget class="QComboBox" name="troops_develop_buiding_comboBox"/>
+                      <widget class="QSpinBox" name="troops_develop_field_spinBox">
+                       <property name="maximum">
+                        <number>1000</number>
+                       </property>
+                      </widget>
                      </item>
-                     <item row="1" column="0">
+                     <item row="1" column="1">
+                      <widget class="QComboBox" name="troops_develop_typ_comboBox"/>
+                     </item>
+                     <item row="2" column="0">
                       <widget class="QLabel" name="label_60">
                        <property name="text">
                         <string>Anzahl</string>
                        </property>
                       </widget>
                      </item>
-                     <item row="1" column="1">
+                     <item row="2" column="1">
                       <widget class="QSpinBox" name="troops_develop_amount_spinBox">
+                       <property name="minimum">
+                        <number>-1000</number>
+                       </property>
                        <property name="maximum">
                         <number>1000</number>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="1" column="0">
+                      <widget class="QLabel" name="label_18">
+                       <property name="text">
+                        <string>Truppentyp</string>
                        </property>
                       </widget>
                      </item>
@@ -629,8 +661,8 @@
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>1036</width>
-                 <height>745</height>
+                 <width>1024</width>
+                 <height>790</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_25">
@@ -728,8 +760,8 @@
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>1036</width>
-                 <height>745</height>
+                 <width>1024</width>
+                 <height>790</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_30">
@@ -793,8 +825,8 @@
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>1036</width>
-                 <height>817</height>
+                 <width>193</width>
+                 <height>626</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_8">
@@ -1174,8 +1206,8 @@
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>1036</width>
-                 <height>817</height>
+                 <width>193</width>
+                 <height>626</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_14">
@@ -1555,8 +1587,8 @@
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>1036</width>
-                 <height>817</height>
+                 <width>1024</width>
+                 <height>846</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_16">
@@ -1936,8 +1968,8 @@
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>1036</width>
-                 <height>817</height>
+                 <width>193</width>
+                 <height>626</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_18">
@@ -2625,7 +2657,7 @@
      <x>0</x>
      <y>0</y>
      <width>1092</width>
-     <height>30</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>

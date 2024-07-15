@@ -8,6 +8,7 @@ from Field import Field
 from Fields import Fields
 from Points import Points
 from Ages import Ages
+from utils.TroopType import TroopType
 from utils.Ressources import Ressources
 from utils.BuildingType import BuildingType
 
@@ -16,6 +17,7 @@ class Game(QObject):
 
     updateNation = pyqtSignal(NationType, Nation)
     updateField = pyqtSignal(Field)
+    displayError = pyqtSignal(str)
 
     def __init__(self) -> None:
         super().__init__()
@@ -114,6 +116,7 @@ class Game(QObject):
         if nation.buildings.towncenter < 1:
             return # TODO: ERROR MESSAGE
         fieldInstance.villagers += amount
+        nation.villagers += amount
         
     @pyqtSlot(NationType, int, BuildingType)
     def buildBuilding(self, nationType: NationType, field: int, buildingType: BuildingType):
@@ -144,10 +147,39 @@ class Game(QObject):
         costs = self.ages.nextAgeCost(nextAge)
 
         if not nation.ressources.isSufficient(costs):
+            self.displayError.emit("Not enough ressources to update age")
             return # TODO: ERROR MESSAGE
         # TODO add check for buildings
         
         nation.age = nextAge
+
+    @pyqtSlot(NationType, TroopType, int, int)
+    def developTroops(self, nationType: NationType, troopType: TroopType, fieldNumber: int, amount: int):
+        fieldInstance = self.fields[fieldNumber]
+        # if fieldInstance.buildings.towncenter <= 0:
+        #     return # TODO: ERROR MESSAGE
+        if fieldInstance.getNation() not in [nationType, NationType.NONE]:
+            return # TODO: ERROR MESSAGE
+        nation = self.nations.getNation(nationType)
+        troopInstance = nation.getTroopInstance(troopType)
+        costs = troopInstance.cost
+        if not nation.ressources.isSufficient(costs):
+            return # TODO: ERROR MESSAGE
+        if nation.buildings.barracks < 0:
+            return # TODO: ERROR MESSAGE
+        
+        if troopType == TroopType.ARCHER:
+            nation.troops.infantry += amount
+            fieldInstance.troops.archer += amoutn
+        elif troopType == TroopType.INFANTRY:
+            nation.troops.infantry += amount
+            fieldInstance.troops.infantry += amount
+        elif troopType == TroopType.CAVALRY:
+            nation.troops.cavalry += amount
+            fieldInstance.troos.cavalry += amount
+        elif troopType == TroopType.SIEGE:
+            nation.troops.siege += amount
+            fieldInstance.troops.siege += amount 
 
     @pyqtSlot(int)
     def updateFields(self, fieldNumber: int):

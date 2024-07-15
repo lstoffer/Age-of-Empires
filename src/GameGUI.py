@@ -1,10 +1,11 @@
 from PyQt5 import QtWidgets, QtCore
 from PyQt5.QtCore import pyqtSignal
 from PyQt5.QtCore import pyqtSlot
-from PyQt5.QtWidgets import QPushButton, QSpinBox, QComboBox
+from PyQt5.QtWidgets import QPushButton, QSpinBox, QComboBox, QMessageBox
 from ui import GameUI
 from Nation import Nation
 from Field import Field
+from utils.TroopType import TroopType
 from utils.NationType import NationType
 from utils.Ressources import Ressources
 from utils.BuildingType import BuildingType
@@ -27,11 +28,14 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
 
     updateAge = pyqtSignal(NationType)
 
+    developTroops = pyqtSignal(NationType, TroopType, int, int)
+
     def __init__(self, parent=None) -> None:
         super().__init__(parent)
         self.setupUi(self)
         self.setupNationSelect()
         self.setupBuildingSelect()
+        self.setupTroopTypeSelect()
 
         # Ressources
         self.ressources_add_btn.clicked.connect(self.onRssourcesAddClick)
@@ -48,6 +52,9 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
 
         # Ages
         self.ages_update_btn.clicked.connect(self.onAgeUpdateClick)
+
+        # Troops
+        self.troops_develop_btn.clicked.connect(self.onTroopsDevelopClick)
         
 
     def closeEvent(self, event):
@@ -67,6 +74,12 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
         self.buildings_type_comboBox.addItem('Wall', 'wall')
         self.buildings_type_comboBox.addItem('Burg', 'Castle')
         self.buildings_type_comboBox.addItem('Universität', 'university')
+
+    def setupTroopTypeSelect(self):
+        self.troops_develop_typ_comboBox.addItem('Infanterie', 'infantry')
+        self.troops_develop_typ_comboBox.addItem('Bogenschützen', 'archer')
+        self.troops_develop_typ_comboBox.addItem('Kavallerie', 'cavalry')
+        self.troops_develop_typ_comboBox.addItem('Belagerungswaffen', 'siege')
     
     def onRssourcesAddClick(self):
         food = self.food_add_sub_spinBox.value()
@@ -119,6 +132,22 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
     def onAgeUpdateClick(self):
         nation = NationType(self.nation_select_comboBox.currentData())
         self.updateAge.emit(nation)
+
+    def onTroopsDevelopClick(self):
+        nationType = NationType(self.nation_select_comboBox.currentData())
+        troopType = TroopType(self.troops_develop_typ_comboBox.currentData())
+        amount = self.troops_develop_amount_spinBox.value()
+        fieldNumber = self.troops_develop_field_spinBox.value()
+        self.developTroops.emit(nationType, troopType, fieldNumber, amount)
+
+    @pyqtSlot(str)
+    def displayError(self, message: str):
+        msg = QMessageBox()
+        msg.setIcon(QMessageBox.Critical)
+        msg.setText("Error")
+        msg.setInformativeText(message)
+        msg.setWindowTitle("Error")
+        msg.exec_()
 
     @pyqtSlot(Field)
     def updateField(self, field: Field):
