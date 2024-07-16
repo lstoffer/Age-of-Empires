@@ -17,7 +17,7 @@ from utils.RessourceType import RessourceType
 
 class Game(QObject):
 
-    updateNation = pyqtSignal(NationType, Nation)
+    updateNation = pyqtSignal(NationType, Nation, Points)
     updateField = pyqtSignal(Field)
     displayError = pyqtSignal(str)
     displayInfo = pyqtSignal(str)
@@ -322,10 +322,10 @@ class Game(QObject):
 
     @pyqtSlot()
     def updateNations(self):
-        self.updateNation.emit(NationType.BRITONS, self.nations.britons)
-        self.updateNation.emit(NationType.VIKINGS, self.nations.vikings)
-        self.updateNation.emit(NationType.CHINESE, self.nations.chinese)
-        self.updateNation.emit(NationType.MONGOLS, self.nations.mongols)
+        self.updateNation.emit(NationType.BRITONS, self.nations.britons, self.points)
+        self.updateNation.emit(NationType.VIKINGS, self.nations.vikings, self.points)
+        self.updateNation.emit(NationType.CHINESE, self.nations.chinese, self.points)
+        self.updateNation.emit(NationType.MONGOLS, self.nations.mongols, self.points)
 
     def serialize(self):
         bordersData = self.borders.serialize()

@@ -97,10 +97,10 @@ class Nation:
         elif troopType == TroopType.SIEGE:
             return self.troopInstances.siege
     
-    def getPoints(self) -> int:
-        # nationPoints = points.ages[self.age] TODO
-        # nationPoints += points.field * len(self.fields)
+    def getPoints(self, points: Points) -> int:
         nationPoints = 0
+        # Age Points
+        nationPoints += points.ages[self.age]
         # Troop Points
         nationPoints += self.troops.archer * self.troopInstances.archer.points
         nationPoints += self.troops.infantry * self.troopInstances.infantry.points

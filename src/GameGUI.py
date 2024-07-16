@@ -10,6 +10,7 @@ from utils.NationType import NationType
 from utils.Ressources import Ressources
 from utils.BuildingType import BuildingType
 from utils.RessourceType import RessourceType
+from Points import Points
 
 class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
     
@@ -221,19 +222,19 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
         self.field_castle_amount_label.setText(str(field.buildings.castle))
         self.field_university_amount_label.setText(str(field.buildings.university))
     
-    @pyqtSlot(NationType, Nation)
-    def updateNation(self, nationType: NationType, nation: Nation):
+    @pyqtSlot(NationType, Nation, Points)
+    def updateNation(self, nationType: NationType, nation: Nation, points: Points):
         if nationType == NationType.BRITONS:
-            self.updateBritions(nation)
+            self.updateBritions(nation, points)
         elif nationType == NationType.VIKINGS:
-            self.updateVikings(nation)
+            self.updateVikings(nation, points)
         elif nationType == NationType.CHINESE:
-            self.updateChinese(nation)
+            self.updateChinese(nation, points)
         elif nationType == NationType.MONGOLS:
-            self.updateMongols(nation)
+            self.updateMongols(nation, points)
 
-    def updateBritions(self, nation: Nation):
-        self.britons_points_label.setText(str(nation.getPoints())) 
+    def updateBritions(self, nation: Nation, points: Points):
+        self.britons_points_label.setText(str(nation.getPoints(points))) 
         self.britons_age_label.setText(str(nation.age.value))
         self.britons_villagers_label.setText(str(nation.villagers))
         self.britons_food_label.setText(str(nation.ressources.food))
@@ -256,8 +257,8 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
         for field in nation.fields:
             self.britons_fields_list.addItem(str(field))
 
-    def updateVikings(self, nation: Nation):
-        self.vikings_points_label.setText(str(nation.getPoints())) 
+    def updateVikings(self, nation: Nation, points: Points):
+        self.vikings_points_label.setText(str(nation.getPoints(points))) 
         self.vikings_age_label.setText(str(nation.age.value))
         self.vikings_villagers_label.setText(str(nation.villagers))
         self.vikings_food_label.setText(str(nation.ressources.food))
@@ -280,8 +281,8 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
         for field in nation.fields:
             self.vikings_fields_list.addItem(str(field))
 
-    def updateChinese(self, nation: Nation):
-        self.chinese_points_label.setText(str(nation.getPoints())) 
+    def updateChinese(self, nation: Nation, points: Points):
+        self.chinese_points_label.setText(str(nation.getPoints(points))) 
         self.chinese_age_label.setText(str(nation.age.value))
         self.chinese_villagers_label.setText(str(nation.villagers))
         self.chinese_food_label.setText(str(nation.ressources.food))
@@ -304,8 +305,8 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
         for field in nation.fields:
             self.chinese_fields_list.addItem(str(field))
 
-    def updateMongols(self, nation: Nation):
-        self.mongols_points_label.setText(str(nation.getPoints())) 
+    def updateMongols(self, nation: Nation, points: Points):
+        self.mongols_points_label.setText(str(nation.getPoints(points))) 
         self.mongols_age_label.setText(str(nation.age.value))
         self.mongols_villagers_label.setText(str(nation.villagers))
         self.mongols_food_label.setText(str(nation.ressources.food))
