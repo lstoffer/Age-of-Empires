@@ -31,4 +31,5 @@ class UpdateCategory(Enum):
     BUILDINGS = 'buildings'
     TROOPS = 'troops'
     VILLAGERS = 'villagers'
+    COSTS = 'costs'
     
