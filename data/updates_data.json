@@ -1,6 +1,12 @@
 {
   "britons": {
     "wheel": {
+      "costs": {
+        "gold": 800,
+        "wood": 0,
+        "food": 400,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -77,16 +83,22 @@
           "stone": 0
         },
         "profits": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+          "gold": 5,
+          "wood": 5,
+          "food": 5,
+          "stone": 5
         },
         "defence": 0,
-        "points": 0
+        "points": 20
       }
     },
     "trade-cart": {
+      "costs": {
+        "gold": 800,
+        "wood": 800,
+        "food": 200,
+        "stone": 200
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -163,16 +175,22 @@
           "stone": 0
         },
         "profits": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+          "gold": 5,
+          "wood": 5,
+          "food": 5,
+          "stone": 5
         },
         "defence": 0,
-        "points": 0
+        "points": 20
       }
     },
     "short-swordsman": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -259,6 +277,12 @@
       }
     },
     "long-swordsman": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -345,6 +369,12 @@
       }
     },
     "heavy-cavalry": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -431,6 +461,12 @@
       }
     },
     "war-elephant": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -517,6 +553,12 @@
       }
     },
     "improved-bowman": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -603,6 +645,12 @@
       }
     },
     "composite-bowman": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -689,6 +737,12 @@
       }
     },
     "centurion": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -775,6 +829,12 @@
       }
     },
     "legionary": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -861,6 +921,12 @@
       }
     },
     "stone-thrower": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -947,6 +1013,12 @@
       }
     },
     "trebuchet": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -1033,6 +1105,12 @@
       }
     },
     "gold-mining": {
+      "costs": {
+        "gold": 600,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -1109,7 +1187,7 @@
           "stone": 0
         },
         "profits": {
-          "gold": 0,
+          "gold": 5,
           "wood": 0,
           "food": 0,
           "stone": 0
@@ -1119,6 +1197,12 @@
       }
     },
     "gold-mining-ii": {
+      "costs": {
+        "gold": 600,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -1195,7 +1279,7 @@
           "stone": 0
         },
         "profits": {
-          "gold": 0,
+          "gold": 5,
           "wood": 0,
           "food": 0,
           "stone": 0
@@ -1205,6 +1289,12 @@
       }
     },
     "stone-mining": {
+      "costs": {
+        "gold": 300,
+        "wood": 0,
+        "food": 0,
+        "stone": 300
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -1284,13 +1374,19 @@
           "gold": 0,
           "wood": 0,
           "food": 0,
-          "stone": 0
+          "stone": 5
         },
         "defence": 0,
         "points": 0
       }
     },
     "stone-mining-ii": {
+      "costs": {
+        "gold": 300,
+        "wood": 0,
+        "food": 0,
+        "stone": 300
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -1370,13 +1466,19 @@
           "gold": 0,
           "wood": 0,
           "food": 0,
-          "stone": 0
+          "stone": 5
         },
         "defence": 0,
         "points": 0
       }
     },
     "woodcutting": {
+      "costs": {
+        "gold": 300,
+        "wood": 300,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -1454,7 +1556,7 @@
         },
         "profits": {
           "gold": 0,
-          "wood": 0,
+          "wood": 5,
           "food": 0,
           "stone": 0
         },
@@ -1463,6 +1565,12 @@
       }
     },
     "artisanship": {
+      "costs": {
+        "gold": 300,
+        "wood": 300,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -1540,7 +1648,7 @@
         },
         "profits": {
           "gold": 0,
-          "wood": 0,
+          "wood": 5,
           "food": 0,
           "stone": 0
         },
@@ -1549,6 +1657,12 @@
       }
     },
     "domestication": {
+      "costs": {
+        "gold": 300,
+        "wood": 0,
+        "food": 300,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -1627,7 +1741,7 @@
         "profits": {
           "gold": 0,
           "wood": 0,
-          "food": 0,
+          "food": 5,
           "stone": 0
         },
         "defence": 0,
@@ -1635,6 +1749,12 @@
       }
     },
     "plow": {
+      "costs": {
+        "gold": 300,
+        "wood": 0,
+        "food": 300,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -1713,7 +1833,7 @@
         "profits": {
           "gold": 0,
           "wood": 0,
-          "food": 0,
+          "food": 5,
           "stone": 0
         },
         "defence": 0,
@@ -1721,6 +1841,12 @@
       }
     },
     "big-wall": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -1807,6 +1933,12 @@
       }
     },
     "stone-wall": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -1893,6 +2025,12 @@
       }
     },
     "big-castle": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -1979,6 +2117,12 @@
       }
     },
     "stone-castle": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -2067,6 +2211,12 @@
   },
   "vikings": {
     "wheel": {
+      "costs": {
+        "gold": 800,
+        "wood": 0,
+        "food": 400,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -2143,16 +2293,22 @@
           "stone": 0
         },
         "profits": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+          "gold": 5,
+          "wood": 5,
+          "food": 5,
+          "stone": 5
         },
         "defence": 0,
-        "points": 0
+        "points": 20
       }
     },
     "trade-cart": {
+      "costs": {
+        "gold": 800,
+        "wood": 800,
+        "food": 200,
+        "stone": 200
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -2229,16 +2385,22 @@
           "stone": 0
         },
         "profits": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+          "gold": 5,
+          "wood": 5,
+          "food": 5,
+          "stone": 5
         },
         "defence": 0,
-        "points": 0
+        "points": 20
       }
     },
     "short-swordsman": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -2325,6 +2487,12 @@
       }
     },
     "long-swordsman": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -2411,6 +2579,12 @@
       }
     },
     "heavy-cavalry": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -2497,6 +2671,12 @@
       }
     },
     "war-elephant": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -2583,6 +2763,12 @@
       }
     },
     "improved-bowman": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -2669,6 +2855,12 @@
       }
     },
     "composite-bowman": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -2755,6 +2947,12 @@
       }
     },
     "centurion": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -2841,6 +3039,12 @@
       }
     },
     "legionary": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -2927,6 +3131,12 @@
       }
     },
     "stone-thrower": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -3013,6 +3223,12 @@
       }
     },
     "trebuchet": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -3099,6 +3315,12 @@
       }
     },
     "gold-mining": {
+      "costs": {
+        "gold": 600,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -3175,7 +3397,7 @@
           "stone": 0
         },
         "profits": {
-          "gold": 0,
+          "gold": 5,
           "wood": 0,
           "food": 0,
           "stone": 0
@@ -3185,6 +3407,12 @@
       }
     },
     "gold-mining-ii": {
+      "costs": {
+        "gold": 600,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -3261,7 +3489,7 @@
           "stone": 0
         },
         "profits": {
-          "gold": 0,
+          "gold": 5,
           "wood": 0,
           "food": 0,
           "stone": 0
@@ -3271,6 +3499,12 @@
       }
     },
     "stone-mining": {
+      "costs": {
+        "gold": 300,
+        "wood": 0,
+        "food": 0,
+        "stone": 300
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -3350,13 +3584,19 @@
           "gold": 0,
           "wood": 0,
           "food": 0,
-          "stone": 0
+          "stone": 5
         },
         "defence": 0,
         "points": 0
       }
     },
     "stone-mining-ii": {
+      "costs": {
+        "gold": 300,
+        "wood": 0,
+        "food": 0,
+        "stone": 300
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -3436,13 +3676,19 @@
           "gold": 0,
           "wood": 0,
           "food": 0,
-          "stone": 0
+          "stone": 5
         },
         "defence": 0,
         "points": 0
       }
     },
     "woodcutting": {
+      "costs": {
+        "gold": 300,
+        "wood": 300,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -3520,7 +3766,7 @@
         },
         "profits": {
           "gold": 0,
-          "wood": 0,
+          "wood": 5,
           "food": 0,
           "stone": 0
         },
@@ -3529,6 +3775,12 @@
       }
     },
     "artisanship": {
+      "costs": {
+        "gold": 300,
+        "wood": 300,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -3606,7 +3858,7 @@
         },
         "profits": {
           "gold": 0,
-          "wood": 0,
+          "wood": 5,
           "food": 0,
           "stone": 0
         },
@@ -3615,6 +3867,12 @@
       }
     },
     "domestication": {
+      "costs": {
+        "gold": 300,
+        "wood": 0,
+        "food": 300,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -3693,7 +3951,7 @@
         "profits": {
           "gold": 0,
           "wood": 0,
-          "food": 0,
+          "food": 5,
           "stone": 0
         },
         "defence": 0,
@@ -3701,6 +3959,12 @@
       }
     },
     "plow": {
+      "costs": {
+        "gold": 300,
+        "wood": 0,
+        "food": 300,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -3779,7 +4043,7 @@
         "profits": {
           "gold": 0,
           "wood": 0,
-          "food": 0,
+          "food": 5,
           "stone": 0
         },
         "defence": 0,
@@ -3787,6 +4051,12 @@
       }
     },
     "big-wall": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -3873,6 +4143,12 @@
       }
     },
     "stone-wall": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -3959,6 +4235,12 @@
       }
     },
     "big-castle": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -4045,6 +4327,12 @@
       }
     },
     "stone-castle": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -4133,6 +4421,12 @@
   },
   "chinese": {
     "wheel": {
+      "costs": {
+        "gold": 800,
+        "wood": 0,
+        "food": 400,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -4209,16 +4503,22 @@
           "stone": 0
         },
         "profits": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+          "gold": 5,
+          "wood": 5,
+          "food": 5,
+          "stone": 5
         },
         "defence": 0,
-        "points": 0
+        "points": 20
       }
     },
     "trade-cart": {
+      "costs": {
+        "gold": 800,
+        "wood": 800,
+        "food": 200,
+        "stone": 200
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -4295,16 +4595,22 @@
           "stone": 0
         },
         "profits": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+          "gold": 5,
+          "wood": 5,
+          "food": 5,
+          "stone": 5
         },
         "defence": 0,
-        "points": 0
+        "points": 20
       }
     },
     "short-swordsman": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -4391,6 +4697,12 @@
       }
     },
     "long-swordsman": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -4477,6 +4789,12 @@
       }
     },
     "heavy-cavalry": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -4563,6 +4881,12 @@
       }
     },
     "war-elephant": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -4649,6 +4973,12 @@
       }
     },
     "improved-bowman": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -4735,6 +5065,12 @@
       }
     },
     "composite-bowman": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -4821,6 +5157,12 @@
       }
     },
     "centurion": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -4907,6 +5249,12 @@
       }
     },
     "legionary": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -4993,6 +5341,12 @@
       }
     },
     "stone-thrower": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -5079,6 +5433,12 @@
       }
     },
     "trebuchet": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -5165,6 +5525,12 @@
       }
     },
     "gold-mining": {
+      "costs": {
+        "gold": 600,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -5241,7 +5607,7 @@
           "stone": 0
         },
         "profits": {
-          "gold": 0,
+          "gold": 5,
           "wood": 0,
           "food": 0,
           "stone": 0
@@ -5251,6 +5617,12 @@
       }
     },
     "gold-mining-ii": {
+      "costs": {
+        "gold": 600,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -5327,7 +5699,7 @@
           "stone": 0
         },
         "profits": {
-          "gold": 0,
+          "gold": 5,
           "wood": 0,
           "food": 0,
           "stone": 0
@@ -5337,6 +5709,12 @@
       }
     },
     "stone-mining": {
+      "costs": {
+        "gold": 300,
+        "wood": 0,
+        "food": 0,
+        "stone": 300
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -5416,13 +5794,19 @@
           "gold": 0,
           "wood": 0,
           "food": 0,
-          "stone": 0
+          "stone": 5
         },
         "defence": 0,
         "points": 0
       }
     },
     "stone-mining-ii": {
+      "costs": {
+        "gold": 300,
+        "wood": 0,
+        "food": 0,
+        "stone": 300
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -5502,13 +5886,19 @@
           "gold": 0,
           "wood": 0,
           "food": 0,
-          "stone": 0
+          "stone": 5
         },
         "defence": 0,
         "points": 0
       }
     },
     "woodcutting": {
+      "costs": {
+        "gold": 300,
+        "wood": 300,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -5586,7 +5976,7 @@
         },
         "profits": {
           "gold": 0,
-          "wood": 0,
+          "wood": 5,
           "food": 0,
           "stone": 0
         },
@@ -5595,6 +5985,12 @@
       }
     },
     "artisanship": {
+      "costs": {
+        "gold": 300,
+        "wood": 300,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -5672,7 +6068,7 @@
         },
         "profits": {
           "gold": 0,
-          "wood": 0,
+          "wood": 5,
           "food": 0,
           "stone": 0
         },
@@ -5681,6 +6077,12 @@
       }
     },
     "domestication": {
+      "costs": {
+        "gold": 300,
+        "wood": 0,
+        "food": 300,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -5759,7 +6161,7 @@
         "profits": {
           "gold": 0,
           "wood": 0,
-          "food": 0,
+          "food": 5,
           "stone": 0
         },
         "defence": 0,
@@ -5767,6 +6169,12 @@
       }
     },
     "plow": {
+      "costs": {
+        "gold": 300,
+        "wood": 0,
+        "food": 300,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -5845,7 +6253,7 @@
         "profits": {
           "gold": 0,
           "wood": 0,
-          "food": 0,
+          "food": 5,
           "stone": 0
         },
         "defence": 0,
@@ -5853,6 +6261,12 @@
       }
     },
     "big-wall": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -5939,6 +6353,12 @@
       }
     },
     "stone-wall": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -6025,6 +6445,12 @@
       }
     },
     "big-castle": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -6111,6 +6537,12 @@
       }
     },
     "stone-castle": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -6199,6 +6631,12 @@
   },
   "mongols": {
     "wheel": {
+      "costs": {
+        "gold": 800,
+        "wood": 0,
+        "food": 400,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -6275,16 +6713,22 @@
           "stone": 0
         },
         "profits": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+          "gold": 5,
+          "wood": 5,
+          "food": 5,
+          "stone": 5
         },
         "defence": 0,
-        "points": 0
+        "points": 20
       }
     },
     "trade-cart": {
+      "costs": {
+        "gold": 800,
+        "wood": 800,
+        "food": 200,
+        "stone": 200
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -6361,16 +6805,22 @@
           "stone": 0
         },
         "profits": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+          "gold": 5,
+          "wood": 5,
+          "food": 5,
+          "stone": 5
         },
         "defence": 0,
-        "points": 0
+        "points": 20
       }
     },
     "short-swordsman": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -6457,6 +6907,12 @@
       }
     },
     "long-swordsman": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -6543,6 +6999,12 @@
       }
     },
     "heavy-cavalry": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -6629,6 +7091,12 @@
       }
     },
     "war-elephant": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -6715,6 +7183,12 @@
       }
     },
     "improved-bowman": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -6801,6 +7275,12 @@
       }
     },
     "composite-bowman": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -6887,6 +7367,12 @@
       }
     },
     "centurion": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -6973,6 +7459,12 @@
       }
     },
     "legionary": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -7059,6 +7551,12 @@
       }
     },
     "stone-thrower": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -7145,6 +7643,12 @@
       }
     },
     "trebuchet": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -7231,6 +7735,12 @@
       }
     },
     "gold-mining": {
+      "costs": {
+        "gold": 600,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -7307,7 +7817,7 @@
           "stone": 0
         },
         "profits": {
-          "gold": 0,
+          "gold": 5,
           "wood": 0,
           "food": 0,
           "stone": 0
@@ -7317,6 +7827,12 @@
       }
     },
     "gold-mining-ii": {
+      "costs": {
+        "gold": 600,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -7393,7 +7909,7 @@
           "stone": 0
         },
         "profits": {
-          "gold": 0,
+          "gold": 5,
           "wood": 0,
           "food": 0,
           "stone": 0
@@ -7403,6 +7919,12 @@
       }
     },
     "stone-mining": {
+      "costs": {
+        "gold": 300,
+        "wood": 0,
+        "food": 0,
+        "stone": 300
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -7482,13 +8004,19 @@
           "gold": 0,
           "wood": 0,
           "food": 0,
-          "stone": 0
+          "stone": 5
         },
         "defence": 0,
         "points": 0
       }
     },
     "stone-mining-ii": {
+      "costs": {
+        "gold": 300,
+        "wood": 0,
+        "food": 0,
+        "stone": 300
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -7568,13 +8096,19 @@
           "gold": 0,
           "wood": 0,
           "food": 0,
-          "stone": 0
+          "stone": 5
         },
         "defence": 0,
         "points": 0
       }
     },
     "woodcutting": {
+      "costs": {
+        "gold": 300,
+        "wood": 300,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -7652,7 +8186,7 @@
         },
         "profits": {
           "gold": 0,
-          "wood": 0,
+          "wood": 5,
           "food": 0,
           "stone": 0
         },
@@ -7661,6 +8195,12 @@
       }
     },
     "artisanship": {
+      "costs": {
+        "gold": 300,
+        "wood": 300,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -7738,7 +8278,7 @@
         },
         "profits": {
           "gold": 0,
-          "wood": 0,
+          "wood": 5,
           "food": 0,
           "stone": 0
         },
@@ -7747,6 +8287,12 @@
       }
     },
     "domestication": {
+      "costs": {
+        "gold": 300,
+        "wood": 0,
+        "food": 300,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -7825,7 +8371,7 @@
         "profits": {
           "gold": 0,
           "wood": 0,
-          "food": 0,
+          "food": 5,
           "stone": 0
         },
         "defence": 0,
@@ -7833,6 +8379,12 @@
       }
     },
     "plow": {
+      "costs": {
+        "gold": 300,
+        "wood": 0,
+        "food": 300,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -7911,7 +8463,7 @@
         "profits": {
           "gold": 0,
           "wood": 0,
-          "food": 0,
+          "food": 5,
           "stone": 0
         },
         "defence": 0,
@@ -7919,6 +8471,12 @@
       }
     },
     "big-wall": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -8005,6 +8563,12 @@
       }
     },
     "stone-wall": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -8091,6 +8655,12 @@
       }
     },
     "big-castle": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
@@ -8177,6 +8747,12 @@
       }
     },
     "stone-castle": {
+      "costs": {
+        "gold": 0,
+        "wood": 0,
+        "food": 0,
+        "stone": 0
+      },
       "buildings": {
         "towncenter": {
           "costs": {
