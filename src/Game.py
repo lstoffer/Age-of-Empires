@@ -74,7 +74,7 @@ class Game(QObject):
 
     @pyqtSlot(int)
     def applyRessourceDividends(self, rounds: int = 1):
-        '''adds all ressources earned by all the villagers of a nation to the nation'''
+        """adds all resources earned by all the villagers of a nation to the nation"""
         for field in self.fields.fields.values():
             ressourceType = field.ressource
             villagersAmount = field.villagers
@@ -299,7 +299,7 @@ class Game(QObject):
                 self.displayInfo.emit(f'Not able to destroy buildings: destruction was {destruction} and structure was {structure}')
 
         # TODO: Felder zurückgeben
-        if fromFieldInstance.troops.infantry == 0 and fromFieldInstance.troops.cavalry == 0 and fromFieldInstance.troops.archer == 0 and fromFieldInstance.buildings.towncenter == 0 and fromFieldInstance.castle == 0:
+        if fromFieldInstance.troops.infantry == 0 and fromFieldInstance.troops.cavalry == 0 and fromFieldInstance.troops.archer == 0 and fromFieldInstance.buildings.towncenter == 0 and fromFieldInstance.buildings.castle == 0:
             fromFieldInstance.nation = NationType.NONE
 
         
