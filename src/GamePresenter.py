@@ -3,6 +3,7 @@ import sys
 from Game import Game
 from GameGUI import GameGUI
 
+
 class GamePresenter:
     def __init__(self) -> None:
         self.model = Game()
@@ -26,6 +27,8 @@ class GamePresenter:
 
         self.gui.buildBuilding.connect(self.model.buildBuilding)
         self.gui.destroyBuilding.connect(self.model.destroyBuilding)
+        self.gui.buildWall.connect(self.model.buildWall)
+        self.gui.destroyWall.connect(self.model.destroyWall)
 
         self.gui.stopGame.connect(self.model.stopGame)
 

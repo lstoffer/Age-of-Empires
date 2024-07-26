@@ -16,7 +16,7 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
     
     stopGame = pyqtSignal()
     
-    # Ressources
+    # Resources
     addRessources = pyqtSignal(NationType, Ressources)
     applyDividends = pyqtSignal(int)
 
@@ -27,6 +27,8 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
     # Buildings
     buildBuilding = pyqtSignal(NationType, int, BuildingType)
     destroyBuilding = pyqtSignal(NationType, int, BuildingType)
+    buildWall = pyqtSignal(NationType, int, int)
+    destroyWall = pyqtSignal(int, int)
 
     updateAge = pyqtSignal(NationType)
 
@@ -44,7 +46,7 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
         self.setupTroopTypeSelect()
         self.setupTradeRessourceSelect()
 
-        # Ressources
+        # Resources
         self.ressources_add_btn.clicked.connect(self.onRssourcesAddClick)
         self.ressources_sub_btn.clicked.connect(self.onRessourcesSubClick)
         self.ressources_dividends_btn.clicked.connect(self.onRessourceDividendsClick)
@@ -53,9 +55,11 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
         self.villagers_move_btn.clicked.connect(self.onVillagersMoveClick)
         self.villagers_develop_btn.clicked.connect(self.onVillagersDevelopClick)
 
-        #Buildings
+        # Buildings
         self.buildings_build_btn.clicked.connect(self.onBuildingsBuildClick)
         self.buildings_destroy_btn.clicked.connect(self.onBuildingsDestroyClick)
+        self.building_wall_build_btn.clicked.connect(self.onBuildingsWallBuildClick)
+        self.building_wall_destroy_btn.clicked.connect(self.onBuildingsWallDestroyClick)
 
         # Ages
         self.ages_update_btn.clicked.connect(self.onAgeUpdateClick)
@@ -83,7 +87,6 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
         self.buildings_type_comboBox.addItem('Dorfzentrum', 'towncenter')
         self.buildings_type_comboBox.addItem('Markt', 'market')
         self.buildings_type_comboBox.addItem('Kaserne', 'barracks')
-        self.buildings_type_comboBox.addItem('Wall', 'wall')
         self.buildings_type_comboBox.addItem('Burg', 'castle')
         self.buildings_type_comboBox.addItem('Universität', 'university')
 
@@ -150,6 +153,17 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
         field = self.buildings_field_select_spinBox.value()
         buildingType = BuildingType(self.buildings_type_comboBox.currentData())
         self.destroyBuilding(nation, field, buildingType)
+
+    def onBuildingsWallBuildClick(self):
+        nation = NationType(self.nation_select_comboBox.currentData())
+        field1 = self.buildings_wall_field1_select_spinBox.value()
+        field2 = self.buildings_wall_field2_select_spinBox.value()
+        self.buildWall.emit(nation, field1, field2)
+
+    def onBuildingsWallDestroyClick(self):
+        field1 = self.buildings_wall_field1_select_spinBox.value()
+        field2 = self.buildings_wall_field2_select_spinBox.value()
+        self.destroyWall.emit(field1, field2)
 
     def onAgeUpdateClick(self):
         nation = NationType(self.nation_select_comboBox.currentData())

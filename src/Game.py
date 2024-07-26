@@ -155,6 +155,20 @@ class Game(QObject):
             return
         fieldInstance.buildings.remove(buildingType, 1)
 
+    @pyqtSlot(NationType, int, int)
+    def buildWall(self, nationType: NationType, fieldOne: int, fieldTwo: int):
+        try:
+            self.borders.addWall(nationType, fieldOne, fieldTwo)
+        except Exception as e:
+            self.displayError.emit(str(e))
+
+    @pyqtSlot(int, int)
+    def destroyWall(self, fieldOne: int, fieldTwo: int):
+        try:
+            self.borders.destroyWall(fieldOne, fieldTwo)
+        except Exception as e:
+            self.displayError.emit(str(e))
+
     @pyqtSlot(NationType)
     def updateAge(self, nationType: NationType):
         nation = self.nations.getNation(nationType)

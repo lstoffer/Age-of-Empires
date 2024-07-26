@@ -58,7 +58,7 @@
         <item>
          <widget class="QTabWidget" name="tabWidget_3">
           <property name="currentIndex">
-           <number>6</number>
+           <number>3</number>
           </property>
           <widget class="QWidget" name="ressources_controlTab">
            <attribute name="title">
@@ -75,8 +75,8 @@
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>1024</width>
-                 <height>790</height>
+                 <width>1036</width>
+                 <height>745</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_26">
@@ -243,8 +243,8 @@
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>1024</width>
-                 <height>790</height>
+                 <width>1036</width>
+                 <height>745</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_5">
@@ -402,8 +402,8 @@
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>1024</width>
-                 <height>790</height>
+                 <width>1036</width>
+                 <height>745</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_9">
@@ -661,15 +661,15 @@
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>1024</width>
-                 <height>790</height>
+                 <width>1036</width>
+                 <height>745</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_25">
                 <item>
                  <widget class="QGroupBox" name="groupBox_6">
                   <property name="title">
-                   <string>Bauen / Abreissen</string>
+                   <string>Gebäude bauem / abreissen</string>
                   </property>
                   <layout class="QVBoxLayout" name="verticalLayout_23">
                    <item>
@@ -711,6 +711,65 @@
                      </item>
                      <item>
                       <widget class="QPushButton" name="buildings_destroy_btn">
+                       <property name="text">
+                        <string>Abreissen</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QGroupBox" name="groupBox_9">
+                  <property name="title">
+                   <string>Wall bauen</string>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_33">
+                   <item>
+                    <layout class="QFormLayout" name="formLayout_10">
+                     <item row="0" column="0">
+                      <widget class="QLabel" name="label_48">
+                       <property name="text">
+                        <string>Feld 1</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="0" column="1">
+                      <widget class="QSpinBox" name="buildings_wall_field1_select_spinBox">
+                       <property name="maximum">
+                        <number>1000</number>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="1" column="0">
+                      <widget class="QLabel" name="label_49">
+                       <property name="text">
+                        <string>Feld 2</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="1" column="1">
+                      <widget class="QSpinBox" name="buildings_wall_field2_select_spinBox">
+                       <property name="maximum">
+                        <number>1000</number>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_6">
+                     <item>
+                      <widget class="QPushButton" name="building_wall_build_btn">
+                       <property name="text">
+                        <string>Bauen</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="building_wall_destroy_btn">
                        <property name="text">
                         <string>Abreissen</string>
                        </property>
@@ -837,8 +896,8 @@
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>1024</width>
-                 <height>790</height>
+                 <width>1036</width>
+                 <height>745</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_30">
@@ -932,8 +991,8 @@
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>193</width>
-                 <height>626</height>
+                 <width>227</width>
+                 <height>758</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_8">
@@ -1313,8 +1372,8 @@
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>193</width>
-                 <height>626</height>
+                 <width>227</width>
+                 <height>758</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_14">
@@ -1694,8 +1753,8 @@
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>1024</width>
-                 <height>846</height>
+                 <width>1036</width>
+                 <height>817</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_16">
@@ -2075,8 +2134,8 @@
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>193</width>
-                 <height>626</height>
+                 <width>227</width>
+                 <height>758</height>
                 </rect>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_18">
@@ -2764,7 +2823,7 @@
      <x>0</x>
      <y>0</y>
      <width>1092</width>
-     <height>21</height>
+     <height>30</height>
     </rect>
    </property>
   </widget>
