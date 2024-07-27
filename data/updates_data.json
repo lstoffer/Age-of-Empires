@@ -30,6 +30,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -65,15 +76,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -122,6 +168,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -157,15 +214,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -214,6 +306,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -249,15 +352,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -306,6 +444,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -341,15 +490,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -398,6 +582,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -433,15 +628,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -490,6 +720,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -525,15 +766,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -582,6 +858,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -617,15 +904,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -674,6 +996,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -709,15 +1042,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -766,6 +1134,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -801,15 +1180,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -858,6 +1272,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -893,15 +1318,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -950,6 +1410,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -985,15 +1456,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -1042,6 +1548,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -1077,15 +1594,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -1134,6 +1686,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -1169,15 +1732,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -1226,6 +1824,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -1261,15 +1870,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -1318,6 +1962,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -1353,15 +2008,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -1410,6 +2100,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -1445,15 +2146,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -1502,6 +2238,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -1537,15 +2284,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -1594,6 +2376,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -1629,15 +2422,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -1686,6 +2514,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -1721,15 +2560,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -1778,6 +2652,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -1813,15 +2698,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -1870,6 +2790,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -1905,15 +2836,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -1962,6 +2928,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -1997,15 +2974,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -2054,6 +3066,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -2089,15 +3112,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -2146,6 +3204,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -2181,15 +3250,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -2240,6 +3344,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -2275,15 +3390,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -2332,6 +3482,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -2367,15 +3528,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -2424,6 +3620,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -2459,15 +3666,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -2516,6 +3758,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -2551,15 +3804,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -2608,6 +3896,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -2643,15 +3942,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -2700,6 +4034,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -2735,15 +4080,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -2792,6 +4172,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -2827,15 +4218,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -2884,6 +4310,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -2919,15 +4356,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -2976,6 +4448,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -3011,15 +4494,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -3068,6 +4586,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -3103,15 +4632,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -3160,6 +4724,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -3195,15 +4770,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -3252,6 +4862,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -3287,15 +4908,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -3344,6 +5000,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -3379,15 +5046,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -3436,6 +5138,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -3471,15 +5184,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -3528,6 +5276,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -3563,15 +5322,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -3620,6 +5414,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -3655,15 +5460,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -3712,6 +5552,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -3747,15 +5598,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -3804,6 +5690,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -3839,15 +5736,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -3896,6 +5828,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -3931,15 +5874,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -3988,6 +5966,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -4023,15 +6012,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -4080,6 +6104,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -4115,15 +6150,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -4172,6 +6242,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -4207,15 +6288,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -4264,6 +6380,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -4299,15 +6426,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -4356,6 +6518,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -4391,15 +6564,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -4450,6 +6658,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -4485,15 +6704,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -4542,6 +6796,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -4577,15 +6842,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -4634,6 +6934,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -4669,15 +6980,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -4726,6 +7072,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -4761,15 +7118,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -4818,6 +7210,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -4853,15 +7256,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -4910,6 +7348,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -4945,15 +7394,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -5002,6 +7486,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -5037,15 +7532,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -5094,6 +7624,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -5129,15 +7670,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -5186,6 +7762,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -5221,15 +7808,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -5278,6 +7900,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -5313,15 +7946,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -5370,6 +8038,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -5405,15 +8084,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -5462,6 +8176,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -5497,15 +8222,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -5554,6 +8314,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -5589,15 +8360,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -5646,6 +8452,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -5681,15 +8498,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -5738,6 +8590,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -5773,15 +8636,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -5830,6 +8728,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -5865,15 +8774,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -5922,6 +8866,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -5957,15 +8912,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -6014,6 +9004,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -6049,15 +9050,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -6106,6 +9142,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -6141,15 +9188,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -6198,6 +9280,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -6233,15 +9326,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -6290,6 +9418,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -6325,15 +9464,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -6382,6 +9556,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -6417,15 +9602,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -6474,6 +9694,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -6509,15 +9740,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -6566,6 +9832,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -6601,15 +9878,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -6660,6 +9972,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -6695,15 +10018,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -6752,6 +10110,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -6787,15 +10156,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -6844,6 +10248,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -6879,15 +10294,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -6936,6 +10386,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -6971,15 +10432,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -7028,6 +10524,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -7063,15 +10570,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -7120,6 +10662,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -7155,15 +10708,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -7212,6 +10800,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -7247,15 +10846,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -7304,6 +10938,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -7339,15 +10984,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -7396,6 +11076,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -7431,15 +11122,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -7488,6 +11214,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -7523,15 +11260,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -7580,6 +11352,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -7615,15 +11398,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -7672,6 +11490,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -7707,15 +11536,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -7764,6 +11628,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -7799,15 +11674,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -7856,6 +11766,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -7891,15 +11812,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -7948,6 +11904,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -7983,15 +11950,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -8040,6 +12042,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -8075,15 +12088,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -8132,6 +12180,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -8167,15 +12226,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -8224,6 +12318,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -8259,15 +12364,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -8316,6 +12456,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -8351,15 +12502,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -8408,6 +12594,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -8443,15 +12640,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -8500,6 +12732,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -8535,15 +12778,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -8592,6 +12870,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -8627,15 +12916,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -8684,6 +13008,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -8719,15 +13054,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {
@@ -8776,6 +13146,17 @@
           "structure": 0,
           "points": 0
         },
+        "barracks": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "structure": 0,
+          "points": 0
+        },
         "wall": {
           "costs": {
             "gold": 0,
@@ -8811,15 +13192,50 @@
         }
       },
       "troops": {
-        "costs": {
-          "gold": 0,
-          "wood": 0,
-          "food": 0,
-          "stone": 0
+        "archer": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
         },
-        "defence": 0,
-        "attack": 0,
-        "points": 0
+        "infantry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "cavalry": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        },
+        "siege": {
+          "costs": {
+            "gold": 0,
+            "wood": 0,
+            "food": 0,
+            "stone": 0
+          },
+          "defence": 0,
+          "attack": 0,
+          "points": 0
+        }
       },
       "villagers": {
         "costs": {

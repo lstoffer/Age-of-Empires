@@ -10,7 +10,7 @@ from utils.UpdateType import UpdateCategory
 class DataAccess():
 
     def __init__(self) -> None:
-        self.dataDir = Path.cwd() / 'data'
+        self.dataDir = Path.cwd().parent / 'data'
         self.nationsData = self.loadData('nations_data.json')
         self.fieldsData = self.loadData('fields_data.json')
         self.villagersData = self.loadData('villagers_data.json')

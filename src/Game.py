@@ -8,6 +8,7 @@ from Nations import Nations
 from Field import Field
 from Fields import Fields
 from Points import Points
+from Updates import Updates
 from Ages import Ages
 from utils.TroopType import TroopType
 from utils.Ressources import Ressources
@@ -63,6 +64,8 @@ class Game(QObject):
 
         self.fields = Fields(self.__fieldsData)
         self.borders = Borders(self.__bordersData)
+
+        self.updates = Updates(self.__updatesData)
 
         self.points = Points.from_dict(self.__pointsData)
 
