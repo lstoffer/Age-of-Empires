@@ -19,8 +19,8 @@ class GamePresenter:
         self.gui.field_select_spinBox.valueChanged.connect(self.model.updateFields)
         self.model.updateField.connect(self.gui.updateField)
 
-        self.gui.addRessources.connect(self.model.addRessources)
-        self.gui.applyDividends.connect(self.model.applyRessourceDividends)
+        self.gui.addResources.connect(self.model.addResources)
+        self.gui.applyDividends.connect(self.model.applyResourceDividends)
 
         self.gui.moveVillagers.connect(self.model.moveVillagers)
         self.gui.developVillagers.connect(self.model.developVillagers)
@@ -39,6 +39,8 @@ class GamePresenter:
         self.gui.attack.connect(self.model.attack)
 
         self.gui.trade.connect(self.model.trade)
+
+        self.gui.applyUpdate.connect(self.model.applyUpdate)
 
         self.model.updateNations()
         

@@ -8,12 +8,12 @@ from Nations import Nations
 from Field import Field
 from Fields import Fields
 from Points import Points
-from Updates import Updates
 from Ages import Ages
 from utils.TroopType import TroopType
 from utils.Ressources import Ressources
 from utils.BuildingType import BuildingType
 from utils.RessourceType import RessourceType
+from utils.UpdateType import UpdateType
 
 
 class Game(QObject):
@@ -65,8 +65,6 @@ class Game(QObject):
         self.fields = Fields(self.__fieldsData)
         self.borders = Borders(self.__bordersData)
 
-        self.updates = Updates(self.__updatesData)
-
         self.points = Points.from_dict(self.__pointsData)
 
         self.ages = Ages(self.__agesData)
@@ -76,23 +74,23 @@ class Game(QObject):
         self.serialize()
 
     @pyqtSlot(int)
-    def applyRessourceDividends(self, rounds: int = 1):
+    def applyResourceDividends(self, rounds: int = 1):
         """adds all resources earned by all the villagers of a nation to the nation"""
         for field in self.fields.fields.values():
-            ressourceType = field.ressource
+            resourceType = field.ressource
             villagersAmount = field.villagers
             nationType = field.nation
             if nationType == NationType.NONE:
                 continue
             nation = self.nations.getNation(nationType)
-            amount = villagersAmount * nation.villagerInstance.profit.get(ressourceType)
+            amount = villagersAmount * nation.villagerInstance.profit.get(resourceType)
             amount = amount * rounds
-            nation.ressources.add(ressourceType=ressourceType, amount=amount)
+            nation.ressources.add(ressourceType=resourceType, amount=amount)
 
     @pyqtSlot(NationType, Ressources)
-    def addRessources(self, nationType: NationType, ressources: Ressources):
+    def addResources(self, nationType: NationType, resources: Ressources):
         nation = self.nations.getNation(nationType)
-        nation.addRessources(ressources)
+        nation.addResources(resources)
 
     @pyqtSlot(NationType, int, int, int)
     def moveVillagers(self, nationType: NationType, amount: int, fromField: int, toField: int):
@@ -113,18 +111,16 @@ class Game(QObject):
     @pyqtSlot(NationType, int, int)
     def developVillagers(self, nationType: NationType, field: int, amount: int):
         fieldInstance = self.fields[field]
-        # if fieldInstance.buildings.towncenter <= 0:
-        #     return # TODO: ERROR MESSAGE
         if fieldInstance.getNation() not in [nationType, NationType.NONE]:
-            self.displayError.emit("Not able to develop ressources on enemy field")
+            self.displayError.emit("Not able to develop resources on enemy field")
             return
         nation = self.nations.getNation(nationType)
         costs = nation.villagerInstance.cost
         if not nation.ressources.isSufficient(costs):
-            self.displayError.emit("Not enough ressources to develop villager")
+            self.displayError.emit("Not enough resources to develop villager")
             return
         if nation.buildings.towncenter < 1:
-            self.displayError.emit("Not able to develop villagers without towncenter")
+            self.displayError.emit("Not able to develop villagers without town center")
             return
         fieldInstance.villagers += amount
         fieldInstance.nation = nationType
@@ -140,7 +136,7 @@ class Game(QObject):
         nation = self.nations.getNation(nationType)
         costs = nation.buildingInstances.get(buildingType).cost
         if not nation.ressources.isSufficient(costs):
-            self.displayError.emit("Not enough ressources to build building")
+            self.displayError.emit("Not enough resources to build building")
             return
         fieldInstance.buildings.add(buildingType, 1)
         nation.buildings.add(buildingType, 1)
@@ -180,7 +176,7 @@ class Game(QObject):
         costs = self.ages.nextAgeCost(nextAge)
 
         if not nation.ressources.isSufficient(costs):
-            self.displayError.emit("Not enough ressources to update age")
+            self.displayError.emit("Not enough resources to update age")
             return
         # TODO add check for buildings
         
@@ -189,8 +185,6 @@ class Game(QObject):
     @pyqtSlot(NationType, TroopType, int, int)
     def developTroops(self, nationType: NationType, troopType: TroopType, fieldNumber: int, amount: int):
         fieldInstance = self.fields[fieldNumber]
-        # if fieldInstance.buildings.towncenter <= 0:
-        #     return # TODO: ERROR MESSAGE
         if fieldInstance.getNation() not in [nationType, NationType.NONE]:
             self.displayError.emit("Not able to develop troops on enemy field")
             return
@@ -198,7 +192,7 @@ class Game(QObject):
         troopInstance = nation.getTroopInstance(troopType)
         costs = troopInstance.cost
         if not nation.ressources.isSufficient(amount * costs):
-            self.displayError.emit("Not enough ressources to develop troops")
+            self.displayError.emit("Not enough resources to develop troops")
             return
         if nation.buildings.barracks < 0:
             self.displayError.emit("No barracks to develop troops")
@@ -315,21 +309,26 @@ class Game(QObject):
             else:
                 self.displayInfo.emit(f'Not able to destroy buildings: destruction was {destruction} and structure was {structure}')
 
-        # TODO: Felder zurückgeben
         if fromFieldInstance.troops.infantry == 0 and fromFieldInstance.troops.cavalry == 0 and fromFieldInstance.troops.archer == 0 and fromFieldInstance.buildings.towncenter == 0 and fromFieldInstance.buildings.castle == 0:
             fromFieldInstance.nation = NationType.NONE
 
-        
-
     @pyqtSlot(NationType, RessourceType, RessourceType, int, int)
-    def trade(self, nationType: NationType, fromRessourceType: RessourceType, toRessourceType: RessourceType, fromAmount: int, toAmount: int):
+    def trade(self, nationType: NationType, fromResourceType: RessourceType, toResourceType: RessourceType, fromAmount: int, toAmount: int):
         nation = self.nations.getNation(nationType)
-        available = nation.ressources.get(fromRessourceType)
+        available = nation.ressources.get(fromResourceType)
         if available < fromAmount:
-            self.displayError.emit("Not enough ressources")
+            self.displayError.emit("Not enough resources")
             return
-        nation.ressources.add(toRessourceType, toAmount)
-        nation.ressources.add(fromRessourceType, -fromAmount)
+        nation.ressources.add(toResourceType, toAmount)
+        nation.ressources.add(fromResourceType, -fromAmount)
+
+    @pyqtSlot(NationType, UpdateType)
+    def applyUpdate(self, nationType: NationType, updateType: UpdateType):
+        nation = self.nations.getNation(nationType)
+        try:
+            nation.addUpdate(updateType)
+        except Exception as e:
+            self.displayError.emit(str(e))
 
     @pyqtSlot(int)
     def updateFields(self, fieldNumber: int):
@@ -356,6 +355,4 @@ class Game(QObject):
         self.dataAccess.storeData('points_data.json', pointsData)
 
 
-
 game = Game()
-print('here')

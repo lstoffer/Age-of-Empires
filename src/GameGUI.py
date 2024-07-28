@@ -10,14 +10,16 @@ from utils.NationType import NationType
 from utils.Ressources import Ressources
 from utils.BuildingType import BuildingType
 from utils.RessourceType import RessourceType
+from utils.UpdateType import UpdateType
 from Points import Points
+
 
 class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
     
     stopGame = pyqtSignal()
     
     # Resources
-    addRessources = pyqtSignal(NationType, Ressources)
+    addResources = pyqtSignal(NationType, Ressources)
     applyDividends = pyqtSignal(int)
 
     # Villagers
@@ -38,18 +40,21 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
 
     trade = pyqtSignal(NationType, RessourceType, RessourceType, int, int)
 
+    applyUpdate = pyqtSignal(NationType, UpdateType)
+
     def __init__(self, parent=None) -> None:
         super().__init__(parent)
         self.setupUi(self)
         self.setupNationSelect()
         self.setupBuildingSelect()
         self.setupTroopTypeSelect()
-        self.setupTradeRessourceSelect()
+        self.setupTradeResourceSelect()
+        self.setupUpdateSelect()
 
         # Resources
-        self.ressources_add_btn.clicked.connect(self.onRssourcesAddClick)
-        self.ressources_sub_btn.clicked.connect(self.onRessourcesSubClick)
-        self.ressources_dividends_btn.clicked.connect(self.onRessourceDividendsClick)
+        self.ressources_add_btn.clicked.connect(self.onResourcesAddClick)
+        self.ressources_sub_btn.clicked.connect(self.onResourcesSubClick)
+        self.ressources_dividends_btn.clicked.connect(self.onResourceDividendsClick)
 
         # Villagers
         self.villagers_move_btn.clicked.connect(self.onVillagersMoveClick)
@@ -72,6 +77,9 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
         # Trade
         self.trade_from_amount_spinBox.valueChanged.connect(self.tradeToAmountUpdate)
         self.trade_btn.clicked.connect(self.onTradeClick)
+
+        # Updates
+        self.update_apply_btn.clicked.connect(self.onUpdateApplyClick)
 
     def closeEvent(self, event):
         super().closeEvent(event)
@@ -96,7 +104,7 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
         self.troops_develop_typ_comboBox.addItem('Kavallerie', 'cavalry')
         self.troops_develop_typ_comboBox.addItem('Belagerungswaffen', 'siege')
 
-    def setupTradeRessourceSelect(self):
+    def setupTradeResourceSelect(self):
         self.trade_from_comboBox.addItem('Nahrung', 'food')
         self.trade_from_comboBox.addItem('Holz', 'wood')
         self.trade_from_comboBox.addItem('Stein', 'stone')
@@ -105,28 +113,53 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
         self.trade_to_comboBox.addItem('Holz', 'wood')
         self.trade_to_comboBox.addItem('Stein', 'stone')
         self.trade_to_comboBox.addItem('Gold', 'gold')
-    
-    def onRssourcesAddClick(self):
+
+    def setupUpdateSelect(self):
+        self.update_apply_select_comboBox.addItem('Dorfbewohner I', 'wheel')
+        self.update_apply_select_comboBox.addItem('Dorfbewohner II', 'trade-cart')
+        self.update_apply_select_comboBox.addItem('Infanterie I', 'short-swordsman')
+        self.update_apply_select_comboBox.addItem('Infanterie II', 'long-swordsman')
+        self.update_apply_select_comboBox.addItem('Kavallerie I', 'heavy-cavalry')
+        self.update_apply_select_comboBox.addItem('Kavallerie II', 'war-elephant')
+        self.update_apply_select_comboBox.addItem('Bogenschütze I', 'improved-bowman')
+        self.update_apply_select_comboBox.addItem('Bogenschütze II', 'composite-bowman')
+        self.update_apply_select_comboBox.addItem('Truppen I', 'centurion')
+        self.update_apply_select_comboBox.addItem('Truppen II', 'legionary')
+        self.update_apply_select_comboBox.addItem('Belagerung I', 'stone-thrower')
+        self.update_apply_select_comboBox.addItem('Belagerung II', 'trebuchet')
+        self.update_apply_select_comboBox.addItem('Goldmine I', 'gold-mining')
+        self.update_apply_select_comboBox.addItem('Goldmine II', 'gold-mining-ii')
+        self.update_apply_select_comboBox.addItem('Steinbruch I', 'stone-mining')
+        self.update_apply_select_comboBox.addItem('Steinburch II', 'stone-mining-ii')
+        self.update_apply_select_comboBox.addItem('Nahrung I', 'domestication')
+        self.update_apply_select_comboBox.addItem('Nahrung II', 'plow')
+        self.update_apply_select_comboBox.addItem('Holz I', 'woodcutting')
+        self.update_apply_select_comboBox.addItem('Holz II', 'artisanship')
+        self.update_apply_select_comboBox.addItem('Wall I', 'big-wall')
+        self.update_apply_select_comboBox.addItem('Wall II', 'stone-wall')
+        self.update_apply_select_comboBox.addItem('Burg I', 'big-castle')
+        self.update_apply_select_comboBox.addItem('Burg II', 'stone-castle')
+
+    def onResourcesAddClick(self):
         food = self.food_add_sub_spinBox.value()
         wood = self.wood_add_sub_spinBox.value()
         stone = self.stone_add_sub_spinBox.value()
         gold = self.gold_add_sub_spinBox.value()
         nation = NationType(self.nation_select_comboBox.currentData())
-        ressources = Ressources(food, wood, stone, gold)
-        self.addRessources.emit(nation, ressources)
+        resources = Ressources(food, wood, stone, gold)
+        self.addResources.emit(nation, resources)
 
-    def onRessourcesSubClick(self):
+    def onResourcesSubClick(self):
         food = self.food_add_sub_spinBox.value()
         wood = self.wood_add_sub_spinBox.value()
         stone = self.stone_add_sub_spinBox.value()
         gold = self.gold_add_sub_spinBox.value()
         nation = NationType(self.nation_select_comboBox.currentData())
-        ressources = Ressources(-food, -wood, -stone, -gold)
-        self.addRessources.emit(nation, ressources)
+        resources = Ressources(-food, -wood, -stone, -gold)
+        self.addResources.emit(nation, resources)
 
-    def onRessourceDividendsClick(self):
+    def onResourceDividendsClick(self):
         rounds = self.ressources_dividends_spinBox.value()
-        nation = NationType(self.nation_select_comboBox.currentData())
         self.applyDividends.emit(rounds)
 
     def onVillagersMoveClick(self):
@@ -197,11 +230,16 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
 
     def onTradeClick(self):
         nationType = NationType(self.nation_select_comboBox.currentData())
-        fromRessourceType = RessourceType(self.trade_from_comboBox.currentData())
-        toRessourceType = RessourceType(self.trade_to_comboBox.currentData())
+        fromResourceType = RessourceType(self.trade_from_comboBox.currentData())
+        toResourceType = RessourceType(self.trade_to_comboBox.currentData())
         fromAmount = self.trade_from_amount_spinBox.value()
-        toAmoutn = self.trade_to_amount_spinBox.value()
-        self.trade.emit(nationType, fromRessourceType, toRessourceType, fromAmount, toAmoutn)
+        toAmount = self.trade_to_amount_spinBox.value()
+        self.trade.emit(nationType, fromResourceType, toResourceType, fromAmount, toAmount)
+
+    def onUpdateApplyClick(self):
+        nationType = NationType(self.nation_select_comboBox.currentData())
+        updateType = UpdateType(self.update_apply_select_comboBox.currentData())
+        self.applyUpdate.emit(nationType, updateType)
  
     @pyqtSlot(str)
     def displayError(self, message: str):
@@ -212,6 +250,7 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
         msg.setWindowTitle("Error")
         msg.exec_()
 
+    @pyqtSlot(str)
     def displayInfo(self, message: str):
         msg = QMessageBox()
         msg.setIcon(QMessageBox.Information)
@@ -239,7 +278,7 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
     @pyqtSlot(NationType, Nation, Points)
     def updateNation(self, nationType: NationType, nation: Nation, points: Points):
         if nationType == NationType.BRITONS:
-            self.updateBritions(nation, points)
+            self.updateBritons(nation, points)
         elif nationType == NationType.VIKINGS:
             self.updateVikings(nation, points)
         elif nationType == NationType.CHINESE:
@@ -247,14 +286,14 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
         elif nationType == NationType.MONGOLS:
             self.updateMongols(nation, points)
 
-    def updateBritions(self, nation: Nation, points: Points):
+    def updateBritons(self, nation: Nation, points: Points):
         self.britons_points_label.setText(str(nation.getPoints(points))) 
         self.britons_age_label.setText(str(nation.age.value))
         self.britons_villagers_label.setText(str(nation.villagers))
-        self.britons_food_label.setText(str(nation.ressources.food))
-        self.britons_wood_label.setText(str(nation.ressources.wood))
-        self.britons_stone_label.setText(str(nation.ressources.stone))
-        self.britons_gold_label.setText(str(nation.ressources.gold))
+        self.britons_food_label.setText(str(nation.resources.food))
+        self.britons_wood_label.setText(str(nation.resources.wood))
+        self.britons_stone_label.setText(str(nation.resources.stone))
+        self.britons_gold_label.setText(str(nation.resources.gold))
         self.britons_archer_label.setText(str(nation.troops.archer))
         self.britons_infantry_label.setText(str(nation.troops.infantry))
         self.britons_cavalry_label.setText(str(nation.troops.cavalry))
@@ -266,6 +305,9 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
         self.britons_castle_label.setText(str(nation.buildings.castle))
         self.britons_universtity_label.setText(str(nation.buildings.university))
 
+        self.britons_updates_list.clear()
+        self.britons_fields_list.clear()
+
         for update in nation.updates:
             self.britons_updates_list.addItem(update.value)
         for field in nation.fields:
@@ -275,10 +317,10 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
         self.vikings_points_label.setText(str(nation.getPoints(points))) 
         self.vikings_age_label.setText(str(nation.age.value))
         self.vikings_villagers_label.setText(str(nation.villagers))
-        self.vikings_food_label.setText(str(nation.ressources.food))
-        self.vikings_wood_label.setText(str(nation.ressources.wood))
-        self.vikings_stone_label.setText(str(nation.ressources.stone))
-        self.vikings_gold_label.setText(str(nation.ressources.gold))
+        self.vikings_food_label.setText(str(nation.resources.food))
+        self.vikings_wood_label.setText(str(nation.resources.wood))
+        self.vikings_stone_label.setText(str(nation.resources.stone))
+        self.vikings_gold_label.setText(str(nation.resources.gold))
         self.vikings_archer_label.setText(str(nation.troops.archer))
         self.vikings_infantry_label.setText(str(nation.troops.infantry))
         self.vikings_cavalry_label.setText(str(nation.troops.cavalry))
@@ -290,6 +332,9 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
         self.vikings_castle_label.setText(str(nation.buildings.castle))
         self.vikings_universtity_label.setText(str(nation.buildings.university))
 
+        self.vikings_updates_list.clear()
+        self.vikings_fields_list.clear()
+
         for update in nation.updates:
             self.vikings_updates_list.addItem(update.value)
         for field in nation.fields:
@@ -299,10 +344,10 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
         self.chinese_points_label.setText(str(nation.getPoints(points))) 
         self.chinese_age_label.setText(str(nation.age.value))
         self.chinese_villagers_label.setText(str(nation.villagers))
-        self.chinese_food_label.setText(str(nation.ressources.food))
-        self.chinese_wood_label.setText(str(nation.ressources.wood))
-        self.chinese_stone_label.setText(str(nation.ressources.stone))
-        self.chinese_gold_label.setText(str(nation.ressources.gold))
+        self.chinese_food_label.setText(str(nation.resources.food))
+        self.chinese_wood_label.setText(str(nation.resources.wood))
+        self.chinese_stone_label.setText(str(nation.resources.stone))
+        self.chinese_gold_label.setText(str(nation.resources.gold))
         self.chinese_archer_label.setText(str(nation.troops.archer))
         self.chinese_infantry_label.setText(str(nation.troops.infantry))
         self.chinese_cavalry_label.setText(str(nation.troops.cavalry))
@@ -314,6 +359,9 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
         self.chinese_castle_label.setText(str(nation.buildings.castle))
         self.chinese_universtity_label.setText(str(nation.buildings.university))
 
+        self.chinese_updates_list.clear()
+        self.chinese_fields_list.clear()
+
         for update in nation.updates:
             self.chinese_updates_list.addItem(update.value)
         for field in nation.fields:
@@ -323,10 +371,10 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
         self.mongols_points_label.setText(str(nation.getPoints(points))) 
         self.mongols_age_label.setText(str(nation.age.value))
         self.mongols_villagers_label.setText(str(nation.villagers))
-        self.mongols_food_label.setText(str(nation.ressources.food))
-        self.mongols_wood_label.setText(str(nation.ressources.wood))
-        self.mongols_stone_label.setText(str(nation.ressources.stone))
-        self.mongols_gold_label.setText(str(nation.ressources.gold))
+        self.mongols_food_label.setText(str(nation.resources.food))
+        self.mongols_wood_label.setText(str(nation.resources.wood))
+        self.mongols_stone_label.setText(str(nation.resources.stone))
+        self.mongols_gold_label.setText(str(nation.resources.gold))
         self.mongols_archer_label.setText(str(nation.troops.archer))
         self.mongols_infantry_label.setText(str(nation.troops.infantry))
         self.mongols_cavalry_label.setText(str(nation.troops.cavalry))
@@ -337,6 +385,9 @@ class GameGUI(QtWidgets.QMainWindow, GameUI.Ui_MainWindow):
         self.mongols_wall_label.setText(str(nation.buildings.wall))
         self.mongols_castle_label.setText(str(nation.buildings.castle))
         self.mongols_universtity_label.setText(str(nation.buildings.university))
+
+        self.mongols_updates_list.clear()
+        self.mongols_fields_list.clear()
 
         for update in nation.updates:
             self.mongols_updates_list.addItem(update.value)

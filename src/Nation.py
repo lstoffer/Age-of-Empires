@@ -1,5 +1,4 @@
 from typing import List
-from typing import Dict
 from utils.TroopType import TroopType
 from utils.UpdateType import UpdateType
 from utils.AgeType import AgeType
@@ -12,6 +11,8 @@ from Villager import Villager
 from Update import Update
 from Points import Points
 from Troop import Troop
+from Updates import Updates
+
 
 class Nation:
     def __init__(
@@ -20,20 +21,20 @@ class Nation:
         updates: List[UpdateType],
         age: AgeType,
         fields: List[int],
-        ressources: Ressources,
+        resources: Ressources,
         troops: Troops,
         buildings: Buildings,
         villagers: int,
         buildingInstances: BuildingInstances,
         troopInstances: TroopInstances,
         villagerInstance: Villager,
-        updateInstances: Dict[UpdateType, Update]
+        updateInstances: Updates
     ) -> None:
-        self.__points = points      # Only used to sotre the points after playing not to access the points during play
+        self.__points = points      # Only used to store the points after playing not to access the points during play
         self.updates = updates
         self.age = age
         self.fields = fields
-        self.ressources = ressources
+        self.resources = resources
         self.troops = troops
         self.buildings = buildings
         self.villagers = villagers
@@ -50,7 +51,7 @@ class Nation:
         updates = [UpdateType(update) for update in nationDict['updates']]
         age = AgeType(nationDict['age'])
         fields = [int(field) for field in nationDict['fields']]
-        ressources = Ressources.from_dict(nationDict['ressources'])
+        resources = Ressources.from_dict(nationDict['resources'])
         troops = Troops.from_dict(nationDict['troops'])
         buildings = Buildings.from_dict(nationDict['buildings'])
         villagers = nationDict['villagers']
@@ -58,19 +59,29 @@ class Nation:
         buildingInstances = BuildingInstances.from_dict(buildingsDict)
         troopInstances = TroopInstances.from_dict(troopsDict)
         villagerInstance = Villager.from_dict(villagerDict)
-        updateInstances = {updateType.value: Update.from_dict(updateDict[updateType.value]) for updateType in updates}
+        updateInstances = Updates(updateDict)
 
-        return cls(points, updates, age, fields, ressources, 
+        return cls(points, updates, age, fields, resources,
                    troops, buildings, villagers, buildingInstances, 
                    troopInstances, villagerInstance, updateInstances)
     
-    def addRessources(self, ressources: Ressources):
-        self.ressources += ressources
+    def addResources(self, resources: Ressources):
+        self.resources += resources
     
-    def addUpdate(self, updateType: UpdateType, update: Update):
+    def addUpdate(self, updateType: UpdateType):
+        update = self.updateInstances.getUpdate(updateType)
+        costs = update.cost
+
+        if not self.resources.isSufficient(costs):
+            raise Exception("Not enough resources to add update")
+
+        self.buildingInstances += update.buildingInstances
+        self.troopInstances += update.troopInstances
+        self.villagerInstance += update.villagerInstance
+
+        self.resources -= costs
+
         self.updates.append(updateType)
-        self.updateInstances[updateType] = update
-        self.__applyUpdate(update)
 
     def getAttack(self, troops: Troops) -> int:
         archerAttack = troops.archer * self.troopInstances.archer.attack
@@ -116,34 +127,28 @@ class Nation:
         nationPoints += self.buildings.university * self.buildingInstances.university.points
         self.__points = nationPoints
         return nationPoints
-    
-    def __applyUpdate(self, update: Update):
-        self.buildingInstances += update.buildingInstances
-        self.troopInstances += update.troopInstances
-        self.villagerInstance += update.villagerInstance
 
     def __applyUpdates(self):
-        if not self.updateInstances:
+        if not self.updates:
             return
-        
-        iterator = iter(self.updateInstances.values())
-        accumulatedUpdate = next(iterator)
 
-        for update in iterator:
-            accumulatedUpdate += update
+        accumulatedUpdate = self.updateInstances.getUpdate(self.updates.pop(0))
+        for update in self.updates:
+            accumulatedUpdate += self.updateInstances.getUpdate(update)
 
         self.buildingInstances += accumulatedUpdate.buildingInstances
         self.troopInstances += accumulatedUpdate.troopInstances
         self.villagerInstance += accumulatedUpdate.villagerInstance
-    
+
     def serialize(self) -> dict:
-        nationsData = {}
-        nationsData['points'] = self.__points
-        nationsData['updates'] = [update.value for update in self.updates]
-        nationsData['age'] = self.age.value
-        nationsData['fields'] = [str(field) for field in self.fields]
-        nationsData['ressources'] = self.ressources.serialize()
-        nationsData['troops'] = self.troops.serialize()
-        nationsData['buildings'] = self.buildings.serialize()
-        nationsData['villagers'] = self.villagers
+        nationsData = {
+           'points': self.__points,
+           'updates': [update.value for update in self.updates],
+           'age': self.age.value,
+           'fields': [str(field) for field in self.fields],
+           'resources': self.resources.serialize(),
+           'troops': self.troops.serialize(),
+           'buildings': self.buildings.serialize(),
+           'villagers': self.villagers
+        }
         return nationsData

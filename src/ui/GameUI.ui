@@ -58,7 +58,7 @@
         <item>
          <widget class="QTabWidget" name="tabWidget_3">
           <property name="currentIndex">
-           <number>3</number>
+           <number>6</number>
           </property>
           <widget class="QWidget" name="ressources_controlTab">
            <attribute name="title">
@@ -920,12 +920,12 @@
            </attribute>
            <layout class="QVBoxLayout" name="verticalLayout_32">
             <item>
-             <widget class="QComboBox" name="updates_select_comboBox"/>
+             <widget class="QComboBox" name="update_apply_select_comboBox"/>
             </item>
             <item>
-             <widget class="QPushButton" name="updates_btn">
+             <widget class="QPushButton" name="update_apply_btn">
               <property name="text">
-               <string>PushButton</string>
+               <string>Anwenden</string>
               </property>
              </widget>
             </item>

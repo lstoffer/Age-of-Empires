@@ -40,7 +40,7 @@ class DataAccess():
             print(f'Error loading file {filepath}: {e}')
             return {}
 
-    def storeData(self, fileName: Path, dataDict: dict):
+    def storeData(self, fileName: str, dataDict: dict):
         filePath = self.dataDir / fileName
         try:
             with open(filePath, 'w') as dataFile:

@@ -26,7 +26,8 @@ class Update:
 
     def __add__(self, other):
         if isinstance(other, Update):
-            return Update(self.buildingInstances + other.buildingInstances, 
+            return Update(self.cost,
+                          self.buildingInstances + other.buildingInstances,
                           self.troopInstances + other.troopInstances, 
                           self.villagerInstance + other.villagerInstance)
         return NotImplemented
