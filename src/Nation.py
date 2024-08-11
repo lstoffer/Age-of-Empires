@@ -110,7 +110,7 @@ class Nation:
     
     def getPoints(self, points: Points) -> int:
         nationPoints = 0
-        # Age Pointss
+        # Age Points
         nationPoints += points.ages[self.age]
         # Troop Points
         nationPoints += self.troops.archer * self.troopInstances.archer.points
